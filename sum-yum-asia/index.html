@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- Owl Carousel Stylesheets -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <style>
+          #signup input{
+            margin-bottom: 10px;
+          }
+          .featured-dishes img{
+            height: 140px!important;
+          }
+        </style>
+
+        <title>Sum Yum Asia | Home</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/dish.css">
+
+    </head>
+    <body>
+
+  <!-- Header  -->
+  <div id="overlay"></div>
+
+  <!-- navbar  -->
+  <div class="bg-red">
+    <div class="container ">
+
+        <!-- Mobile screens  -->
+        <!-- sliding navbar left  -->
+        <div class="d-block d-md-none">
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-long-arrow-left" aria-hidden="true" style="color: white;"></i></a>
+            <h5 class="pl-4 pb-2" style="border-bottom: 1px solid #e7e6e6;">
+              <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            </h5>
+            <div class="mob-slide">
+              <a href="#" data-toggle="modal" data-target="#add-to-cart" onclick="closeNav()">Order online</a>
+              <a href="index.html#safety" onclick="closeNav()">Safety Standards</a>
+              <a href="index.html#offers" onclick="closeNav()">Offers</a>
+              <a href="#" id="menu-drop">Menu <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <ul class="list-unstyled">
+                <li class=" dis no-dis">
+                  <div style="background-color: #a11112; box-shadow: inset 1px 0px 45px 0px #00000085;">
+                    <ul class="list-unstyled">
+                          <li><a href="dishes.html">Soups</a></li>
+                          <li><a href="dishes.html">Veg starters</a></li>
+                          <li><a href="dishes.html">Salad</a></li>
+                          <li><a href="dishes.html">Non-veg starters</a></li>
+                          <li><a href="dishes.html">Dimsum</a></li>
+                          <li><a href="dishes.html">Asian curries</a></li>
+                          <li><a href="dishes.html">Main course</a></li>
+                          <li><a href="dishes.html">Chicken</a></li>
+                          <li><a href="dishes.html">Lamb</a></li>
+                          <li><a href="dishes.html">Fish/Prawn</a></li>
+                          <li><a href="dishes.html">Rice & Noodles</a></li>
+                          <li><a href="dishes.html">Full meal/Combo</a></li>
+                      </ul>
+                  </div>
+                </li>
+              </ul>
+              <a href="media.html">Media</a>
+              <a href="contact.html">Contact us</a>
+            </div>  
+          </div>
+          
+            <div>
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()" class="bars">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </span>
+
+              <!-- Logo  -->
+              <div class="text-left">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="" class="image-fluid" width="70%">
+                </a>
+              </div>
+
+              <!-- Icons  -->
+                <button class="btn btn-default nav-item nav-but user" data-toggle="modal" data-target="#add-to-cart">
+                  Order online
+                </button>
+             
+                <button id="hi-name-sm" class="btn btn-default nav-item nav-but user hi-name">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </button>
+                <div class="row">
+                  <div class="col-6"></div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li class=" see no-see">
+                        <div style="background-color: rgb(243, 242, 242);">
+                          <ul class="list-unstyled menu pl-2 pr-4" style="display: inline-block; width: 150px;">
+                            <li style="border-bottom: 1px solid gray;"><a href="#" data-toggle="modal" data-target="#number-login">Login</a></li>
+                            <li><a href="account.html#nav-profile">Profile</a></li>
+                            <li><a href="account.html#nav-address">Address</a></li>
+                            <li style="border-bottom: 1px solid gray;"><a href="account.html#nav-orders">Orders</a></li>
+                            <li><a href="#">Log-out</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+             
+            </div>
+
+        </div>
+
+        <!-- Large screens  -->
+        <div class="d-none d-md-block">
+          <nav class="navbar navbar-expand-md p-0">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.png" alt="" class="w-25">
+              <span style="font-size:30px; vertical-align: middle;">Sum Yum Asia</span>
+            </a>
+            
+            <div class="navbar-nav nav-lg">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="dishes.html">Our food</a>
+                  <div class="dropdown-menu">
+                    <ul class="list-unstyled menu">
+                      <li><a href="dishes.html">Soups</a></li>
+                      <li><a href="dishes.html">Veg starters</a></li>
+                      <li><a href="dishes.html">Salad</a></li>
+                      <li><a href="dishes.html">Non-veg starters</a></li>
+                      <li><a href="dishes.html">Dimsum</a></li>
+                      <li><a href="dishes.html">Asian curries</a></li>
+                      <li><a href="dishes.html">Main course</a></li>
+                      <li><a href="dishes.html">Chicken</a></li>
+                      <li><a href="dishes.html">Lamb</a></li>
+                      <li><a href="dishes.html">Fish/Prawn</a></li>
+                      <li><a href="dishes.html">Rice & Noodles</a></li>
+                      <li><a href="dishes.html">Full meal/Combo</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="index.html#offers">Offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-default nav-item nav-but" data-toggle="modal" data-target="#add-to-cart">
+                    Order online
+                  </button>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle btn btn-default nav-item nav-but hi-name" href="#"><i class="fa fa-user" aria-hidden="true" style="font-size:25px"></i></a>
+                  <div class="dropdown-menu">
+                    <ul class="list-unstyled menu px-3">
+                      <li style="border-bottom: 1px solid gray;"><a href="#" data-toggle="modal" data-target="#number-login">Login</a></li>
+                      <li><a href="account.html#nav-profile">Profile</a></li>
+                      <li><a href="account.html#nav-address">Address</a></li>
+                      <li style="border-bottom: 1px solid gray;"><a href="account.html#nav-orders">Orders</a></li>
+                      <li><a href="#">Log-out</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+
+          </nav>
+        </div>
+
+    </div>
+  </div>
+
+
+  <!-- Modal Pop-up (number-login) -->
+  <div class="modal sign" id="number-login">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+              <h5 class="modal-title">Login to Sum Yum Asia</h5>
+              <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <form id="registration">
+              <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-12 p-0">
+                      <label for="mob-num">Mobile No.</label>
+                      <input type="tel" id="mob-num" name="num" placeholder="Enter mobile no." class="form-control pl-2" style="width: 90%;">
+                    </div>
+                </div>
+                    
+              </div>
+  
+                    <div class="modal-footer">
+                      <button class="btn btn-default bg-yellow w-100" data-toggle="modal" data-target="#password-login" data-dismiss="modal">Continue</button>
+                      <button class="btn btn-default bg-yellow w-100" data-toggle="modal" data-target="#signup" data-dismiss="modal">Continue</button>
+                    </div>
+                    
+            </form>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+
+  <!-- Modal Pop-up (password-login)  -->
+  <div class="modal sign" id="password-login">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+                <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#number-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+                <h5 class="modal-title" style="margin-left: 15px;">Login to Sum Yum Asia</h5>
+                <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <form id="registration">
+              <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-12 p-0">
+                      <p class="text-center" style="font-size: 24px;">Hi Kashish!</p>
+                      <p style="margin-bottom: 0;">Mobile no.</p>
+                      <div class="row ml-0">
+                        <p>9876543210</p>
+                        <a href="#number-login" data-toggle="modal" data-target="#number-login" style="position: absolute; right:10%; color: var(--yellow);" data-dismiss="modal">Not you?</a>
+                      </div>
+                      <label for="login-password">Password:</label>
+                      <input type="password" name="login-password" id="login-password" placeholder="Enter password" class="form-control pl-2" style="width: 90%;">
+                      <a href="#" data-toggle="modal" data-target="#forgot-pass" data-dismiss="modal">Forgot password?</a>
+                    </div>
+                </div>
+                    
+              </div>
+  
+                    <div class="modal-footer">
+                      <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Login</button>
+                    </div>
+                    
+            </form>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (forgot-pass)-->
+<div class="modal sign" id="forgot-pass">
+  <div class="modal-dialog modal-md">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#password-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+            <h4 class="modal-title" style="margin-left: 15px;">Forgot Password</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <form id="registration">
+            <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+              <div class="row">
+                  <div class="col-12 p-0">
+                    <p>We have sent otp to +91 9876543210</p>
+                    <input type="tel" name="otp" placeholder="Enter otp" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <input type="password" name="pass" placeholder="Password" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <input type="password" name="con-pass" placeholder="Confirm password" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <p class="mb-0">Resend otp in (00:30) seconds</p>
+                    <p class="mb-0">If you haven’t got OTP - <a href="#"> Resend SMS </a></p>
+                  </div>
+              </div>
+                  
+            </div>
+
+                  <div class="modal-footer">
+                    <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Continue</button>
+                  </div>
+                  
+          </form>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (signup)-->
+<div class="modal sign" id="signup">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#number-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+            <h4 class="modal-title" style="margin-left: 15px;">Sign-up to Sum Yum Asia</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <form id="registration">
+            <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+              <div class="row">
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" class="form-control" style="width: 95%;">
+                  </div>
+
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="email">Email:</label>
+                      <input type="text" id="email" name="email" class="form-control" style="width: 95%;">
+                  </div>
+              </div>
+
+              <div class="row"> 
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="pass">Password:</label>
+                      <input type="password" id="pass" name="pass" class="form-control" style="width: 95%;">  
+                  </div>
+
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="conpass">Confirm Password:</label>
+                      <input type="password" id="conpass" name="conpass" class="form-control" style="width: 95%;">
+                  </div>
+              </div>
+                  
+            </div>
+
+                  <div class="modal-footer">
+                    <button class="btn btn-default bg-yellow w-100 continue" data-toggle="modal" data-target="#otp-login" data-dismiss="modal">Continue</button>
+                  </div>
+                  
+          </form>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (otp-login)-->
+<div class="modal sign" id="otp-login">
+  <div class="modal-dialog modal-md">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#signup" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+            <h4 class="modal-title" style="margin-left: 15px;">Enter otp</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <form id="registration">
+            <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+              <div class="row">
+                  <div class="col-12 p-0">
+                    <p>OTP sent to +91 9876543210</p>
+                    <input type="tel" name="otp" placeholder="Enter otp" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <p class="mb-0">Resend otp in (00:30) seconds</p>
+                    <p class="mb-0">OTP not received - <a href="#"> Resend SMS </a></p>
+                  </div>
+              </div>
+                  
+            </div>
+
+                  <div class="modal-footer">
+                    <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Sign-up</button>
+                  </div>
+                  
+          </form>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (add-to-cart)-->
+<div class="modal sign" id="add-to-cart">
+  <div class="modal-dialog modal-md">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+              <a class="nav-link active" href="#id-1" data-toggle="tab">Delivery</a>
+              <a class="nav-link" href="#id-2" data-toggle="tab">Take-away</a>
+            </nav>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+
+              <div class="tab-content py-3">
+                <div class="tab-pane active" id="id-1">
+                  <h4>Enter your location</h4>
+                  <input type="text" name="location" placeholder="Location" class="form-conttol py-1 px-2">
+                </div>
+        
+                <div class="tab-pane fade" id="id-2">
+                  <h4>Select Takeaway outlet</h4>
+                  <select name="take-away" class="form-contol py-1">
+                    <option value="">Plot No. 9, Palam Vihar Extn.</option>
+                    <option value="">B 110 Supermart 1, DLF Phase IV</option>
+                    <option value="">Sector-49, Gurgaon</option>
+                  </select>
+                </div>      
+              </div>
+                      
+              <div class="modal-footer">
+                <a href="dishes.html" class="btn btn-default bg-yellow w-100" >Order now</a>
+              </div>
+
+            </form>
+
+          </div>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+
+<!-- Only on home page -->
+<!-- Modal pop-up (When page loads)-->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content load">
+          <button type="button" class="btn btn-default close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <img src="assets/images/offers/offer-2.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+<!-- Body  -->
+
+  <!-- Side vectors  -->
+  <img class="side-vector vector-noodles" src="assets/images/vector/vector-noodles.png" alt="">
+  <img class="side-vector vector-chicken" src="assets/images/vector/vector-chicken.png" alt="">
+  <img class="side-vector vector-dimsum" src="assets/images/vector/vector-dimsum.png" alt="">
+  <img class="side-vector vector-meal-box" src="assets/images/vector/vector-meal-box.png" alt="">
+  <img class="side-vector vector-meal" src="assets/images/vector/vector-meal.png" alt="">
+  <!-- <img class="side-vector vector-seeks" src="assets/images/vector/vector-seeks.png" alt=""> -->
+  <!-- <img class="side-vector vector-cute-dimsum" src="assets/images/vector/vector-cute-dimsum.png" alt=""> -->
+
+          <!-- Image carousel  -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+  
+            <!-- Images -->
+            <!-- Large screens  -->
+            <div class="carousel-inner img-car">
+              <div class="carousel-item active">
+                  <img class="d-none d-md-block" src="assets/images/banners/banner-1 desk.jpg" alt="First slide">
+                  <img class="d-md-none" src="assets/images/banners/banner-1 mob.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-none d-md-block" src="assets/images/banners/banner-2 desk.jpg" alt="Second slide">
+                  <img class="d-md-none" src="assets/images/banners/banner-2 mob.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-none d-md-block" src="assets/images/banners/banner-3 desk.jpg" alt="Third slide">
+                  <img class="d-md-none" src="assets/images/banners/banner-3 mob.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-none d-md-block" src="assets/images/banners/banner-4 desk.jpg" alt="Fourth slide">
+                <img class="d-md-none" src="assets/images/banners/banner-4 mob.jpg" alt="Fourth slide">
+              </div>
+            </div>
+  
+            <!-- Controls  -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <div class="container space space-pad mt-0 mt-md-2 p-0 px-md-3">
+
+            <!-- Coupon  -->
+            <!-- large screen  -->
+            <div class="container d-none d-md-block coupon">
+                <div class="row">
+                  <img src="assets/images/offers/coupon.jpg" alt="" class="img-fluid w-100">
+                </div>
+            </div>
+    
+    
+            <!-- Delivery -->
+            <!-- <div class="container text-center space space-pad bg-white radius delivery cover-pics mt-0 mt-md-5">
+    
+              <div class="row d-none d-md-block deli-lg">
+                <div class="col-12">
+                  <h3>What's on the menu?</h3>
+                </div>
+              </div>
+    
+              <div class="row d-block d-md-none deli-sm">
+                <div class="col-12">
+                  <h3>What's on the menu?</h3>
+                </div>
+              </div>
+    
+              <div class="row menu-items">
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/soups.JPG" alt="">
+                    <p>Soups</p>
+                  </a>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/veg starters.JPG" alt="">
+                    <p>Veg Starters</p>
+                  </a>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/salads.jpeg" alt="">
+                    <p>Salads</p>
+                  </a>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/non veg starters.JPG" alt="">
+                    <p>Non-veg Starters</p>
+                  </a>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/dimsums.JPG" alt="">
+                    <p>Dimsum</p>
+                  </a>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/asian curry.jpg" alt="">
+                    <p>Asian Curries</p>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/main course.JPG" alt="">
+                    <p>Main course</p>
+                  </a>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/rice & noodles.JPG" alt="">
+                    <p>Rice & Noodles</p>
+                  </a>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <a href="dishes.html">
+                    <img src="assets/images/cover pics/full meal.jpg" alt="">
+                    <p>Full meal/Combo</p>
+                  </a>
+                </div>
+                
+              </div>
+    
+            </div> -->
+
+            <!-- Cover pics  -->
+            <div class="container text-center space space-pad bg-white radius delivery cover-pics mt-0 mt-md-5">
+    
+              <div class="row d-none d-md-block deli-lg">
+                <div class="col-12">
+                  <h3>What's on menu ?</h3>
+                </div>
+              </div>
+    
+              <div class="row d-block d-md-none feature-sm">
+                <div class="col-12">
+                  <h3>What's on menu ?</h3>
+                </div>
+              </div>
+    
+              <!-- Owl carousel-->
+              <div class="carousel-wrap bg-white">
+                <div class="owl-carousel owl-theme description" id="wom">
+    
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/soups.JPG" alt="">
+                      <p>Soups</p>
+                    </a>
+                  </div>
+      
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="">
+                      <p>Veg Starters</p>
+                    </a>
+                  </div>
+      
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/salads.jpeg" alt="">
+                      <p>Salads</p>
+                    </a>
+                  </div>
+      
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/non veg starters.JPG" alt="">
+                      <p>Non-veg Starters</p>
+                    </a>
+                  </div>
+      
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/dimsums.JPG" alt="">
+                      <p>Dimsum</p>
+                    </a>
+                  </div>
+      
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/asian curry.jpg" alt="">
+                      <p>Asian Curries</p>
+                    </a>
+                  </div>
+  
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/main course.JPG" alt="">
+                      <p>Main course</p>
+                    </a>
+                  </div>
+      
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/rice & noodles.JPG" alt="">
+                      <p>Rice & Noodles</p>
+                    </a>
+                  </div>
+      
+                  <div>
+                    <a href="dishes.html">
+                      <img src="assets/images/cover pics/full meal.jpg" alt="">
+                      <p>Full meal/Combo</p>
+                    </a>
+                  </div>
+                    
+    
+                </div>
+              </div>
+            
+            </div>
+    
+    
+            <!-- Offers  -->
+            <div class="container text-center bg-white radius space space-pad delivery" id="offers">
+    
+              <div class="row d-none d-md-block deli-lg">
+                <div class="col-12">
+                  <h3>Offers we have</h3>
+                </div>
+              </div>
+    
+              <div class="row d-block d-md-none offer-sm">
+                <div class="col-12">
+                  <h3>Offers we have</h3>
+                </div>
+              </div>
+    
+              <div class="row">
+
+                <div class="col-12 col-md-3 pb-3">
+                  <img src="assets/images/offers/offer-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-3 pb-3">
+                  <img src="assets/images/offers/offer-2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-3 pb-3">
+                  <img src="assets/images/offers/offer-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-3 pb-3">
+                  <img src="assets/images/offers/offer-4.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+    
+            </div>
+    
+    
+            <!-- Our Promise  -->
+            <div class="container text-center  bg-white radius space space-pad delivery">
+    
+              <div class="row d-none d-md-block deli-lg">
+                <div class="col-12">
+                  <h3>Our Promise</h3>
+                </div>
+              </div>
+    
+              <div class="row d-block d-md-none prom-sm">
+                <div class="col-12">
+                  <h3>Our Promise</h3>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="assets/images/promise-safety/kitchen.jpg" alt="" class=" img-fluid pb-3" style="height: 265px;
+                  object-fit: contain;">
+                  <h5>Clean & Hygienic Kitchen</h5>
+                  <p>We prides itself in using the freshest and handpicked ingredients</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="assets/images/promise-safety/freshly cooked.jpg" alt="" class="img-fluid pb-3">
+                  <h5>Freshly Cooked Dishes</h5>
+                  <p>Each dish is individually prepared in the traditional dum style with distinct layers by our khansamas in natural clay handis</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="assets/images/promise-safety/service.png" alt="" class="img-fluid pb-3">
+                  <h5>Quality Service</h5>
+                  <p>We brings the Royal dish to you, prepared in the traditional dum style, slow cooked to perfection by our khansama</p>
+                </div>
+              </div>
+    
+            </div>
+
+            <!-- Safety standards  -->
+            <div class="container text-center  bg-white radius space space-pad delivery" id="safety">
+    
+              <div class="row d-none d-md-block deli-lg">
+                <div class="col-12">
+                  <h3>Safety Standards</h3>
+                </div>
+              </div>
+    
+              <div class="row d-block d-md-none safety-sm">
+                <div class="col-12">
+                  <h3>Safety Standards</h3>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="assets/images/promise-safety/temperature.png" alt="" class="img-fluid pb-3" style="height: 200px; object-fit: contain;">
+                  <h5>Temperature Checks</h5>
+                  <p>Thermal guns are being used for temperature check for staff and delivery executives every day.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="assets/images/promise-safety/mask.png" alt="" class="img-fluid pb-3" style="height: 200px; object-fit: contain;">
+                  <h5>Use of masks</h5>
+                  <p>All staff involved in food preparation practice safe, sanitary food handling and wear masks everytime in kitchen.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="assets/images/promise-safety/sanatizer.png" alt="" class="img-fluid pb-3" style="height: 200px; object-fit: contain;">
+                  <h5>Staff safety</h5>
+                  <p>Frequent use of sanstizer. Any staff member who shows symptoms associated with COVID-19 has been told to stay home, until cleared from doctors.</p>
+                </div>
+              </div>
+    
+            </div>
+
+            <!-- Testimonials  -->
+            <div class="container text-center  bg-white radius space space-pad delivery">
+    
+              <div class="row d-none d-md-block deli-lg">
+                <div class="col-12">
+                  <h3>Testimonials</h3>
+                </div>
+              </div>
+
+              <div class="row d-block d-md-none testimonial-sm">
+                <div class="col-12">
+                  <h3>Testimonials</h3>
+                </div>
+              </div>
+
+              <!-- Owl carousel-->
+              <div class="carousel-wrap  bg-white radius space space-pad">
+                <div class="owl-carousel owl-theme description">
+    
+                  <div class="testimonial">
+                      <div>
+                        <img src="assets/images/testimonials/shalini puthal.webp" class="img-fluid rounded-circle"/>
+                        <h4>Shalini Puthal</h4>
+                          <p class="mb-0">I wanted to have some Chinese. So I checked their menu and firstly ordered the assorted momos and pan fried noodles. And I was not disappointed. But only thing I didn't like is that they have a minimum order thing, which forced me for a second dish.</p>
+                      </div>
+                  </div>
+  
+                  <div class="testimonial">
+                    <div>
+                      <img src="assets/images/testimonials/amit pandey.webp" class="img-fluid rounded-circle"/>
+                      <h4>Amit Pandey</h4>
+                        <p class="mb-0">If you are looking for asian and thai cuisine, then this is the best place to order. I ordered chicken momos from here, it was great in taste. Delivery was on time with good packaging. Food was presented well and quality was great.</p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial">
+                    <div>
+                      <img src="assets/images/testimonials/aditya rampure.jpg" class="img-fluid rounded-circle"/>
+                      <h4>Aditya Rampure</h4>
+                        <p class="mb-0">Want to have great food? Order from this place for a great meal. Also the quantity of the food was good. Always fresh and above and beyond expectations. Reasonable pricing and fantastic packaging. I recommend this place. Honey Chilly Patato is worth trying.</p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial">
+                    <div>
+                      <img src="assets/images/testimonials/sakshi relwani.webp" class="img-fluid rounded-circle"/>
+                      <h4>Sakshi Relwani</h4>
+                        <p class="mb-0">Very cute packaging and delightful food it was..
+                          Really blessed to find such kind of place..
+                          Considering that is really difficult to find a good and amazing place ..they have all organic and fresh Product on daily basis and the delivery is so fast and good</p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial">
+                    <div>
+                      <img src="assets/images/testimonials/nilesh dodmani.webp" class="img-fluid rounded-circle"/>
+                      <h4>Nilesh Dodmani</h4>
+                        <p class="mb-0">I love Chinese food 🥰. Yesterday i had ordered from this restaurant for Anniversary. This restaurant food is very delicious 😋. Good quality of food products 😋. This restaurant delivery time is nice 😊</p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial">
+                    <div>
+                      <img src="assets/images/testimonials/yash surve.webp" class="img-fluid rounded-circle"/>
+                      <h4>Yash Surve</h4>
+                        <p class="mb-0">I recently ordered Chilly garlic chicken noodles from this amazing restaurant.... chicken was cooked properly.... Noodles was fresh....Food was hot and tasty.... Delivery was quick.... Packaging was great....</p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial">
+                    <div>
+                      <img src="assets/images/testimonials/ritika chaudhary.webp" class="img-fluid rounded-circle"/>
+                      <h4>Reetika ChaudhAry</h4>
+                        <p class="mb-0">I had ordered Bolognese pasta. It was so delicious that i wanna ordered it again. Their service towards their customer was mind blowing. I loved the food. I highly recommend this place to everyone</p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial">
+                    <div>
+                      <img src="assets/images/testimonials/raj talwar.webp" class="img-fluid rounded-circle"/>
+                      <h4>Raj Talwar</h4>
+                        <p class="mb-0">I have ordered from this place many times and their favourite item which I like the most is Munchau soup. Other than that I have also tried their chili potato and noodles which are also very delicious. Nice outlets for Chinese and Asian food.</p>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            
+            </div>
+
+            <!-- Coupon  -->
+            <!-- large screen  -->
+            <div class="container d-none d-md-block space space-pad coupon">
+              <div class="row">
+                <img src="assets/images/offers/coupon.jpg" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+
+          </div> <!-- Container bg-white -->
+
+
+
+        
+<!-- Footer  -->
+          <footer>
+            <div class="bg-red">
+              <div class="container text-center txt-white">
+                <div class="row">
+        
+                  <div class="col-12 col-md-4 bdr-btm">
+                    <a href="index.html">
+                      <img src="assets/images/footer-logo.png" alt="" width="70%">
+                      <h6 class="txt-yellow">Chinese, Thai and Asian Food</h6>
+                    </a>
+                  </div>
+        
+                  <div class="col-12 col-md-4 pt-2 pb-3 text-left bdr-btm">
+                    <h3 class="foot-cat">Categories</h3>
+                    <div class="row mt-3">
+                      <div class="col-12">
+                        <ul class="list-unstyled foot-cat-ul">
+                          <li><a href="dishes.html">Soups</a></li>
+                          <li><a href="dishes.html">Veg-starters</a></li>
+                          <li><a href="dishes.html">Salads</a></li>
+                          <li><a href="dishes.html">Non-veg starters</a></li>
+                          <li><a href="dishes.html">Dimsum</a></li>
+                          <li><a href="dishes.html">Asian Curries</a></li>
+                          <li><a href="dishes.html">Main course</a></li>
+                          <li><a href="dishes.html">Chicken</a></li>
+                          <li><a href="dishes.html">Lamb</a></li>
+                          <li><a href="dishes.html">Fish/Prawn</a></li>
+                          <li><a href="dishes.html">Rice & Noodles</a></li>
+                          <li><a href="dishes.html">Full meal/Combo</a></li>
+                        </ul>
+                      </div>
+                      
+                    </div>
+                  </div>
+        
+                  <div class="col-12 col-md-4 pt-2 text-left pl-4 bdr-btm">
+                    <h3 class="foot-cat" style="margin-left: -15px;">Call for delivery</h3>
+        
+                      <div class="row mt-3">
+                        <a href="#"><i class="fa fa-map-marker txt-yellow" aria-hidden="true"></i>
+                          Plot No. 9, Palam Vihar Extn. (Delivery only)</a>
+                      </div>
+        
+                      <div class="row">
+                        <a href="tel:9999126251">
+                            <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+                            Call: 9999126251
+                        </a>
+                      </div>
+        
+                    <div class="row mt-3">
+                      <a href="https://www.google.com/maps/place/Sum+Yum+Asia/@28.462462,77.0850943,17z/data=!3m1!4b1!4m5!3m4!1s0x390d18db307378a3:0xa81cf1452994acd1!8m2!3d28.462462!4d77.087283" target="_blank"><i class="fa fa-map-marker txt-yellow" aria-hidden="true"></i>
+                        B 110 Supermart 1, DLF Phase IV, Gurgaon</a>
+                    </div>
+        
+                    <div class="row">
+                      <div class="col-12 col-md-6 pl-0">
+                        <a href="tel:0124-4040050">
+                          <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+                          Call: 0124-4040050
+                        </a>
+                      </div>
+        
+                      <div class="col-12 col-md-6 pl-0">
+                        <a href="tel:9540043393">
+                          <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+                          Call: 9540043393
+                        </a>
+                      </div>
+                    </div>
+        
+                    <div class="row mt-3">
+                      <a href="#"><i class="fa fa-map-marker txt-yellow" aria-hidden="true"></i>
+                        Sector-49, Gurgaon</a>
+                    </div>
+        
+                    <div class="row">
+                      <a href="tel:9999126241">
+                        <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+                        Call: 9999126241
+                      </a>
+                      
+                    </div>
+
+                    <div class="row social-icons">
+                      <ul class="list-unstyled">
+                        <li>Follow us on:</li>
+                        <li>
+                          <a href="https://www.facebook.com/Sum-Yum-Asia-694882030593220" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/sumyumasia/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+        
+            <!-- copyright  -->
+            <div class="copyright">
+              <div class="container">
+                  <p class="m-0 txt-white" style="font-size: 13px;"> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 Wangshis Foods. All Rights Reserved. | Terms & Conditions. Designed & Developed By <a href="https://www.freelanceritservices.com/" style="color: var(--red);">Freelancer IT Services</a>.</p>
+              </div> 
+            </div>
+        
+          </footer> 
+
+
+
+
+
+
+         <!-- Compiled and minified jquery  -->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+         <!-- Compiled and minified Popper.js  -->
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ 
+         <!-- Compiled and minified JavaScript  -->
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ 
+         <!-- Owl carousel -->
+         <script src="assets/js/owl.carousel.min.js"></script>
+ 
+         <!-- Validation  -->
+         <script src="assets/js/jquery.validate.min.js"></script>
+ 
+ 
+         <!-- System script  -->
+         <script src="assets/js/index.js"></script>
+
+         <!-- Image carousel  -->
+         <script>
+          $('.carousel').carousel({
+            interval: 5000,
+            pause: false
+          })
+         </script>
+ 
+     </body>
+ </html>

@@ -1,0 +1,680 @@
+#header.header-scrolled {
+    background: #fff;
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+}
+ body {
+    position: relative;
+  } 
+#header #logo h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#header #logo h1 a, #header #logo h1 a:hover {
+    color: #000;
+    padding-left: 10px;
+    border-left: 4px solid grey;
+}
+#nav-menu-container {
+    float: right;
+    margin: 0;
+}
+.nav-menu > li {
+    margin-left: 10px;
+}
+.nav-menu > li {
+    float: left;
+}
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-scrolled .nav-menu li:hover > a, .header-scrolled .nav-menu > .menu-active > a {
+    color: #295f2d;
+}
+.header-scrolled .nav-menu a {
+    color: black;
+}
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+    color: #295f2d;
+}
+.nav-menu a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    outline: none;
+}
+#mobile-nav-toggle {
+    display: inline;
+}
+#mobile-nav-toggle {
+    position: absolute;
+    right: 0;
+    top: -8px;
+    z-index: 999;
+    margin: 20px 20px 0 0;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    display: none;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+}
+#mobile-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    /* display: none; */
+}
+body.mobile-nav-active #mobile-nav {
+    left: 0;
+}
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    padding-top: 18px;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.8);
+    left: -260px;
+    width: 260px;
+    overflow-y: auto;
+    transition: 0.4s;
+}
+#mobile-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mobile-nav ul li {
+    position: relative;
+}
+#mobile-nav ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+#mobile-nav ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#mobile-nav ul li li {
+    padding-left: 30px;
+}
+
+.menu-has-children ul
+{visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;}
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color:black;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+.nav-menu ul {
+    margin: 4px 0 0 0;
+    padding: 10px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #fff;
+}
+.nav-menu ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+
+.sf-arrows .sf-with-ul {
+    padding-right: 30px;
+}
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 768px){
+#nav-menu-container {
+    display: none;
+}
+.menu-has-children ul {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 0.5s linear;
+    display: none;
+}
+.carousel-item .w-100 {
+    width: 100%!important;
+    height: 275px;
+}
+#mobile-nav-toggle {
+    display: inline;
+}
+}
+a.scrollto img {
+    width: 200px;
+}
+.applyNowPopup .modal-header h4 {
+    color: #2c2e41;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.applyNowPopup .modal-header {
+    padding: 12px 15px 10px;
+}
+.applyNowPopup button.close {
+    font-size: 22px;
+    font-weight: 700;
+    border: 2px solid #333;
+    border-radius: 14px;
+    padding: 1px 5px 0 5px;
+    opacity: .4;
+    margin: 0!important;
+}
+.buttonApplySubmit {
+    width: 100%;
+    padding: 6px 12px;
+    background: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.top-bar{
+    background: #295F2D;
+    width: 100%;
+    padding: 10px 0;
+}
+.top-bar .top-contact-details ul{
+    list-style: none;
+    margin:0;
+}
+.top-bar .top-contact-details ul li {
+    display: inline-block;
+    padding: 0 10px 0 0px;
+}
+.top-bar .top-contact-details ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+}
+.top-user-login{
+    float: right;
+}
+.jumbotron-image {
+  background-position:center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:120%;
+  margin-bottom: 0px;
+}
+
+.line{
+    height:2px;
+    width:95%;
+      
+}
+.line1{
+    height:2px;
+    width:50%;
+    margin:0
+}
+.hover:hover{
+    box-shadow:0px 0px 0px;
+}
+.bs{
+    box-shadow:2px 5px 10px green yellow;
+}
+.card-title:hover{
+    text-decoration: underline;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+ 
+.sticky {
+  
+  position: sticky;
+  position: -webkit-sticky; 
+   top:120px
+}
+.sticky1 {
+  
+  position: sticky;
+  position: -webkit-sticky; 
+   top:600px
+} 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar1 {
+  overflow: hidden;
+  background-color: #333;
+  margin-top:400px;
+  
+}
+
+.navbar1 a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+ 
+  text-decoration: none;
+}
+
+.dropdown1 {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+  font-size: 13px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 14px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar1 a:hover, .dropdown1:hover .dropbtn1 {
+  background-color: #5cb85c;
+}
+
+.dropdown1 .active{
+  background-color: #5cb85c;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content1 a:hover {
+  background-color: #ddd;
+  border-left:4px solid #5cb85c;
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+.position{
+  position:fixed;
+}
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 3px 5px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white!important;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.sidenav .closebtn {
+  
+  top: 0;
+ margin-right:10px;
+  font-size: 36px;
+  
+   float: right;
+  
+}
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 70px;
+  transition: all 0.5s;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 1px gray;
+}
+   
+/* The Modal (background) */
+
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    height:100%; 
+}
+
+@media screen and (max-width:767px){
+    .modal-content{
+        padding: 0!important;
+    }
+}
+
+/* The Close Button */
+.close {
+    color: black; 
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+th,td{
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+   color: white;
+}
+
+
+/************************* My style sheet  **************************/
+.bg-green{
+    background-color: #295F2D;
+    color: white;
+}
+
+.txt-green{
+    color:  #28A745;
+}
+
+/****** Full page pop-ups  ********/
+.full-page{
+    height: 100%;
+    pointer-events: all;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000; 
+    position: fixed!important;
+    display: none;
+}
+
+.full-page-open {
+    display: block;
+}
+
+.fp-container {
+    background: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.fp-container .row{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fp-container ul{
+    width: 100%;
+}
+
+.fp-container li{
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.fp-container li a{
+  color: rgb(65, 65, 65);
+  font-size: 14px;
+}
+
+.fp-container h4{
+    font-size: 18px;
+}
+
+.fp-container button{
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    right: 1%;
+    top: 0%;
+}
+
+.card a{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.flex-row{
+    margin-bottom: 5px!important;
+}
+
+.idk{
+    display: inline-block;
+    border-left: 1px solid black;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    border-radius: 0;
+    /* margin: 5px; */
+}
+
+.idk .active{
+    background-color: green;
+  color: white!important;
+}
+
+.rel{
+    position: relative;
+}
+
+.table-sm{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 40px;
+    transition: all 0.5s;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.table-sm .col-12{
+    padding-bottom: 8px!important;
+    border-bottom: 2px solid #28a745;
+}
+
+.table-lg{
+    position: sticky;
+    position: -webkit-sticky;
+    transition: all 0.5s;
+    top: 50px;
+    z-index: 997;
+    background-color: #fff;
+}
+
+.slide-lg{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 70px;
+    transition: all 0.5s;
+    z-index: 999;
+}
+
+.rd-more a{
+    color: black;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:767px){
+    .jumbotron h1{
+        font-size: 30px;
+    }
+
+    .jumbotron p{
+        font-size: 17px;
+    }
+}
+
+.exams .row{
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.exams .row .col-4{
+    background-color: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.exams .row .col-8{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+

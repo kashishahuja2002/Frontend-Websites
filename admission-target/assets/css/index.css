@@ -1,0 +1,348 @@
+#header.header-scrolled {
+    background: #fff;
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+}
+#header {
+    padding: 10px 0;
+    height: 70px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    background-color: #fff;
+    box-shadow: 1px 2px 15px #00000038;
+    
+}
+#header #logo h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#header #logo h1 a, #header #logo h1 a:hover {
+    color: #000;
+    padding-left: 10px;
+    border-left: 4px solid grey;
+}
+#nav-menu-container {
+    float: right;
+    margin: 0;
+}
+.nav-menu > li {
+    margin-left: 10px;
+}
+.nav-menu > li {
+    float: left;
+}
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-scrolled .nav-menu li:hover > a, .header-scrolled .nav-menu > .menu-active > a {
+    color: #295f2d;
+}
+.header-scrolled .nav-menu a {
+    color: black;
+}
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+    color: #295f2d;
+}
+.nav-menu a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    outline: none;
+}
+#mobile-nav-toggle {
+    display: inline;
+}
+
+#mobile-nav-toggle {
+    position: relative;
+    right: -44px;
+    top: -17px;
+    z-index: 999;
+    margin: 20px 20px 0 0;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    display: none;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+}
+#mobile-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+body.mobile-nav-active #mobile-nav {
+    left: 0;
+}
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    padding-top: 18px;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.8);
+    left: -260px;
+    width: 260px;
+    overflow-y: auto;
+    transition: 0.4s;
+}
+#mobile-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mobile-nav ul li {
+    position: relative;
+}
+#mobile-nav ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+    color: #FFCF04;
+}
+#mobile-nav ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+#mobile-nav ul .menu-item-active {
+    color: #FFCF04;
+}
+#mobile-nav ul li li {
+    padding-left: 30px;
+}
+
+.menu-has-children ul
+{visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;}
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color:black;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+.nav-menu ul {
+    margin: 4px 0 0 0;
+    padding: 10px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #fff;
+}
+.nav-menu ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+
+.sf-arrows .sf-with-ul {
+    padding-right: 30px;
+}
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 768px){
+#nav-menu-container {
+    display: none;
+}
+.menu-has-children ul {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 0.5s linear;
+    display: none;
+}
+.carousel-caption-item .w-100 {
+    width: 100%!important;
+    height: 275px;
+}
+#mobile-nav-toggle {
+    display: inline;
+}
+}
+a.scrollto img {
+    width: 200px;
+}
+.applyNowPopup .modal-header h4 {
+    color: #2c2e41;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.applyNowPopup .modal-header {
+    padding: 12px 15px 10px;
+}
+.applyNowPopup button.close {
+    font-size: 22px;
+    font-weight: 700;
+    border: 2px solid #333;
+    border-radius: 14px;
+    padding: 1px 5px 0 5px;
+    opacity: .4;
+    margin: 0!important;
+}
+.buttonApplySubmit {
+    width: 100%;
+    padding: 6px 12px;
+    background: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.top-bar{
+    background: #295F2D;
+    width: 100%;
+    padding: 10px 0;
+}
+.top-bar .top-contact-details ul{
+    list-style: none;
+    margin:0;
+}
+.top-bar .top-contact-details ul li {
+    display: inline-block;
+    /* padding: 0 10px 0 10px; */
+    border-right: 1px solid #fff;
+}
+.top-bar .top-contact-details ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+}
+.top-user-login{
+    float: right;
+}
+
+
+
+/* ********************** */
+.page-link {
+    color:  #28A745;
+}
+
+.page-link:hover{
+    color:  #28A745;
+}
+
+.page-link:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #28A745;
+    border-color: #28A745;
+}
+
+
+/********* Newly Added  ************/
+
+@media screen and (max-width:767px){
+    .login{
+        padding-right: 0px;
+        padding-top: 5px;
+    }
+}
+
+.top-contact-details ul li:last-child {
+    border: none;
+}
+
+
+@media screen and (max-width:767px){
+    .container-fluid .col-sm-12[data-spy="scroll"]{
+        padding: 0px;
+    }
+
+    .exam .col-12{
+        padding: 0px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #28a745!important;
+    /* border-bottom: 2px solid ; */
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6, .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6{
+    color: white!important;
+}
+
+.practice .card{
+    width: 100%;
+}
+
+/******** Admission page  ***********/
+.card-title{
+    color: black!important;
+}

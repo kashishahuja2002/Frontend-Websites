@@ -1,0 +1,772 @@
+/****************** Course listing Page  ******************/
+
+.bsc_card p a{
+    color: black;
+}
+
+.btn-outline-warning:hover {
+    color: white;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.bsc_card .card p, .bsc_card .card a{
+    margin-bottom: 0px;
+}
+
+.bsc_card .card-body{
+    padding: 1rem;
+}
+
+.bsc_card .card-body .card-text {
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:767px){
+
+    .bsc_card .card-body{
+        padding-bottom: 0%;
+    }
+
+    .bsc_card .card-body .card-title a{
+        font-size: 16px!important;
+    }
+
+    .bsc_card .card-body .text-sm a{
+        width: auto;
+    }
+}
+
+/************ News page  **************/
+.news_card .card{
+    margin-bottom: 20px;
+}
+
+.news_card .card-space{
+    padding: 10px;
+}
+
+.news_card .date{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.news_card .card-title, .featured-news .card-title{
+   font-size: 14px;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+.news_card .card-block p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.featured-news{
+    margin-bottom: 50px;
+}
+
+.featured-news .row {
+    margin: 0;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.featured-news .col-4{
+    padding-right: 0px!important;
+}
+
+.featured-news span{
+    font-size: 12px;
+}
+
+.featured-news .card-title{
+    margin-bottom: 0;
+}
+
+/************* Write a Review page *************/
+.review{
+    margin-top: 50px;
+}
+
+.review .shadow{
+    padding: 20px;
+}
+
+#psyr{
+    height: 28px; 
+    border: 1px solid #afafaf!important;
+}
+
+.review textarea{
+    width: 100%;
+    border: 1px solid #d4d9df;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.review-submit input{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.review-submit input:hover{
+    color: white;
+}
+
+/* Star rating  */
+
+  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+    follow these rules. Every browser that supports :checked also supports :not(), so
+    it doesn’t make the test unnecessarily selective */
+  .rating:not(:checked) > input {
+      position:absolute;
+      top: 1px;
+      clip:rect(0,0,0,0);
+  }
+
+  .rating:not(:checked) > label {
+      float:right;
+      width:1em;
+      /* padding:0 .1em; */
+      overflow:hidden;
+      white-space:nowrap;
+      cursor:pointer;
+      font-size: 200%;
+      line-height: 0.7;
+      color:#ddd;
+  }
+
+  .rating:not(:checked) > label:before {
+      content: '★ ';
+  }
+
+  .rating > input:checked ~ label {
+      color: green;
+      
+  }
+
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+      color: green;
+  }
+
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+      color:green;
+      
+  }
+
+  .rating > label{
+      margin-bottom: 0;
+  }
+
+  .rating > label:active {
+      position:relative;
+      top:2px;
+      left:2px;
+  }
+
+
+/* Mobile css  */
+@media screen and (max-width:767px){
+    .review .shadow{
+        padding: 10px;
+    }
+
+    .mar-top{
+        margin-top: 50px;
+    }
+}
+
+
+/******************* Login page  ****************/
+
+
+#login_form {
+    margin-top: 20px
+}
+
+
+
+.login-right .login-form .login-div {
+border: 1px solid #dadada;
+box-shadow: 0 0 2px #ccc;
+border-radius: 4px;
+background: #f6f6f6;
+padding: 15px;
+}
+
+.login-form input, .login-form button{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.login-validation-errors {
+font-size: 1.2rem;
+left: 5px;
+top: 0;
+color: red;
+margin: 0;
+text-align: center;
+}
+.login-right .login-form h4 {
+text-align: center;
+}
+#success-regis {
+text-align: center;
+color: #41b212;
+font-weight: bolder;
+font-size: 18px;
+}
+#login_form {
+margin-top: 20px;
+}
+.login-container {
+white-space: nowrap;
+/* position: relative; */
+}
+.login-right .login-form form input[type=password], .login-right .login-form form input[type=text], .login-right .login-form form input[type=email], .login-right .login-form form input[type=date], .login-right .login-form form select, .login-right .login-form form textarea {
+
+border-radius: 3px;
+width: 100%;
+border: 1px solid #eee;
+margin: 5px;
+font-size: 14px;
+box-shadow: none;
+padding: 4px 8px;
+}
+.login-right .login-form .btnlogin {
+width: 100%;
+margin: 10px 5px 5px;
+font-size: 16px;
+background-color: #41b212;
+color: #fff;
+}
+.btn {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+.login-right .login-form .forgot {
+display: inline-block;
+font-size: 12px;
+text-align: right;
+text-decoration: none;
+color: #aaa;
+outline: 0;
+margin: 5px 0;
+}
+
+
+
+label.error {
+font-size: 12px;
+margin: 0 10px;
+color: #e00;
+}
+label.error:before {
+content:'x';
+background:#e00;
+padding:0 5px 1px;
+color:#fff;
+margin:0 2px;
+}
+
+
+/* My style sheet  */
+
+.loginpannel .col-md-6{
+    padding: 0;
+}
+
+.login-left{
+    height: 600px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 775px;
+    background: linear-gradient(125deg,#295f2d 0,#295f2d 100%);
+}
+
+.why-signup{
+    padding: 20px;
+    border-radius: 4px;
+    background: #f6f6f6;
+    text-align: left;
+    display: inline-block;
+}
+    
+.why-signup ul li {
+    background: #d5dadc;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    font-weight: 500;
+    list-style: inside;
+    color: #000;
+    padding: 10px;
+}
+
+.login-right {
+    background: #dbd9da;
+    height: 600px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 760px;
+}
+
+.login-form {
+    display: inline-block;
+}
+
+.next-link{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* Mobile css  */
+@media screen and (max-width:767px){
+    .why-signup{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .why-signup ul li{
+        max-width: 100%;
+    }
+
+    .main-form{
+        margin: 10px;
+    }
+
+    .login-right .login-form .login-div{
+        padding: 10px;
+    }
+
+    .login-left, .login-right{
+        height: 320px;
+    }
+}
+
+/*************** Reviews Page  ****************/
+.jumbotron .btn{
+    background-color: #28A745;
+    color: white;
+    font-size: 18px;
+}
+
+.jumbotron .btn:hover{
+    background-color: #28A745;
+    color: white;
+}
+
+.jumbotron .btn:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* AU rating  */
+.au-rating .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .au-rating .fa {
+      color: #ddd;
+    font-size: 25px;
+  }
+  
+  .au-rating .checked {
+    color: #FFD10D;
+  }
+  
+  /* Three column layout */
+  .au-rating .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .au-rating .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  /* .au-rating .right {
+    text-align: right;
+  } */
+  
+  /* Clear floats after the columns */
+  .au-rating .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .au-rating .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .au-rating .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+  .au-rating .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .au-rating .bar-3 {width: 50%; height: 18px; background-color: #00bcd4;}
+  .au-rating .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .au-rating .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+
+    .au-rating .side{
+        margin-left: 10px;
+    }
+    
+    .au-rating .middle{
+        width: 57%;
+        margin-left: 10px;
+    }
+
+    .au-rating .right {
+      float: right;
+    }
+}
+
+
+/* Circular progress bar (rating) */
+
+.progress {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+  }
+  .progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 7px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .progress > span {
+    width: 51%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .progress .progress-left {
+    left: 0;
+  }
+  .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    border-color: #ffd10d;
+  }
+  .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+  }
+  .progress .progress-right {
+    right: 0;
+  }
+  .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+  }
+  .progress .progress-value {
+    display: flex;
+    border-radius: 50%;
+    font-size: 26px;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 300;
+  }
+  .progress .progress-value div {
+    /* margin-top: 10px; */
+    margin-left: 180%;
+  }
+  .progress .progress-value span {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  /* This for loop creates the 	necessary css animation names 
+  Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+  */
+  .progress[data-percentage="10"] .progress-right .progress-bar {
+    animation: loading-1 1.5s linear forwards;
+  }
+  .progress[data-percentage="10"] .progress-left .progress-bar {
+    animation: 0;
+  }
+  
+  .progress[data-percentage="20"] .progress-right .progress-bar {
+    animation: loading-2 1.5s linear forwards;
+  }
+  .progress[data-percentage="20"] .progress-left .progress-bar {
+    animation: 0;
+  }
+  
+  .progress[data-percentage="30"] .progress-right .progress-bar {
+    animation: loading-3 1.5s linear forwards;
+  }
+  .progress[data-percentage="30"] .progress-left .progress-bar {
+    animation: 0;
+  }
+  
+  .progress[data-percentage="40"] .progress-right .progress-bar {
+    animation: loading-4 1.5s linear forwards;
+  }
+  .progress[data-percentage="40"] .progress-left .progress-bar {
+    animation: 0;
+  }
+  
+  .progress[data-percentage="50"] .progress-right .progress-bar {
+    animation: loading-5 1.5s linear forwards;
+  }
+  .progress[data-percentage="50"] .progress-left .progress-bar {
+    animation: 0;
+  }
+  
+  .progress[data-percentage="60"] .progress-right .progress-bar {
+    animation: loading-5 1.5s linear forwards;
+  }
+  .progress[data-percentage="60"] .progress-left .progress-bar {
+    animation: loading-1 1.5s linear forwards 1.5s;
+  }
+  
+  .progress[data-percentage="70"] .progress-right .progress-bar {
+    animation: loading-5 1.5s linear forwards;
+  }
+  .progress[data-percentage="70"] .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.5s;
+  }
+  
+  .progress[data-percentage="80"] .progress-right .progress-bar {
+    animation: loading-5 1.5s linear forwards;
+  }
+  .progress[data-percentage="80"] .progress-left .progress-bar {
+    animation: loading-3 1.5s linear forwards 1.5s;
+  }
+  
+  .progress[data-percentage="90"] .progress-right .progress-bar {
+    animation: loading-5 1.5s linear forwards;
+  }
+  .progress[data-percentage="90"] .progress-left .progress-bar {
+    animation: loading-4 1.5s linear forwards 1.5s;
+  }
+  
+  .progress[data-percentage="100"] .progress-right .progress-bar {
+    animation: loading-5 1.5s linear forwards;
+  }
+  .progress[data-percentage="100"] .progress-left .progress-bar {
+    animation: loading-5 1.5s linear forwards 1.5s;
+  }
+  
+  @keyframes loading-1 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(36);
+      transform: rotate(36deg);
+    }
+  }
+  @keyframes loading-2 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(72);
+      transform: rotate(72deg);
+    }
+  }
+  @keyframes loading-3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(108);
+      transform: rotate(108deg);
+    }
+  }
+  @keyframes loading-4 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(144);
+      transform: rotate(144deg);
+    }
+  }
+  @keyframes loading-5 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(180);
+      transform: rotate(180deg);
+    }
+  }
+  .progress {
+    margin-bottom: 1em;
+  }
+  
+
+  /* Review block  */
+  .review-block{
+      border-bottom: 1px solid gray;
+      margin-bottom: 25px!important;
+  }
+
+  .star-rate p{
+      background-color: green;
+      padding: 1px 7px;
+      border-radius: 5px;
+      color: white;
+  }
+
+  .star-rate .fa{
+      color: white!important;
+  }
+
+  .review-heading{
+      margin: 0 8px;
+  }
+
+  .review-block .fa{
+      color: #ddd;
+  }
+
+  /* Laptop  */
+@media screen and (min-width:767px){
+    .user-rate ul{
+      list-style: none;
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .review-block{
+        margin: 10px;
+    }
+}
+    
+  .user-rate ul li{
+      display: inline-block;
+      /* padding-right: 10px; */
+  }
+
+  .letter{
+    background-color: rgb(0, 255, 170);
+    font-size: 26px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+
+  .name p{
+    font-size: 22px;
+    padding: 0 20px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+  }
+
+  .user-review{
+      margin-top: 15px;
+      color: #636262;
+  }
+
+  .user-review b{
+      color: rgb(70, 70, 70);
+  }
+
+  .user-block, .user-rate, .user-name{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+   }   
+
+  /* Mobile  */
+  @media screen and (max-width:767px){
+      .user-rate ul{
+          padding-left: 10px;
+      }
+
+      .user-review p{
+        padding:0!important;
+      }
+
+      .name p{
+        font-size: 18px;
+        padding: 0 20px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+      }
+
+      .user-block, .user-rate, .user-name{
+        padding-left: .5rem;
+        padding-right: .5rem;
+       }
+  }
+
+  

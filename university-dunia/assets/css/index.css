@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+}
+
+input:focus, button:focus{
+    outline: none!important;
+    box-shadow: none!important;
+    border: none!important;
+}
+
+/******* Header  *******/
+
+/* navbar (Log-sign) */
+
+/* Large screens  */
+.bg-blue{
+    background: rgb(235, 58, 117);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bg-blue a{
+    color: white;
+    font-size: 14px;
+}
+
+.bg-blue a:hover{
+    color: black;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+/* Mobile screen  */
+/* Mobile navbar  */
+/* The side navigation menu */
+.rel{
+    position: relative;
+}
+
+.bars{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: black;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* navbar(logo) */
+.bg-white{
+    background-color: white;
+}
+
+/* navbar (menu) */
+
+.menu li{
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.menu li a{
+    color: black;
+}
+
+.menu li a:hover{
+    color: rgb(235, 58, 117);
+}
+
+/******* Body  *******/
+
+/* Image carousel  */
+.image-car{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Search box  */
+.search-box{
+    position: relative;
+    top: 180px;
+}
+
+.search-box input:focus{
+    border: 1px solid black!important;
+}
+
+/* Explore  */
+.space{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.up:hover{
+    transition: .5s ease;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.up a{
+    color: black;
+}
+
+.img-explore{
+    width: 100px; 
+    position: relative; 
+    top: 40px;
+}
+
+.img-explore-text{
+    background: rgb(245, 119, 161); 
+    padding-top: 50px; 
+    padding-bottom: 15px;
+    color: white;
+}
+
+/* Career  */
+.mar-future{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 45px;
+}
+
+.mar-future a{
+    color: black;
+}
+
+.img-future{
+    width: 60px;
+    height: 60px;
+}
+
+.name{
+    font-size: 14px;
+    margin-bottom: 0%;
+}
+
+.num{
+    font-size: 12px; 
+    margin-bottom: 0%;
+}
+
+/* nav-pills  */
+.nav-pills .nav-link:not(.active) {
+    background-color: #fff;
+    color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgb(235, 58, 117);
+}
+
+.tab-content a{
+    color: black;
+}
+
+/* Top Courses  */
+.btn-top{
+    color:#FFF;
+    border:1px solid #FFF;
+    border-radius:8px;
+    padding:5px;
+    background:none;
+    margin:5px;
+}
+
+/******* Footer  *******/
+
+.bg-black{
+    background-color: #333;
+}
+
+.bg-black h6{
+    color: white;
+}
+
+.bg-black a{
+    color: #999;
+    font-weight: 400;
+}
+
+.bg-black a:hover{
+    color: white;
+    font-weight: 400;
+}
+
+.rel{
+    position: relative;
+}
+
+.foot-btn{
+    background: rgb(235, 58, 117);
+    color: white;
+}
+
+.font-sm{
+    font-size: 12px;
+}
+
+
+
+
+
+/* Modal  */
+.space-bdr{
+    margin: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.modal-body i{
+    margin: 10px;
+}
+
+.text{
+    border: none;
+    width: 80%;
+    margin-bottom: 1px;
+}
+
+.modal-footer a{
+    color: white; 
+    width: 100%; 
+    margin: 0px;
+}
+
+.modal-body button:hover{
+    background-color: rgb(245, 119, 161);
+}
+
+.error{
+    color: red;
+}
+

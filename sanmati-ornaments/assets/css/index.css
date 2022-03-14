@@ -1,0 +1,775 @@
+*{
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+  margin: 0px;
+}
+
+input:focus, button:focus{
+  box-shadow: none!important;
+}
+
+select:focus{
+  box-shadow: none!important;
+}
+
+/******* Header  *******/
+
+/* hide navbar on scroll  */
+#site-header {
+	position: sticky;
+	background: #fff;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	transition: all .3s ease;
+	box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+#site-header.hide {
+	top: -53px;
+}
+
+
+/* navbar  */
+.in-bl li{
+    display: inline-block;
+}
+
+.golden li a:hover{
+  color: black;
+}     
+
+.golden{
+    background-color: goldenrod;
+}
+
+.golden li, .black li{
+    padding-right: 25px;
+    color: white;
+    font-size: 14px;
+}
+
+.mythree li:last-child{
+  padding-right: 10px;
+}
+
+li a{
+    color:white;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+.black{
+    background-color: black;
+}
+
+.black li a:hover{
+  color: goldenrod;
+}
+
+.head-nav{
+    text-align: right;
+}
+
+
+.logo{
+  padding-bottom: 5px;
+}
+
+.white{
+    background: white;
+}
+
+.txt-black li a{
+    color: black;
+}
+
+.white li a:hover{
+    color: gray;
+}
+
+.white li{
+    padding: 0px 12px;
+    font-size: 14px;
+}
+
+.in-bl{
+    display: inline-block;
+}
+
+.search-box{
+    position: absolute;
+    top: 13px;
+}
+
+.no-bdr{
+    position: absolute;
+    border: none;
+    width: 80%;
+    top: -5px;
+}
+
+.pos{
+    position: absolute;
+    right: 1%;
+    top: -5px;
+    background-color: black;
+    color: white;
+}
+
+.pos:hover{
+  color: white;
+}
+
+.hgol li a:hover{
+  color: goldenrod;
+}
+
+/* sliding navbar  */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0; /* Stay at the top */
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #mySidenav-left{
+    left: 0;
+  }
+
+  #mySidenav-right{
+    right: 0;
+  }
+
+  .rel{
+    position: relative;
+  }
+
+  .bars{
+      position: absolute;
+      top: 40%;
+      left: 5%;
+  }
+
+  .user{
+      position: absolute;
+      top: 40%;
+      right: 5%;
+  }
+
+  /* Categories dropdown  */
+  .navbar .nav-item a{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 15px;
+  }
+   
+  .dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+  }
+   
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+    border: none;
+  }
+
+  .dropdown-menu ul{
+    columns: 2;
+  }
+
+  .dropdown-menu li{
+    /* border-bottom: 1px solid #f1f1ff; */
+    padding: 7px 30px;
+  }
+
+  .no-dis{
+      display: none;
+  }
+
+/* Featured Items  */
+.bg-img{
+  background-image: url(../Images/background.jpg);
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.space{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Owl carousel  */
+
+.owl-carousel .owl-nav{
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #2caae1;
+}
+
+
+.owl-carousel .item {
+    text-align: center;
+}
+.owl-carousel .nav-btn{
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 100px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide{
+    background: url(nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+}
+.owl-carousel .next-slide{
+    background: url(nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+}
+.owl-carousel .prev-slide:hover{
+   background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover{
+  background-position: -24px -53px;
+}
+
+span.img-text {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  cursor: pointer;
+  width: 100%;
+  font-size: 23px;
+  display: block;
+  text-transform: capitalize;
+}
+span.img-text:hover {
+  color: #2caae1;
+}
+
+.description {
+  padding-top: 5px;
+}
+
+.description a:visited, .description a:link:visited, .description a:visited:visited {
+  text-decoration: none;
+}
+.description a, .description a:link, .description a:visited {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+}
+.description a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.description a {
+  background-color: transparent;
+}
+
+.description h3 {
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+  line-height: 22px;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.description h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  /* margin-block-end: 1em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 600;
+}
+
+.description span {
+  display: block;
+  padding-top: 10px;
+  font-size: 22px;
+  color: #000000;
+}
+
+.description span del {
+  font-size: 18px;
+  color: #b2b2b2;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+.cat-name {
+  text-transform: uppercase;
+  color: #acacac;
+  font-size: 15px;
+  display: inline-block;
+  /* float: right; */
+  padding: 8px 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.inquiry{
+  background-color: black!important; 
+  color: white; 
+  border: none; 
+  padding-right: 10px; 
+  padding-left: 10px; 
+  border-radius: 20px;
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.item{
+  padding-right: 15px;
+  padding-left: 5px;
+  padding-bottom: 6px;
+  border-right: 1px solid rgb(190, 189, 189);
+}
+
+.sub{
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+.sub:hover{
+  background-color: goldenrod;
+  color: white;
+}
+
+label{
+  margin: 0px;
+  padding: 0px;
+}
+
+.form{
+  position: relative;
+  top: -7px;
+}
+
+.form-control:focus{
+  border-color: black;
+}
+
+
+input:focus{
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.far{
+  position: relative;
+  right: -230px;
+  top: 2px;
+}
+
+.near{
+  position: relative;
+  right: -140px;
+  top: 2px;
+}
+
+.close:focus{
+  outline: none;
+}
+
+.foot-logo{
+  padding-bottom: 5px;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.foot-logo p{
+  color: white; 
+  font-size: 14px;
+}
+
+.foot-cat{
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.foot-cat span{
+    font-size: 20px;
+    position: relative;
+    right: 10px;
+}
+
+.foot-cat li{
+  font-size: 14px;
+}
+
+.foot-con{
+  text-align: center;
+  color: white; 
+  font-size: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.foot-con li{
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.foot-con p{
+  position: relative; 
+  right: 4%;
+  font-size: 20px;
+}
+
+.social a{
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-sm{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.chev{
+  background-color: black; 
+  padding: 10px;
+  visibility: hidden;
+}
+
+.carousel:hover .chev{
+  visibility: visible;
+}
+
+.last{
+  background-color: goldenrod;
+  padding: 10px;
+}
+
+.last p, .last a{
+  color: white;
+  font-size:13px ;
+}
+
+.last a:hover{
+  color: black;
+}
+
+.gold a:hover h3{
+  color: goldenrod;
+}
+
+.inquiry:hover{
+  background-color: goldenrod!important;
+  color: white;
+}
+
+/* View All buttons  */
+.view a{
+  text-decoration: none;
+}
+
+.view h4{
+  font-family: 'Tangerine', serif;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 10px 0;
+  color: goldenrod;
+}
+
+.view a:hover{
+  background-color: goldenrod!important;
+  color: white;
+}
+
+.view-large{
+  background-color: black!important; 
+  color: white; 
+  border: none; 
+  border-radius: 30px;
+  width: 90px;
+  position: absolute;
+  top: 60%;
+  right: 2%;
+}
+
+.view-small{
+  background-color: black!important; 
+  color: white; 
+  border: none; 
+  width: 90px; 
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 30px;
+  position: relative;
+  top: -8px;
+  left: 100px;
+}
+
+/* Validation  */
+.error{
+  color: red;
+}
+
+/******* Contact page  *******/
+.contact-us a{
+  color: black;
+  text-decoration: none;
+}
+
+.contact-us a:hover{
+  color: gray;
+  text-decoration: none;
+}
+
+.mar-left{
+  margin-left: 0px;
+}
+
+
+/******* Sign up page & login page *******/
+.bg-white h3{
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding-top: 30px;
+}
+
+.bg-white input, .select2, .address{
+  margin-bottom: 20px;
+}
+
+span.select2-selection.select2-selection--single {
+  height: auto;
+  padding: 4px;
+}
+
+.address{
+  margin-left:2px!important;
+  margin-right:2px!important;
+}
+
+.add{
+  border: 1px solid rgb(218, 215, 215); 
+  border-radius: 4px; 
+  width: 100%;
+}
+
+.sign-up{
+  background-color: black;
+  color: white;
+  margin-left:17px!important;
+}
+
+.sign-up:hover{
+  background-color: goldenrod;
+  color: white;
+}
+
+.policy a{
+  color: gray;
+}
+
+.policy a:hover{
+  color: black;
+}
+
+.error{
+  color: red;
+}
+
+/******* My account pages  *******/
+.detail{
+  border-bottom: 2px solid rgb(202, 201, 201);
+  font-weight:lighter;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+/******* Modal  *******/
+.mar-bot{
+  margin-bottom: 10px;
+}
+
+.rad-1{
+  position: relative; 
+  top: 6px; left: 8px;
+}
+
+.lab-1{
+  position: relative;
+  left: 10px;
+}
+
+.rad-2{
+  position: relative; 
+  top: 6px; 
+  left: 18px;
+}
+
+.lab-2{
+  position: relative; 
+  left: 20px;
+}
+
+/* Newly added  */
+.font-sm h3{
+  font-size: 15px;
+  padding-top: 0px;
+}
+
+
+/******* Footer (Saify sir)  *******/
+.foot-cat h2, .foot-con h2 {
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+.foot-cat li:before 
+{
+content: '→ ';
+opacity: 0; 
+color: goldenrod;
+
+}
+
+.foot-cat li:hover:before 
+{
+opacity: 1;
+transition: 0.5s all;
+margin-left: 5px;
+}
+@media screen and (max-width: 767px){
+.foot-cat li:before {display: none;}
+}
+
+
+/*==========social icon effects======*/
+
+.social .fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.social .fa:hover {
+transform: rotate(360deg);
+color: #fff;
+border-radius: 10px;
+transition: 1s all;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.social .fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+/* Insta */
+.social .fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+/* Whatsapp */
+.social .fa-whatsapp {
+background: #25D366;
+color: white;
+}
+li.social.buttons span {
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 5px;
+  margin-right: 10px;
+}
+

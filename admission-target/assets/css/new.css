@@ -1,0 +1,287 @@
+/************ index page  **************/
+
+.searchinput{
+    line-height: 100%;
+    display: table;
+    margin: 0;
+    width: 100%;
+    position: absolute; 
+    text-align: center;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    width: 60%;
+    padding: 9px;
+    color: green;
+    border: 1px solid green;
+    box-shadow: 1px 0px 3px green;
+    border-radius: 50px 0 0px 50px;
+    font-size: 15px;
+    text-transform: capitalize;
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color: green;
+}
+
+::-moz-input-placeholder{
+    color: green;
+}
+
+::-ms-input-placeholder{
+    color: green;
+}
+
+.text:focus{
+    box-shadow: 1px 1px 8px green;
+}
+
+.submit{
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 13px;
+    color: white;
+    background: green;
+    border: none;
+    margin: 0;
+    border-radius: 0px 50px 50px 0px;
+    box-shadow: 0px 0px 10px green;
+    outline: none;
+}
+.course_btn a button {
+    width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: 1px solid;
+    margin:5px 5px 0 0;
+}
+
+.submit:active{
+    box-shadow: 0px 0px 7px green;
+}
+.grid-content .grid-5 .grid-list {
+    text-align: center;
+}
+.grid-content .details h4 {
+    font-size: 15.1px;
+    color: #4f5767;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: .5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.grid-content .details p {
+    font-size: 13.3px;
+    line-height: 1.6;
+    color: #7b7b7b;
+    font-weight: 600;
+}
+
+.grid-content .grid-5 .grid-list {
+    text-align: center;
+}
+.seaction_header h3 {
+    font-size: 35.6px;
+    color: #2a602e;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.top-block .clg-name-address h3 {
+    color: white!important;
+}
+
+
+/**************** User Dashboard page  **************/
+
+.dash-shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.user-dashboard-panel .dash-left, .user-dashboard-panel .dash-left .avtar, .user-dashboard-panel .dash-right {
+    border-radius: 15px;
+} 
+
+/* left panel  */
+
+.user-dashboard-panel .dash-left .avtar{
+    background-image: linear-gradient(rgba(255,121,0,.8),#FFCF04 100%);
+}
+
+.user-dashboard-panel .dash-left .avtar img{
+    position: relative;
+    left: 15px;
+    height: 115px;
+    width: 115px;
+}
+
+.user-dashboard-panel .dash-left .avtar input{
+    display: none;
+}
+
+.user-dashboard-panel .dash-left .avtar label{
+    background-color: white;
+    opacity: 0.7;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: 35px;
+    left: -15px;
+    cursor: pointer;    
+}
+
+.user-dashboard-panel .dash-left .avtar h5{
+    color: white!important;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.user-dashboard-panel .dash-left .avtar p{
+    /* color: rgb(240, 238, 238); */
+    color: white;
+    margin-bottom: 0;
+}
+
+.user-dashboard-panel .dash-left .dash-options a .row{
+    color: black;
+    margin: 1.5rem;
+    font-size: 20px;
+}
+
+.user-dashboard-panel .dash-left .dash-options a .row i{
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.user-dashboard-panel .dash-left .dash-options a .row p{
+    margin-bottom: 0;
+}
+
+.user-dashboard-panel .dash-left .dash-options a:hover .row{
+    color: #FFCF04;
+}
+
+/* right panel  */
+.user-dashboard-panel .dash-right label{
+    width: 100%;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #0000004d ;
+    border-radius: 5px;
+    padding: 0 1.4em 0 1.4em !important;
+    margin: 0 0 .5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border{
+    font-size: 1.2em !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+    color: rgb(173, 173, 173);
+    margin-bottom: 0;
+}
+
+.user-dashboard-panel .dash-right input{
+    border:none;
+    padding-bottom: .5rem;
+    font-size: 16px;
+    width: 100%;
+}
+
+.user-dashboard-panel .dash-right span{
+    font-size: 16px;
+}
+
+.user-dashboard-panel .dash-right input:focus{
+    box-shadow: none!important;
+}
+
+.user-dashboard-panel .dash-right input:focus legend.scheduler-border{
+    color: green!important;
+} 
+
+.user-dashboard-panel .dash-right input[type="radio"]{
+    width:auto;
+}
+
+.user-dashboard-panel .dash-right .user-save{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
+
+.user-dashboard-panel .dash-right .user-save:hover{
+    background-color:  #FFCF04;
+    color: black;
+}
+
+
+/* Laptop only  */
+@media screen and (min-width:767px){
+    .user-dashboard-panel .col-md-3, .user-dashboard-panel .col-md-9{
+        padding: 1.5rem;
+    }
+
+    .user-dashboard-panel .dash-right .user-details{
+        padding: 1.5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+}
+
+/* Mobile only  */
+@media screen and (max-width:767px){
+    fieldset.scheduler-border {
+        padding: 0 0.8em 0 0.8em !important;
+    }
+}
+
+
+
+/* Newly added  */
+.course-overview, .rd-more .float-right{
+    color: #fff!important;
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-bottom: 10px!important;
+}
+
+.course-overview:hover, .rd-more .float-right:hover{
+    color: #28a745!important;
+    background-color: white;
+    border-color: #28a745;
+}
+
+.apply-now{
+    color: black;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    margin-bottom: 10px!important;
+}
+
+.apply-now:hover{
+    color: #ffc107;
+    background-color: white;
+    border-color: #ffc107;
+}
+
+.rd-more .float-right{
+    margin-bottom: 0!important;
+}
+
+.explore-more{
+    width: 100%!important;
+    margin-bottom: 0!important;
+}

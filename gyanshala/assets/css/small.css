@@ -1,0 +1,283 @@
+/* Log In Page  */
+/* Forgot password Page */
+/* Sign Up Page */
+/* School College Select Page */
+/* Segments Page  */
+
+
+
+/*************** Log In Page ***************/
+section.user-login{
+    background-image: url('../images/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+    background-position: bottom left;
+}
+
+section.user-login h2{
+    margin-bottom: 20px;
+    color: white;
+}
+
+section.user-login label{
+    font-size: 24px;
+    color: white;
+}
+
+section.user-login input{
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+.no-margin{
+    margin-bottom: 5px!important;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+section.user-login .forgot-pass{
+    margin-bottom: 25px;
+}
+
+section.user-login .forgot-pass a{
+    color: #ff9797;
+}
+
+section.user-login p{
+    color: #ff9797;
+}
+
+
+
+/************** Forgot password Page   *******************/
+.swal-button{
+    background-color: var(--red);
+    color: white;
+    border: white!important;
+}
+
+.swal-button:hover{
+    background-color: white;
+    color: var(--red);
+    border: var(--red);
+    box-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: var(--red);
+    color: white;
+    border: var(--red)!important;
+    box-shadow: none;
+}
+
+
+
+/****************** Sign Up Page  ******************/
+section.user-signup{
+    background-image: url('../images/signup.jpg');
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    padding: 50px;
+}
+
+section.user-signup .registration{
+    padding: 20px;
+    border: 3px solid black;
+    background: #f1f1f145;
+    box-shadow: 1px 8px 12px gray;
+}
+
+section.user-signup h2{
+    margin-bottom: 20px;
+    color: black;
+}
+
+section.user-signup label{
+    font-size: 24px;
+    color: black;
+}
+
+section.user-signup input{
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+section.user-signup input[type="radio"]+label{ 
+    margin-right: 14px;
+} 
+
+section.user-signup .gender{
+    padding-left: 10px;
+    margin-bottom: 35px;
+}
+
+[class*=icheck-]>input:first-child+label::before{
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+}
+
+.icheck-primary>input:first-child:not(:checked):not(:disabled):hover+label::before {
+    border-color: var(--red);
+}
+
+[class*=icheck-]>input:first-child:checked+label::after{
+    top: -1px;
+    left: -1px;
+}
+
+.icheck-primary>input:first-child:checked+label::before {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+}
+
+section.user-signup .forgot-pass{
+    padding-left: 18px;
+    margin-bottom: 25px;
+}
+
+
+
+/************************* School College Select Page *************************/
+
+/* Section (.coaching-tution) */
+section.school-college-select{
+    padding: 50px 0;
+}
+
+.school-college-select h1{
+    color: var(--red);
+    margin-bottom: 30px;
+}
+
+.school-college-select-content-box {
+    background: white;
+    box-shadow: 0px 5px 15px #00000059;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.school-college-select-content-box img{
+    border-radius: 10px;
+}
+
+.school-college-select-content-box h3 {
+    color: var(--red);
+    font-size: 34px;
+    padding: 8px;
+}
+.school-college-select-content-box a{
+    position: relative;
+    display: block;
+}
+
+.school-college-select-content-box a::after {
+    background: var(--red);
+    position: absolute;
+    left: -15px;
+    bottom: -8px;
+    width: 0;
+    content: "";
+    height: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.school-college-select-content-box:hover a::after {
+    width: 110%;
+}
+
+
+
+/*************** Segments Page  ***************/
+
+/* Section (.school-segments) */
+section.school-segments{
+    padding: 50px 0;
+}
+
+section.school-segments h1{
+    color: var(--red);
+}
+
+section.school-segments .col-md-4{
+    margin-top: 30px;
+}
+
+section.school-segments .segments{
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.school-segments .segments .subjects{
+    height: 400px;
+    overflow-y: auto;
+}
+
+section.school-segments .segments .subjects ul li{
+    margin-bottom: 10px;
+}
+
+section.school-segments .segments .subjects ul li a::before{
+    content: "\f054";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: var(--red);
+    padding: 8px;
+}
+
+section.school-segments .segments .subjects ul li a:hover:before{
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+section.school-segments .segments .subjects ul li a{
+    color: rgb(70, 70, 70);
+    display: block;
+}
+
+section.school-segments .segments .subjects ul li:hover a{
+    color: var(--red);
+}
+
+section.school-segments .segments .all{
+    margin-bottom:0;
+}
+
+section.school-segments .segments .all a{
+    color: var(--red);
+}
+
+section.school-segments .segments::after {
+    background: var(--red);
+    position: absolute;
+    left: -15px;
+    bottom: 0px;
+    width: 0;
+    content: "";
+    height: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+section.school-segments .segments:hover::after {
+    width: 110%;
+}

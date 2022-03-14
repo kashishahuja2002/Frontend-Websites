@@ -1,0 +1,372 @@
+/*************** LAPTOP  ***************/
+@media screen and (min-width:767px){
+
+
+
+    /*************** Index Page  ******************/
+    
+    /* Header  */
+    header ul li{
+        margin-right: 20px;
+    } 
+
+
+    /* Section (.slider) */
+    /* Image carousel  */
+    section.slider img{
+        object-fit: cover;
+    }
+
+    .carousel-caption h2{
+        position: relative; 
+        font-size: 60px;
+        top: -200px;
+        color: white;
+    }
+
+    .caption-1 h2{
+        left: 10%;
+    }
+
+    .caption-2 h2{
+        left: -10%;
+    }
+
+    .caption-3 h2{
+        left: -15%;
+    }
+    
+
+    /* Section (.top-owl) */
+    section.top-owl .service-content-box h5{
+        padding: 10px 0 5px;
+    }
+
+
+
+    /*************** Log In Page ******************/
+
+    /* Section (.user-login) */
+    section.user-login{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);   /*Flip image*/ 
+    }
+
+    section.user-login .container{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);   /*Flip content*/
+    }
+
+
+
+    /***************** Profile Page  *****************/
+    .user-profile .container{
+        position: absolute;
+        top: 200px;
+        left: 13%;
+    }
+
+    /* Section (.user-intro) */
+    section.user-intro ul li{
+        margin-right: 30px;
+    }
+    
+
+    /****************** Reviews Page  ******************/
+    .review-block{
+          margin: 10px;
+    }
+
+
+
+    /******************** Dashboard Page  ********************/
+    .user-dashboard-panel .col-md-3, .user-dashboard-panel .col-md-9{
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** MOBILE  ***************/
+@media screen and (max-width:767px){
+
+
+    /*************** Index Page  ***************/
+
+
+    /* Header  */
+    header ul li a {
+        margin-right: 0px;
+    }
+
+    .logo h1{
+        font-size: 35px;
+    }
+
+    .select-city{
+        margin: 20px auto;
+    }
+
+
+    /* Section (.slider) */
+    /* Image carousel  */
+    section.slider img{
+        width: 100%!important;
+        height: 250px;
+    }
+
+    .carousel-caption h2{
+        position: relative; 
+        font-size: 18px;
+        top: -100px;
+        color: white;
+    }
+
+    .caption-1 h2{
+        left: 15%;
+    }
+
+    .caption-2 h2{
+        left: -15%;
+    }
+
+    .caption-3 h2{
+        left: -15%;
+        font-size: 14px;
+    }
+
+
+    /* Section (.service-box) */
+    section.service-box{
+        padding: 15px 0;
+    }
+
+    .service-box .col-6{
+        padding: 0;
+    }
+
+    .service-content-box{
+        margin: 5px;
+        padding: 4px;
+        position: relative;
+        background-color: black;
+    }
+
+    .service-content-box img{
+        height: 100px;
+        opacity: 0.65;
+    }
+
+    .service-content-box h2{
+        color: white;
+        position: absolute;
+        top: 35%;
+        font-size: 24px;
+    }
+
+    .service-content-box h2.clg{
+        left: 20px;
+    }
+
+    .service-content-box h2.scl{
+        left: 29px;
+    }
+
+    .service-content-box h2.ccg{
+        left: 14px;
+    }
+
+    .service-content-box h2.tut{
+        left: 30px;
+    }
+
+    .service-content-box:hover a::after {
+        width: 0%;
+    }
+
+
+    /* Section (.top-owl) */
+    section.top-owl{
+        padding: 15px 0;
+    }
+
+    section.top-owl .service-content-box{
+        background-color: white;
+    }
+
+    section.top-owl .service-content-box img{
+        height: auto;
+        opacity: 1;
+    }
+
+    section.top-owl .service-content-box h5{
+        color: black;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 2px;
+        margin-bottom: 0px;
+    }
+
+
+    /* Section (.coaching-tution) */
+    section.coaching-tution{
+        padding: 15px 0;
+    }
+
+    section.coaching-tution .tab-pane{
+        padding: 0;
+    }
+
+    section.coaching-tution .tab-pane .col-md{
+        margin-bottom: 25px;
+    }
+
+
+    /* Section (.edulogy) */
+    section.edulogy{
+        padding: 15px 0;
+    }
+
+
+
+    /**************** Log In Page  *****************/
+
+    /* Section (.user-login) */
+    section.user-login{
+        padding: 15px 0;
+    }
+
+    section.user-login input{
+        margin-bottom: 20px;
+    }
+
+    section.user-login{
+        background-size: auto;
+    }
+
+
+
+    /**************** Sign Up Page  *****************/
+
+    /* Section (.user-signup) */
+    section.user-signup{
+        padding: 15px 0;
+    }
+
+    section.user-signup input{
+        margin-bottom: 20px;
+    }
+    
+    section.user-signup .gender{
+        margin-bottom: 20px;
+    }
+
+
+    /**************** School College Select Page *****************/
+
+    /* Section (.coaching-tution-select) */
+    section.coaching-tution-select{
+        padding: 15px 0;
+    }
+
+
+
+    /***************** Profile Page  *****************/
+    .user-profile .container{
+        padding: 0px;
+    }
+
+    section.user-intro{
+        margin-top: 10px;
+    }
+
+
+
+    /****************** Reviews Page  ******************/
+    .user-review p{
+      padding:0!important;
+    }
+
+    .name p{
+      font-size: 18px;
+      padding: 0 20px;
+      margin-top: 3px;
+      margin-bottom: 0px;
+    }
+
+    .user-block, .user-name{
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+
+
+
+    /******************* Write a review page   *******************/
+
+    /* Section (.write-review) */
+    section.write-review{
+        padding: 15px 0;
+    }
+
+
+
+    /******************** Dashboard Page  ********************/
+    fieldset.scheduler-border {
+        padding: 0 0.8em 0 0.8em !important;
+    }
+
+
+
+    /****************** School segements page  ******************/
+    
+     /* Section (.service-box) */
+     section.service-box{
+        padding: 15px 0;
+    }
+
+
+
+    /******************* Listing Page  *******************/
+    .img-fluid.rounded{
+        height: 85px;
+        object-fit: contain;
+    }
+
+}
+
+
+

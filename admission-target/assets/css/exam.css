@@ -1,0 +1,468 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.in-bl{
+    display: inline-block;
+}
+
+/* Exam section  */
+.side-sec{
+    box-shadow: 1px 1px 20px 1px #ddd;
+}
+
+.exam-section {
+    box-shadow: 1px 1px 20px 1px #ddd;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:767px){
+    .exam .col-6{
+        padding-left: 0px;
+    }
+
+    .exam .row{
+        margin-left: 0px!important;
+        padding-left: 0px!important;
+        padding-right: 1rem!important;
+    }
+
+    .text-content p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+}
+
+.exam-logo h4{
+    margin-left: 8px;
+}
+
+.exam-logo p{
+    font-size: 10px;
+    font-weight: 600;
+    color: gray;
+    margin-left: 8px;
+}
+
+.side-three p{
+    padding-right: 10px;
+    font-size: 13px;
+    border-right: 2px solid gray;
+    margin-bottom: 10px;
+}
+
+.side-three p:last-of-type{
+    border: none;
+}
+
+.side-three span{
+    color:  #28A745;
+    font-size: 15px;
+}
+
+.exam .col-md-6{
+    padding: 0px;
+}
+
+.exam-link ul li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 0px;
+    padding-right: 10px;
+}
+
+.exam-link li a{
+    color:  #28A745;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.exam-link li a:hover{
+    text-decoration: underline;
+}
+
+.apply a{
+    background-color: #28A745;
+    color: white!important;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 20px;
+}
+
+.apply a:hover{
+    background-color: white;
+    color: #28A745!important;
+    border: 1px solid #28A745;
+    text-decoration: none!important;
+}
+
+.exam h4 a{
+    color: black;
+}
+.exam h4 a:hover{
+    text-decoration: underline;
+}
+
+.exam-logo img {
+    height:100%;
+}
+
+/***** Filters  ******/
+
+/* Large screens  */
+.filter ul{
+    margin-bottom: 0%;
+}
+
+.filter{
+    padding-bottom: 5px; 
+}
+
+.filter-sec{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+
+    max-height: 200px;
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+
+.filter-sec li{
+    color: black;
+}
+
+.filter h5{
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-left: 3px solid MediumSeaGreen;
+    font-size: 16px;
+    margin-bottom: 0%;
+}
+
+.filter .fa-angle-up{
+    float: right;
+}
+
+.filter .fa-angle-down{
+    float: right;
+    display: none;
+}
+
+.no-dis{
+    display: none;
+}
+
+/* Mobile screens  */
+.mob-fil{
+    background-color: #28A745;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#mob-fil {
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible!important;
+}
+
+#fp-filter .col-4, #fp-filter .col-8{
+    padding: 0px;
+    height: 100%;
+}
+
+.fil .col-8{
+    margin-bottom: 35px;
+}
+
+#fp-filter .fil{
+    margin: 0%;
+    margin-top: 37px;
+}
+
+.nav-link{
+    color: black;
+    margin-top: 2px;
+}
+
+.nav .active{
+    color:white;
+}
+
+.tab-pane{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:767px){
+.filter{
+    padding-bottom: 0%;
+}
+
+    .filter-sec{
+        padding-left: 0px;
+        max-height: 100%;
+        height: auto;
+        overflow-x: auto;
+        margin-bottom: 0px;
+        padding-bottom: 0%;
+    }
+}
+
+.fil-top{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.fil-bot, .fil-bot h5{
+    margin: 0px!important;
+    padding: 2px;
+}
+
+.fil-bot button:focus{
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+/* Checkbox  */
+input[type=checkbox] + label {
+    display: inline-block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    color: transparent;
+    transition: .2s;
+}
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+
+
+  /************ Single News Page ********************/
+  .bg-white{
+      background-color: white;
+  }
+
+  /****************** Course info Page ************************/
+  .course-info ul li{
+      color: white;
+      display: inline-block;
+      margin-right: 50px;
+  }
+
+  /******************** Courses after 10th page  ************************/
+  .after10 .card{
+      width: 100%;
+  }
+
+
+
+  /****************** Top Courses Page  *************************/
+.text-dark h3, .text-dark p{
+      color: black!important;
+}
+    
+.text-dark h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.level_card .col-md-4, .interest_card .col-md-3{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:767px){
+    .choose p{
+        width: 100%!important;
+    }
+
+    .card{
+        height: auto!important;
+    }
+
+    .level_card .img-overlay p {
+        margin-bottom: 0px;
+    }
+}
+
+.level_card img{
+    opacity: .7;
+}
+
+.level_card .img-overlay p{
+    margin-bottom: 10px;
+}
+
+.level_card .card-body {
+    padding: 0px 5px 10px
+}
+
+.level_card .card-body ul{
+    margin-bottom: 0px;
+}
+
+.level_card .card-body ul li{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.level_card .card-body li a{
+    background-color: #28a745;
+    padding: 2px 12px;
+    border-radius: 5px;
+}
+
+.level_card .text-dark{
+    margin-top: 10px;
+}
+
+.level_card .text-dark h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.interest_card p{
+    margin-bottom: 0px;
+}
+
+.interest_card p a{
+    color: black;
+}
+
+.interest_card .btn-outline-success{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 5px;
+    width: auto;
+}
+
+.interest_card .btn-outline-success:hover{
+    color: white;
+}
+
+.interest_card .card img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.interest_card .card-body {
+    padding: 10px 15px;
+}
+
+@media screen and (max-width:767px){
+    .interest_card .card img{
+        height: 95px;
+        object-fit: cover;
+    }
+
+    .interest_card h5 a{
+        font-size: 13px;
+    }
+
+    .interest_card .card-body {
+        padding: 10px 10px 0px;
+    }
+
+    .interest_card .card-body .card-text {
+        display: none;
+    }
+
+    .interest_card .col-6{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+
+/************ ITI courses after 10th page  ************/
+/************ Courses after 10th page  ****************/
+.iti_10 h5 p a, .after10 h5 p a{
+    color: black;
+}
+
+a.badge-warning{
+    border: 1px solid #ffc107;
+}
+
+a.badge-warning:hover {
+    color: white;
+    border: 1px solid #ffc107;
+    background-color: #d39e00;
+}
+
+.after10{
+    margin-bottom: 40px!important;
+    background-color: white;
+}
+
+.shadow {
+    box-shadow: 0px 0px 3px 0px gray!important;
+}
+
+.after10 .col-md-10{
+    padding-bottom: 20px;
+}
+
+.view-all {
+    background-color: #28a745;
+    color: white!important;
+    padding: 5px 15px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.view-all:hover{
+    background-color: green;
+}

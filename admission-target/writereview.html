@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+          <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Select2 css  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+        <!-- Toastr -->
+        <link rel="stylesheet" href="assets/css/toastr.css">
+        
+        <!-- System stylesheets  -->
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/body.css">
+        <link rel="stylesheet" href="assets/css/admitcard.css">
+        <link rel="stylesheet" href="assets/css/exam.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/review.css">
+        <link rel="stylesheet" href="assets/css/country.css">
+        <title>Admission Target | Write a Review</title>
+        
+        <style>
+          body{
+            background-color: #F7F7F7;
+          }
+          input:focus, textarea:focus{
+            outline: black!important;
+            box-shadow: 0 0 0 .1rem black!important;
+            border: black!important;
+          }
+        </style>
+
+  </head>
+  <body>
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 p-0">
+                <div class="top-contact-details">
+                    <ul>
+                        <li><a href="#" style="padding-left: 8px;"> Top Universities</a></li>
+                        <li><a href="#"> Top Courses</a></li>
+                        <li><a href="#"> Exams</a></li>
+                        <li><a href="#"> News</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 login">
+                <div class="top-user-login top-contact-details">
+                    <ul>
+                        <li><a href="#"><i class=" fa fa-graduation-cap"></i> Register</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<header id="header">
+    <div class="container" id="menu_container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#" class="scrollto"><img width="200" src="assets/images/logo.png"></a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#">Home</a></li>
+          <li class="menu-has-children" ><a href="#">Study Abroad</a>
+            <ul>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">USA</a></li>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">UK</a></li>
+              <li><a href="#">Germany</a></li>
+              <li><a href="#">Ireland</a></li>
+              <li><a href="#">Malaysia</a></li>
+              <li><a href="#">Netherlands</a></li>
+              <li><a href="#">Singapur</a></li>
+              <li><a href="#">Sweden</a></li>
+              <li><a href="#">HongKong</a></li>
+              
+            </ul>
+          </li>
+        
+          <li class="menu-has-children" ><a href="#">Colleges</a>
+            <ul>
+              <li><a href="#">Management</a></li>
+              <li><a href="#">IT</a></li>
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Engineering</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Medical</a></li>
+              <li><a href="#">ART</a></li>
+              <li><a href="#">LAW</a></li>
+              
+              
+            </ul>
+          </li>
+            <li><a href="#">Top Universities</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+
+    </div>
+  </header><!-- #header -->
+
+
+<!-- Jumbotron  -->
+<div class="jumbotron jumbotron-fluid jumbotron-image" 
+style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(assets/images/study.jpg);">
+  
+        <div class="container ">
+            <h1 class="display-5 mt-4" style="color: white;"><strong>GUIDE YOUR YOUNGER GENERATION</strong></h1>
+        </div>
+     </div> 
+      
+   
+     </div>
+  
+
+
+<!-- Main content  -->
+<div class="container">
+    <div class="row  pt-2 pr-2 pl-2 pb-2 ">
+        <h4>Write a review</h4>
+        Share your college experience with us to help prospective students in choosing the best college for their needs. It doesn't matter if it's good or bad, as long as it's honest and true.
+    </div>
+</div>
+
+
+<div class="container">
+    <form action="">
+
+      <div class="row review">
+        <div class="col-md-4">
+          <label for="clg">Select College/University:</label>
+          <select class="select2 form-control" id="clg">
+              <option value="I">Indore</option>
+              <option value="B">Bhopal</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="stream">Select Stream:</label>
+          <select class="select2 form-control" id="stream">
+              <option value="I">Indore</option>
+              <option value="B">Bhopal</option>
+          </select>
+        </div>
+        <div class="col-md-4 psyr">
+          <label for="psyr">Passing Year:</label>
+          <input type="number" id="psyr" class="form-control">
+        </div>
+      </div>
+
+      <div class="review">
+        <h2>Overall Review</h2>
+        <div class="bg-white shadow">
+          <label for="overall-title">Title:</label>
+          <input type="text" id="overall-title" class="form-control mb-4" placeholder="Title"> 
+
+          <label for="overall-review">Review:</label> <br>
+          <textarea name="overall-review" id="overall-review" rows="5" onkeyup="charcters('overall-review')"></textarea>
+          <p class="overall-review">150 Characters remaining</p>
+
+          <div class="container">
+            <div class="row">
+              <div class="rating rel">
+                <input type="radio" id="overall-star5" name="overall-rating" value="5" /><label for="overall-star5" title="Meh">5 stars</label>
+                <input type="radio" id="overall-star4" name="overall-rating" value="4" /><label for="overall-star4" title="Kinda bad">4 stars</label>
+                <input type="radio" id="overall-star3" name="overall-rating" value="3" /><label for="overall-star3" title="Kinda bad">3 stars</label>
+                <input type="radio" id="overall-star2" name="overall-rating" value="2" /><label for="overall-star2" title="Sucks big tim">2 stars</label>
+                <input type="radio" id="overall-star1" checked name="overall-rating" value="1" /><label for="overall-star1" title="Sucks big time">1 star</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row review">
+        <div class="col-12 col-md-6">
+          <h4>Infrastructure</h4>
+          <div class="bg-white shadow">
+            <label for="infra-title">Title:</label>
+            <input type="text" id="infra-title" class="form-control mb-4" placeholder="Title">
+  
+            <label for="infra-review">Review:</label> <br>
+            <textarea name="infra-review" id="infra-review" rows="5" onkeyup="charcters('infra-review')"></textarea>
+            <p class="infra-review">150 Characters remaining</p>
+  
+            <div class="container">
+              <div class="row">
+                <div class="rating rel">
+                  <input type="radio" id="infra-star5" name="infra-rating" value="5" /><label for="infra-star5" title="Meh">5 stars</label>
+                  <input type="radio" id="infra-star4" name="infra-rating" value="4" /><label for="infra-star4" title="Kinda bad">4 stars</label>
+                  <input type="radio" id="infra-star3" name="infra-rating" value="3" /><label for="infra-star3" title="Kinda bad">3 stars</label>
+                  <input type="radio" id="infra-star2" name="infra-rating" value="2" /><label for="infra-star2" title="Sucks big tim">2 stars</label>
+                  <input type="radio" id="infra-star1" checked name="infra-rating" value="1" /><label for="infra-star1" title="Sucks big time">1 star</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mar-top">
+          <h4>Faculty</h4>
+          <div class="bg-white shadow">
+            <label for="faculty-title">Title:</label>
+            <input type="text" id="faculty-title" class="form-control mb-4" placeholder="Title">
+  
+            <label for="faculty-review">Review:</label> <br>
+            <textarea name="faculty-review" id="faculty-review" rows="5" onkeyup="charcters('faculty-review')"></textarea>
+            <p class="faculty-review">150 Characters remaining</p>
+  
+            <div class="container">
+              <div class="row">
+                <div class="rating rel">
+                  <input type="radio" id="faculty-star5" name="faculty-rating" value="5" /><label for="faculty-star5" title="Meh">5 stars</label>
+                  <input type="radio" id="faculty-star4" name="faculty-rating" value="4" /><label for="faculty-star4" title="Kinda bad">4 stars</label>
+                  <input type="radio" id="faculty-star3" name="faculty-rating" value="3" /><label for="faculty-star3" title="Kinda bad">3 stars</label>
+                  <input type="radio" id="faculty-star2" name="faculty-rating" value="2" /><label for="faculty-star2" title="Sucks big tim">2 stars</label>
+                  <input type="radio" id="faculty-star1" checked name="faculty-rating" value="1" /><label for="faculty-star1" title="Sucks big time">1 star</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row review">
+        <div class="col-12 col-md-6">
+          <h4>Placements</h4>
+          <div class="bg-white shadow">
+            <label for="place-title">Title:</label>
+            <input type="text" id="place-title" class="form-control mb-4" placeholder="Title">
+  
+            <label for="place-review">Review:</label> <br>
+            <textarea name="place-review" id="place-review" rows="5" onkeyup="charcters('place-review')"></textarea>
+            <p class="place-review">150 Characters remaining</p>
+  
+            <div class="container">
+              <div class="row">
+                <div class="rating rel">
+                  <input type="radio" id="place-star5" name="place-rating" value="5" /><label for="place-star5" title="Meh">5 stars</label>
+                  <input type="radio" id="place-star4" name="place-rating" value="4" /><label for="place-star4" title="Kinda bad">4 stars</label>
+                  <input type="radio" id="place-star3" name="place-rating" value="3" /><label for="place-star3" title="Kinda bad">3 stars</label>
+                  <input type="radio" id="place-star2" name="place-rating" value="2" /><label for="place-star2" title="Sucks big tim">2 stars</label>
+                  <input type="radio" id="place-star1" checked name="place-rating" value="1" /><label for="place-star1" title="Sucks big time">1 star</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mar-top">
+          <h4>Hostel</h4>
+          <div class="bg-white shadow">
+            <label for="hostel-title">Title:</label>
+            <input type="text" id="hostel-title" class="form-control mb-4" placeholder="Title">
+  
+            <label for="hostel-review">Review:</label> <br>
+            <textarea name="hostel-review" id="hostel-review" rows="5" onkeyup="charcters('hostel-review')"></textarea>
+            <p class="hostel-review">150 Characters remaining</p>
+  
+            <div class="container">
+              <div class="row">
+                <div class="rating rel">
+                  <input type="radio" id="hostel-star5" name="hostel-rating" value="5" /><label for="hostel-star5" title="Meh">5 stars</label>
+                  <input type="radio" id="hostel-star4" name="hostel-rating" value="4" /><label for="hostel-star4" title="Kinda bad">4 stars</label>
+                  <input type="radio" id="hostel-star3" name="hostel-rating" value="3" /><label for="hostel-star3" title="Kinda bad">3 stars</label>
+                  <input type="radio" id="hostel-star2" name="hostel-rating" value="2" /><label for="hostel-star2" title="Sucks big tim">2 stars</label>
+                  <input type="radio" id="hostel-star1" checked name="hostel-rating" value="1" /><label for="hostel-star1" title="Sucks big time">1 star</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review">
+        <h4>Contact Info</h4>
+        <div class="bg-white shadow">
+          <label for="contact-name">Name:</label>
+          <input type="text" id="contact-name" class="form-control mb-4" placeholder="Enter your name here">
+
+          <label for="contact-num">Mobile no.:</label> <br>
+          <input type="text" id="contact-num" class="form-control mb-4" placeholder="Enter your mobile no. here">
+
+          <label for="contact-mail">Email:</label> <br>
+          <input type="text" id="contact-mail" class="form-control mb-4" placeholder="Enter your email here">
+        </div>
+      </div>
+
+      <div class="review">
+        <h4>We will reject your review if:</h4>
+        <ol class="pl-3">
+          <li>It is too short and vague, without any useful information</li>
+          <li>You have copied text from anywhere on the internet</li>
+          <li>You have used junk characters, SMS language, slang or abusive words in your review</li>
+        </ol>
+      </div>
+
+      <div class="review review-submit text-center">
+        <input type="submit" class="btn btn-default" value="Submit">
+      </div>
+
+    </form>
+</div>
+
+<!-- Footer  -->
+
+  <!--================================subscription===================================-->
+  <section class="py-5 mt-5" style="background: url('http://maxcity.mu/wp-content/uploads/2017/08/contact-us-banner-overlay.jpg');">
+    <div class="container">
+      <h2 class="text-center text-white mb-5">Get A Quick Inquiry</h2>
+      <div class="row">
+  
+        <div class="col-12 col-md-6">
+          <img src="https://timescareer.org/wp-content/uploads/2019/06/b2btripyourinquiry.png" class="img-fluid">
+        </div> 
+        <div class="col-12 col-md-6">
+         <div class="card card-body bg-light">
+          <form id="applyNowForm" name="apply_now_form" method="POST" action="#" data-toggle="validator" >
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="apply_full_name">Full Name:</label>
+              <input type="text" name="apply_full_name" id="apply_full_name" class="form-control" placeholder="Please enter your full name*" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="apply_phone">Mobile Number:</label>
+              <input type="text" name="apply_phone" id="apply_phone" class="form-control" placeholder="Please enter your 10 digits valid mobile number*" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="apply_course">Select Course:</label>
+              <select name="apply_course" id="apply_course" class="form-control">
+                <option value="">Select course</option><option value="1">ANM</option><option value="2">B.Arch.</option><option value="3">B.Com</option><option value="4">B.Com+B.Ed.</option><option value="5">B.Com+LLB</option><option value="6">B.Design</option><option value="7">B.Ed.</option><option value="8">B.El.Ed.</option><option value="9">B.Lib.</option><option value="10">B.P.Ed.</option><option value="11">B.Pharm.</option><option value="12">B.Sc.</option><option value="13">B.Sc. Agriculture</option><option value="14">B.Sc.+B.Ed.</option><option value="15">B.Sc.+LLB</option><option value="16">B.Tech</option><option value="18">BA</option><option value="19">BA+B.Ed.</option><option value="20">BA+LLB</option><option value="96">BAMS</option><option value="21">BBA</option><option value="22">BCA</option><option value="23">BDS</option><option value="24">BFA</option><option value="25">BHM</option><option value="27">BMLT</option><option value="100">BPE</option><option value="32">BPT</option><option value="83">BSW</option><option value="35">D.Ed.</option><option value="36">D.El.Ed.</option><option value="97">D.Litt.</option><option value="37">D.P.Ed.</option><option value="38">D.Pharm.</option><option value="39">DCA</option><option value="42">Diploma In Engineering</option><option value="43">DMLT</option><option value="44">GNM</option><option value="45">ITI</option><option value="47">LLB</option><option value="48">LLM</option><option value="50">M.Com</option><option value="52">M.Ed.</option><option value="54">M.P.Ed.</option><option value="55">M.Pharm.</option><option value="56">M.Phil.</option><option value="57">M.Sc.</option><option value="58">M.Tech</option><option value="60">MA</option><option value="61">MBA</option><option value="62">MBBS</option><option value="63">MCA</option><option value="66">MFA</option><option value="91">MPH</option><option value="71">MPHW</option><option value="72">MPT</option><option value="82">MSW</option><option value="73">NTT</option><option value="77">PGDCA</option><option value="79">Ph.D.</option><option value="80">STC</option><option value="81">VLDA</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="apply_state">Select State:</label>
+              <select name="apply_state" id="apply_state" class="form-control"><option value="">Select state</option><option value="1">Andaman and Nicobar Islands</option><option value="2">Andhra Pradesh</option><option value="3">Arunachal Pradesh</option><option value="4">Assam</option><option value="5">Bihar</option><option value="6">Chandigarh</option><option value="7">Chhattisgarh</option><option value="8">Dadra and Nagar Haveli</option><option value="9">Daman and Diu</option><option value="10">Delhi</option><option value="11">Goa</option><option value="12">Gujarat</option><option value="13">Haryana</option><option value="14">Himachal Pradesh</option><option value="15">Jammu and Kashmir</option><option value="16">Jharkhand</option><option value="17">Karnataka</option><option value="18">Kenmore</option><option value="19">Kerala</option><option value="20">Lakshadweep</option><option value="21">Madhya Pradesh</option><option value="22">Maharashtra</option><option value="23">Manipur</option><option value="24">Meghalaya</option><option value="25">Mizoram</option><option value="26">Nagaland</option><option value="27">Narora</option><option value="28">Natwar</option><option value="29">Odisha</option><option value="30">Paschim Medinipur</option><option value="31">Pondicherry</option><option value="32">Punjab</option><option value="33">Rajasthan</option><option value="34">Sikkim</option><option value="35">Tamil Nadu</option><option value="36">Telangana</option><option value="37">Tripura</option><option value="38">Uttar Pradesh</option><option value="39">Uttarakhand</option><option value="40">Vaishali</option><option value="41">West Bengal</option></select>
+            </div>
+          </div>
+          <div class="modal-footer AlgnCenter">
+            <button type="submit" class="btn-success buttonApplySubmit">Apply Now</button>
+          </div>
+        </form>
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================Footer===================================-->
+  <div class="container-fluid">
+  <div class="row pt-5 pb-5" style="background-color: #008938;">
+    <div class="col-1 d-none d-md-block">
+    </div>
+    <div class="col-sm-12 col-md-2 text-white footer pt-4">
+      <ul>
+        <li><a href="#"><h5>Uni/Colleges In India</h5></a></li>
+        <li><a href="#">Engineering</a></li>
+        <li><a href='#'>Management</a></li>
+        <li><a href="#">Medical</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href='#'>Law</a></li>
+        <li><a href="#">Pharmacy</a></li>
+        <li><a href="#">Arts & Humanities</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-2 text-white footer pt-4">
+      <ul>
+        <li>  <a href="#"><h5>Distance Eduaction</h5></a></li>
+        <li><a href="#">MBA</a></li>
+        <li><a href='#'>BBA</a></li>
+        <li><a href="#">BCA </a></li>
+        <li><a href="#">MCA</a></li>
+        <li><a href='#'>BA</a></li>
+        <li><a href="#">MA</a></li>
+        <li><a href="#">B.COM </a></li>
+        <li><a href="#">M.COM </a></li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-2 text-white footer pt-4">
+      <ul>
+        <li><a href="#"><h5>MBBS ABROAD</h5></a></li>
+        <li><a href="#">CHINA</a></li>
+        <li><a href='#'>PHILIPPINES</a></li>
+        <li><a href="#">NEPAL</a></li>
+        <li><a href="#">UKRAINE</a></li>
+        <li><a href='#'>RUSSIA</a></li>
+        <li><a href="#">POLAND</a></li>
+        <li><a href="#">BANGLADESH</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-2 text-white footer pt-4">
+      <ul>
+        <li><a href="#"><h5>STUDY ABROAD</h5></a></li>
+        <li><a href="#">CANADA</a></li>
+        <li><a href='#'>USA</a></li>
+        <li><a href="#">UK</a></li>
+        <li><a href="#">AUSTRALIA</a></li>
+        <li><a href='#'>GERMANY</a></li>
+        <li><a href="#">SWEDEN</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-2 text-white footer pt-4" >
+      <ul>
+        <li><a href="#"><h5>OTHER LINKS</h5></a></li>
+        <li><a href="#">ABOUT EDUPEDIA</a></li>
+        <li><a href='#'>CONTACT US</a></li>
+        <li><a href="#">ADVERTISING</a></li>
+        <li><a href="#">CAREERS</a></li>
+        <li><a href='#'>PRIVACY</a></li>
+        <li><a href="#">TERMS & CONDITIONS</a></li>
+      </ul>
+    </div>
+    <div class="col-1 d-none d-md-block">
+    </div>
+  </div>
+  <div class="row " style="background-color: #06A94D;">
+    <div class="col-6 p-0 footer_img">
+      
+    </div>
+    <div class="col-6 text-right footer_img pr-5">
+      <a href="#" ><img src="http://admissiontarget.com/assets/images/facebook_icon.png"></a>
+      <a href="#"><img src="http://admissiontarget.com/assets/images/linkdin_icon.png"></a>
+      <a href="#"><img src="http://admissiontarget.com/assets/images/twiter_icon.png"></a>
+      <a href="#"><img src="http://admissiontarget.com/assets/images/youtube_icon.png"></a>
+    </div>
+    <div class="col-12 text-center p-3 p-sm-5 copyright" style="background-color: #008938; color:white;">
+      <h6>Copyright © 2020 Admission Target || All Rights Reserved.</h6>
+    </div>
+  </div>
+  </div>
+  <div id="applynowModal" class="applyNowPopup modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Admission Enquiry</h4>
+      </div>
+      <form id="applyNowForm" name="apply_now_form" method="POST" action="#" data-toggle="validator" >
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="apply_full_name">Full Name:</label>
+            <input type="text" name="apply_full_name" id="apply_full_name" class="form-control" placeholder="Please enter your full name*" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="apply_phone">Mobile Number:</label>
+            <input type="text" name="apply_phone" id="apply_phone" class="form-control" placeholder="Please enter your 10 digits valid mobile number*" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="apply_course">Select Course:</label>
+            <select name="apply_course" id="apply_course" class="form-control">
+              <option value="">Select course</option><option value="1">ANM</option><option value="2">B.Arch.</option><option value="3">B.Com</option><option value="4">B.Com+B.Ed.</option><option value="5">B.Com+LLB</option><option value="6">B.Design</option><option value="7">B.Ed.</option><option value="8">B.El.Ed.</option><option value="9">B.Lib.</option><option value="10">B.P.Ed.</option><option value="11">B.Pharm.</option><option value="12">B.Sc.</option><option value="13">B.Sc. Agriculture</option><option value="14">B.Sc.+B.Ed.</option><option value="15">B.Sc.+LLB</option><option value="16">B.Tech</option><option value="18">BA</option><option value="19">BA+B.Ed.</option><option value="20">BA+LLB</option><option value="96">BAMS</option><option value="21">BBA</option><option value="22">BCA</option><option value="23">BDS</option><option value="24">BFA</option><option value="25">BHM</option><option value="27">BMLT</option><option value="100">BPE</option><option value="32">BPT</option><option value="83">BSW</option><option value="35">D.Ed.</option><option value="36">D.El.Ed.</option><option value="97">D.Litt.</option><option value="37">D.P.Ed.</option><option value="38">D.Pharm.</option><option value="39">DCA</option><option value="42">Diploma In Engineering</option><option value="43">DMLT</option><option value="44">GNM</option><option value="45">ITI</option><option value="47">LLB</option><option value="48">LLM</option><option value="50">M.Com</option><option value="52">M.Ed.</option><option value="54">M.P.Ed.</option><option value="55">M.Pharm.</option><option value="56">M.Phil.</option><option value="57">M.Sc.</option><option value="58">M.Tech</option><option value="60">MA</option><option value="61">MBA</option><option value="62">MBBS</option><option value="63">MCA</option><option value="66">MFA</option><option value="91">MPH</option><option value="71">MPHW</option><option value="72">MPT</option><option value="82">MSW</option><option value="73">NTT</option><option value="77">PGDCA</option><option value="79">Ph.D.</option><option value="80">STC</option><option value="81">VLDA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="apply_state">Select State:</label>
+            <select name="apply_state" id="apply_state" class="form-control"><option value="">Select state</option><option value="1">Andaman and Nicobar Islands</option><option value="2">Andhra Pradesh</option><option value="3">Arunachal Pradesh</option><option value="4">Assam</option><option value="5">Bihar</option><option value="6">Chandigarh</option><option value="7">Chhattisgarh</option><option value="8">Dadra and Nagar Haveli</option><option value="9">Daman and Diu</option><option value="10">Delhi</option><option value="11">Goa</option><option value="12">Gujarat</option><option value="13">Haryana</option><option value="14">Himachal Pradesh</option><option value="15">Jammu and Kashmir</option><option value="16">Jharkhand</option><option value="17">Karnataka</option><option value="18">Kenmore</option><option value="19">Kerala</option><option value="20">Lakshadweep</option><option value="21">Madhya Pradesh</option><option value="22">Maharashtra</option><option value="23">Manipur</option><option value="24">Meghalaya</option><option value="25">Mizoram</option><option value="26">Nagaland</option><option value="27">Narora</option><option value="28">Natwar</option><option value="29">Odisha</option><option value="30">Paschim Medinipur</option><option value="31">Pondicherry</option><option value="32">Punjab</option><option value="33">Rajasthan</option><option value="34">Sikkim</option><option value="35">Tamil Nadu</option><option value="36">Telangana</option><option value="37">Tripura</option><option value="38">Uttar Pradesh</option><option value="39">Uttarakhand</option><option value="40">Vaishali</option><option value="41">West Bengal</option></select>
+          </div>
+        </div>
+        <div class="modal-footer AlgnCenter">
+          <button type="submit" class="btn-success buttonApplySubmit">Apply Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  
+  
+ <!-- Scripts  -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript" src="assets/js/validation.js"></script>
+<script type="text/javascript" src="assets/js/cookies.js"></script>
+<script type="text/javascript" src="assets/js/menu.js"></script>
+<script src="assets/js/toastr.js"></script>
+<script src="assets/js/sweetalert.js"></script>
+<script src="assets/js/fancybox.js"></script>
+
+   <!-- Select 2 -->
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select2').select2();
+        });
+
+        function charcters(id){
+          var newStr = $('#'+id).val();
+          var length = newStr.length;
+          var n = 150-length;
+          $('.'+id).html(n + ' characters remaining');
+        }
+
+    </script>
+  
+<!-- System script  -->
+<script src="assets/js/index.js"></script>
+<script src="assets/js/footer.js"></script>  
+
+  </body>
+  </html>

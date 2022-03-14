@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Owl Stylesheets -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <title>Sum Yum Asia | Dishes</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/dish.css">
+
+    </head>
+    <body >
+
+  <!-- Header  -->
+  <div id="overlay"></div>
+
+  <!-- navbar  -->
+  <div class="bg-red">
+    <div class="container ">
+
+        <!-- Mobile screens  -->
+        <!-- sliding navbar left  -->
+        <div class="d-block d-md-none">
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-long-arrow-left" aria-hidden="true" style="color: white;"></i></a>
+            <h5 class="pl-4 pb-2" style="border-bottom: 1px solid #e7e6e6;">
+              <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            </h5>
+            <div class="mob-slide">
+              <a href="#" data-toggle="modal" data-target="#add-to-cart" onclick="closeNav()">Order online</a>
+              <a href="index.html#safety" onclick="closeNav()">Safety Standards</a>
+              <a href="index.html#offers" onclick="closeNav()">Offers</a>
+              <a href="#" id="menu-drop">Menu <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <ul class="list-unstyled">
+                <li class=" dis no-dis">
+                  <div style="background-color: #a11112; box-shadow: inset 1px 0px 45px 0px #00000085;">
+                    <ul class="list-unstyled">
+                          <li><a href="dishes.html">Soups</a></li>
+                          <li><a href="dishes.html">Veg starters</a></li>
+                          <li><a href="dishes.html">Salad</a></li>
+                          <li><a href="dishes.html">Non-veg starters</a></li>
+                          <li><a href="dishes.html">Dimsum</a></li>
+                          <li><a href="dishes.html">Asian curries</a></li>
+                          <li><a href="dishes.html">Main course</a></li>
+                          <li><a href="dishes.html">Chicken</a></li>
+                          <li><a href="dishes.html">Lamb</a></li>
+                          <li><a href="dishes.html">Fish/Prawn</a></li>
+                          <li><a href="dishes.html">Rice & Noodles</a></li>
+                          <li><a href="dishes.html">Full meal/Combo</a></li>
+                      </ul>
+                  </div>
+                </li>
+              </ul>
+              <a href="media.html">Media</a>
+              <a href="contact.html">Contact us</a>
+            </div>  
+          </div>
+          
+            <div>
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()" class="bars">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </span>
+
+              <!-- Logo  -->
+              <div class="text-left">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="" class="image-fluid" width="70%">
+                </a>
+              </div>
+
+              <!-- Icons  -->
+                <button class="btn btn-default nav-item nav-but user" data-toggle="modal" data-target="#add-to-cart">
+                  Order online
+                </button>
+             
+                <button id="hi-name-sm" class="btn btn-default nav-item nav-but user hi-name">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </button>
+                <div class="row">
+                  <div class="col-6"></div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li class=" see no-see">
+                        <div style="background-color: rgb(243, 242, 242);">
+                          <ul class="list-unstyled menu pl-2 pr-4" style="display: inline-block; width: 150px;">
+                            <li style="border-bottom: 1px solid gray;"><a href="#" data-toggle="modal" data-target="#number-login">Login</a></li>
+                            <li><a href="account.html#nav-profile">Profile</a></li>
+                            <li><a href="account.html#nav-address">Address</a></li>
+                            <li style="border-bottom: 1px solid gray;"><a href="account.html#nav-orders">Orders</a></li>
+                            <li><a href="#">Log-out</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+             
+            </div>
+
+        </div>
+
+        <!-- Large screens  -->
+        <div class="d-none d-md-block">
+          <nav class="navbar navbar-expand-md p-0">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.png" alt="" class="w-90">
+              <span style="font-size:30px; vertical-align: middle;">Sum Yum Asia</span>
+            </a>
+            
+            <div class="navbar-nav nav-lg">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="dishes.html">Our food</a>
+                  <div class="dropdown-menu">
+                    <ul class="list-unstyled menu">
+                      <li><a href="dishes.html">Soups</a></li>
+                      <li><a href="dishes.html">Veg starters</a></li>
+                      <li><a href="dishes.html">Salad</a></li>
+                      <li><a href="dishes.html">Non-veg starters</a></li>
+                      <li><a href="dishes.html">Dimsum</a></li>
+                      <li><a href="dishes.html">Asian curries</a></li>
+                      <li><a href="dishes.html">Main course</a></li>
+                      <li><a href="dishes.html">Chicken</a></li>
+                      <li><a href="dishes.html">Lamb</a></li>
+                      <li><a href="dishes.html">Fish/Prawn</a></li>
+                      <li><a href="dishes.html">Rice & Noodles</a></li>
+                      <li><a href="dishes.html">Full meal/Combo</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="index.html#offers">Offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-default nav-item nav-but" data-toggle="modal" data-target="#add-to-cart">
+                    Order online
+                  </button>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle btn btn-default nav-item nav-but hi-name" href="#"><i class="fa fa-user" aria-hidden="true" style="font-size:25px"></i></a>
+                  <div class="dropdown-menu">
+                    <ul class="list-unstyled menu px-3">
+                      <li style="border-bottom: 1px solid gray;"><a href="#" data-toggle="modal" data-target="#number-login">Login</a></li>
+                      <li><a href="account.html#nav-profile">Profile</a></li>
+                      <li><a href="account.html#nav-address">Address</a></li>
+                      <li style="border-bottom: 1px solid gray;"><a href="account.html#nav-orders">Orders</a></li>
+                      <li><a href="#">Log-out</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+
+          </nav>
+        </div>
+
+    </div>
+  </div>
+
+
+  <!-- Modal Pop-up (number-login) -->
+  <div class="modal sign" id="number-login">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+              <h5 class="modal-title">Login to Sum Yum Asia</h5>
+              <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <form id="registration">
+              <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-12 p-0">
+                      <label for="mob-num">Mobile No.</label>
+                      <input type="tel" id="mob-num" name="num" placeholder="Enter mobile no." class="form-control pl-2" style="width: 90%;">
+                    </div>
+                </div>
+                    
+              </div>
+  
+                    <div class="modal-footer">
+                      <button class="btn btn-default bg-yellow w-100" data-toggle="modal" data-target="#password-login" data-dismiss="modal">Continue</button>
+                      <button class="btn btn-default bg-yellow w-100" data-toggle="modal" data-target="#signup" data-dismiss="modal">Continue</button>
+                    </div>
+                    
+            </form>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+
+  <!-- Modal Pop-up (password-login)  -->
+  <div class="modal sign" id="password-login">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+                <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#number-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+                <h5 class="modal-title" style="margin-left: 15px;">Login to Sum Yum Asia</h5>
+                <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <form id="registration">
+              <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-12 p-0">
+                      <p class="text-center" style="font-size: 24px;">Hi Kashish!</p>
+                      <p style="margin-bottom: 0;">Mobile no.</p>
+                      <div class="row ml-0">
+                        <p>9876543210</p>
+                        <a href="#number-login" data-toggle="modal" data-target="#number-login" style="position: absolute; right:10%; color: var(--yellow);" data-dismiss="modal">Not you?</a>
+                      </div>
+                      <label for="login-password">Password:</label>
+                      <input type="password" name="login-password" id="login-password" placeholder="Enter password" class="form-control pl-2" style="width: 90%;">
+                      <a href="#" data-toggle="modal" data-target="#forgot-pass" data-dismiss="modal">Forgot password?</a>
+                    </div>
+                </div>
+                    
+              </div>
+  
+                    <div class="modal-footer">
+                      <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Login</button>
+                    </div>
+                    
+            </form>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (forgot-pass)-->
+<div class="modal sign" id="forgot-pass">
+  <div class="modal-dialog modal-md">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#password-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+            <h4 class="modal-title" style="margin-left: 15px;">Forgot Password</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <form id="registration">
+            <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+              <div class="row">
+                  <div class="col-12 p-0">
+                    <p>We have sent otp to +91 9876543210</p>
+                    <input type="tel" name="otp" placeholder="Enter otp" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <input type="password" name="pass" placeholder="Password" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <input type="password" name="con-pass" placeholder="Confirm password" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <p class="mb-0">Resend otp in (00:30) seconds</p>
+                    <p class="mb-0">If you haven’t got OTP - <a href="#"> Resend SMS </a></p>
+                  </div>
+              </div>
+                  
+            </div>
+
+                  <div class="modal-footer">
+                    <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Continue</button>
+                  </div>
+                  
+          </form>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (signup)-->
+<div class="modal sign" id="signup">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#number-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+            <h4 class="modal-title" style="margin-left: 15px;">Sign-up to Sum Yum Asia</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <form id="registration">
+            <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+              <div class="row">
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" class="form-control" style="width: 95%;">
+                  </div>
+
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="email">Email:</label>
+                      <input type="text" id="email" name="email" class="form-control" style="width: 95%;">
+                  </div>
+              </div>
+
+              <div class="row"> 
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="pass">Password:</label>
+                      <input type="password" id="pass" name="pass" class="form-control" style="width: 95%;">  
+                  </div>
+
+                  <div class="col-md-6 col-xs-12 pl-0">
+                      <label for="conpass">Confirm Password:</label>
+                      <input type="password" id="conpass" name="conpass" class="form-control" style="width: 95%;">
+                  </div>
+              </div>
+                  
+            </div>
+
+                  <div class="modal-footer">
+                    <button class="btn btn-default bg-yellow w-100 continue" data-toggle="modal" data-target="#otp-login" data-dismiss="modal">Continue</button>
+                  </div>
+                  
+          </form>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (otp-login)-->
+<div class="modal sign" id="otp-login">
+  <div class="modal-dialog modal-md">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#signup" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+            <h4 class="modal-title" style="margin-left: 15px;">Enter otp</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <form id="registration">
+            <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+              <div class="row">
+                  <div class="col-12 p-0">
+                    <p>OTP sent to +91 9876543210</p>
+                    <input type="tel" name="otp" placeholder="Enter otp" class="form-control pl-2 mb-2" style="width: 90%;">
+                    <p class="mb-0">Resend otp in (00:30) seconds</p>
+                    <p class="mb-0">OTP not received - <a href="#"> Resend SMS </a></p>
+                  </div>
+              </div>
+                  
+            </div>
+
+                  <div class="modal-footer">
+                    <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Sign-up</button>
+                  </div>
+                  
+          </form>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+<!-- Modal Pop-up (add-to-cart)-->
+<div class="modal sign" id="add-to-cart">
+  <div class="modal-dialog modal-md">
+      <div class="modal-content">
+
+          <div class="modal-header bg-yellow">
+            <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+              <a class="nav-link active" href="#id-1" data-toggle="tab">Delivery</a>
+              <a class="nav-link" href="#id-2" data-toggle="tab">Take-away</a>
+            </nav>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+
+              <div class="tab-content py-3">
+                <div class="tab-pane active" id="id-1">
+                  <h4>Enter your location</h4>
+                  <input type="text" name="location" placeholder="Location" class="form-conttol py-1 px-2">
+                </div>
+        
+                <div class="tab-pane fade" id="id-2">
+                  <h4>Select Takeaway outlet</h4>
+                  <select name="take-away" class="form-contol py-1">
+                    <option value="">Plot No. 9, Palam Vihar Extn.</option>
+                    <option value="">B 110 Supermart 1, DLF Phase IV</option>
+                    <option value="">Sector-49, Gurgaon</option>
+                  </select>
+                </div>      
+              </div>
+                      
+              <div class="modal-footer">
+                <a href="dishes.html" class="btn btn-default bg-yellow w-100" >Order now</a>
+              </div>
+
+            </form>
+
+          </div>
+
+      </div> <!-- [end .modal-content] -->
+  </div> <!-- [end .modal dialog] -->
+</div> <!-- [end .modal] -->
+
+
+
+        <!-- Body  -->
+
+        <!-- Side vectors  -->
+        <img class="side-vector vector-noodles-dish" src="assets/images/vector/vector-noodles.png" alt="">
+        <img class="side-vector vector-chicken-dish" src="assets/images/vector/vector-chicken.png" alt="">
+        <img class="side-vector vector-dimsum-dish" src="assets/images/vector/vector-dimsum.png" alt="">
+        <img class="side-vector vector-meal-box-dish" src="assets/images/vector/vector-meal-box.png" alt="">
+        <img class="side-vector vector-meal-dish" src="assets/images/vector/vector-meal.png" alt="">
+        <img class="side-vector vector-seeks-dish" src="assets/images/vector/vector-seeks.png" alt="">
+        <img class="side-vector vector-cute-dimsum-dish" src="assets/images/vector/vector-cute-dimsum.png" alt="">
+        <img class="side-vector vector-noodles-bowl-dish" src="assets/images/vector/vector-noodles-bowl.png" alt="">
+
+        <!-- Coupon  -->
+          <!-- large screen  -->
+          <div class="container d-none d-md-block space bg-white coupon">
+            <div class="row">
+              <img src="assets/images/offers/coupon.jpg" alt="" class="img-fluid w-100">
+            </div>
+          </div>
+
+
+      <!-- Body  -->
+      <div class="container space">
+          <div class="row">
+
+            <!-- categories  -->
+              <div class="col-md-3 d-none d-md-block rel">
+                <div style="position: sticky; top: 0px;" class="bg-white dish-cat">
+                  <h5 class="menu-heading">What's on menu?</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="dishes.html">Soups</a></li>
+                      <li><a href="dishes.html">Veg Starters</a></li>
+                      <li><a href="dishes.html">Salads</a></li>
+                      <li><a href="dishes.html">Non-veg Starters</a></li>
+                      <li class="active"><a href="dishes.html">Dimsum</a></li>
+                      <li><a href="dishes.html">Asian Curries</a></li>
+                      <li><a href="dishes.html">Main course</a></li>
+                      <li><a href="dishes.html">Chicken</a></li>
+                      <li><a href="dishes.html">Lamb</a></li>
+                      <li><a href="dishes.html">Fish/Prawn</a></li>
+                      <li><a href="dishes.html">Rice & Noodles</a></li>
+                      <li><a href="dishes.html">Full meal/Combo</a></li>
+                    </ul>
+                </div>
+              </div>
+
+              <!-- Dishes  -->
+              <div class="col-12 col-md-6">
+                <div class="center-main bg-white">
+
+                
+
+                <!-- search box  -->
+                <div class="container search-box" id="search_box">
+                  <form action="">
+                    <div class="row">
+
+                      <div class="col-10 col-md-11">
+                        <input type="text" class="form-control" placeholder="Search your dish..." required>
+                      </div>
+
+                      <div class="col-2 col-md-1">
+                        <button type="submit" class="btn btn-default">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+
+                <div class="text-center">
+                  <h1 style="color:var(--red);">Dimsum</h1>
+                </div>
+
+                <div class="container">
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex dish-individual">
+                    <div class="col-4 col-md-3">
+                      <img src="assets/images/cover pics/veg starters.JPG" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-8 col-md-6">
+                      <h4>Honey Chili Potato</h4>
+                      <p>Lorem, ipsum dolor sit amet amet amet elit et amet elit et amet elit.</p>
+                      <span> <b> ₹ 999.00 </b> </span>
+                    </div>
+                    <div class="col-12 col-md-3 justify-content-end align-self-end">
+                      <button class="btn btn-default add" data-toggle="modal" data-target="#caret">Add <i class="fa fa-plus" style="font-size: 15px;" aria-hidden="true"></i></button>
+                      <p>Customise</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="container pb-4">
+                  <div class="row">
+                    <div class="col-6 d-none d-md-block"></div>
+                    <div class="col-12 col-md-6">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+
+                </div>
+              </div>
+
+              <!-- Order  -->
+              <div class="col-md-3 d-none d-md-block rel">
+                <div style="position: sticky; top: 0px;" class="bg-white order">
+                  <div class="bg-red">
+                    <h6>Your cart : 0 items</h6>
+                    <h6 class="money">₹0</h6>
+                  </div>
+
+                  <!-- Changing (order) -->
+                  <div class="text-center" style="display: block;">
+                    <div class="row bdr-btm">
+                        
+                      <div class="empty-cart text-center">
+                        <img src="https://biryaniblues.com/assets/frontend/images/empty-box.png" class="w-50" alt="Empty Box">
+                        <h4>No Orders Yet!</h4>
+                        <p>Your cart is empty. Add Something from the menu</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="items">
+
+                    <div class="row bdr-btm">
+                      <div class="col-6">
+                        <p>Dimsum</p>
+                      </div>
+                      <div class="col-3">
+                        <div class="row">
+                          <i class="fa fa-minus-circle" onclick="minus('one')" aria-hidden="true"></i>
+                          <p class="qnt one">1</p>
+                          <i class="fa fa-plus-circle" onclick="plus('one')" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <p>₹ <span class="rt-one 250">250</span></p>
+                      </div>
+                    </div>
+
+                    <div class="row bdr-btm">
+                      <div class="col-6">
+                        <p>Dimsum</p>
+                      </div>
+                      <div class="col-3">
+                        <div class="row">
+                          <i class="fa fa-minus-circle" onclick="minus('two')" aria-hidden="true"></i>
+                          <p class="qnt two">1</p>
+                          <i class="fa fa-plus-circle" onclick="plus('two')" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <p>₹ <span class="rt-two 10">10</span></p>
+                      </div>
+                    </div>
+
+                    <div class="row bdr-btm">
+                      <div class="col-6">
+                        <p>Dimsum</p>
+                      </div>
+                      <div class="col-3">
+                        <div class="row">
+                          <i class="fa fa-minus-circle" onclick="minus('three')" aria-hidden="true"></i>
+                          <p class="qnt three">1</p>
+                          <i class="fa fa-plus-circle" onclick="plus('three')" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <p>₹ <span class="rt-three 15">15</span></p>
+                      </div>
+                    </div>
+
+                    <div class="row bdr-btm">
+                      <div class="col-6">
+                        <p>Dimsum</p>
+                      </div>
+                      <div class="col-3">
+                        <div class="row">
+                          <i class="fa fa-minus-circle" onclick="minus('four')" aria-hidden="true"></i>
+                          <p class="qnt four">1</p>
+                          <i class="fa fa-plus-circle" onclick="plus('four')" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <p>₹ <span class="rt-four 20">20</span></p>
+                      </div>
+                    </div>
+
+                    <div class="row bdr-btm">
+                      <div class="col-6">
+                        <p>Dimsum</p>
+                      </div>
+                      <div class="col-3">
+                        <div class="row">
+                          <i class="fa fa-minus-circle" onclick="minus('five')" aria-hidden="true"></i>
+                          <p class="qnt five">1</p>
+                          <i class="fa fa-plus-circle" onclick="plus('five')" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <p>₹ <span class="rt-five 25">25</span></p>
+                      </div>
+                    </div>
+
+                    <div class="row bdr-btm">
+                      <div class="col-6">
+                        <p>Dimsum</p>
+                      </div>
+                      <div class="col-3">
+                        <div class="row">
+                          <i class="fa fa-minus-circle" onclick="minus('six')" aria-hidden="true"></i>
+                          <p class="qnt six">1</p>
+                          <i class="fa fa-plus-circle" onclick="plus('six')" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <p>₹ <span class="rt-six 30">30</span></p>
+                      </div>
+                    </div>
+
+                    <div class="gst">
+
+                      <div class="row">
+                        <div class="col-8">
+                          <p><b>Subtotal</b></p>
+                        </div>
+                        <div class="col-4">
+                          <p><b>₹3085</b></p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-8">
+                          <p>Delivery charge</p>
+                        </div>
+                        <div class="col-4">
+                          <p>₹40</p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-8">
+                          <p>CGST @ 2.5%</p>
+                        </div>
+                        <div class="col-4">
+                          <p>₹77</p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-8">
+                          <p>SGST @ 2.5%</p>
+                        </div>
+                        <div class="col-4">
+                          <p>₹77</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <!-- Coupon code -->
+                  <div class="code">
+                    <p>Coupon code/Offer code</p>
+                    <form action="">
+                      <div class="row">
+
+                        <div class="col-8">
+                          <input type="text" class="form-control" name="code" placeholder="Coupon code" required>
+                        </div>
+
+                        <div class="col-4">
+                          <button class="btn btn-default bg-red">Apply</button>
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="row total">
+                    <h6>Total</h6>
+                    <h6 class="money">₹0</h6>
+                  </div>
+
+                  <a href="cart.html" class="btn btn-default bg-red w-100">Proceed to checkout</a>
+                </div>
+              </div>
+
+          </div>
+
+      </div>
+
+
+      <!-- Bottom slide up navbar  -->
+      
+      <div class="bottom-navbar d-block d-md-none" style="background-color:var(--red);">
+          <ul class="list-unstyled">
+
+            <li class="botnav-cat">
+              <h6> <i class="fa fa-cutlery" aria-hidden="true"></i> Menu</h6>			
+              <div class="wom">
+                <!-- categories  -->
+                <div class="bg-white dish-cat-sm">
+                  <div class="bg-white text-left">
+                    <button class="btn btn-default close mr-2">x</button>
+                    <h5 class="txt-yellow m-0">What's on menu</h5>
+                    <ul class="list-unstyled">
+                      <li class="bg-white"><a href="dishes.html">Soups</a></li>
+                      <li class="bg-white"><a href="dishes.html">Veg Starters</a></li>
+                      <li class="bg-white"><a href="dishes.html">Salads</a></li>
+                      <li class="bg-white"><a href="dishes.html">Non-veg Starters</a></li>
+                      <li class="active bg-white"><a href="dishes.html">Dimsum</a></li>
+                      <li class="bg-white"><a href="dishes.html">Asian Curries</a></li>
+                      <li class="bg-white"><a href="dishes.html">Main course</a></li>
+                      <li class="bg-white"><a href="dishes.html">Chicken</a></li>
+                      <li class="bg-white"><a href="dishes.html">Lamb</a></li>
+                      <li class="bg-white"><a href="dishes.html">Fish/Prawn</a></li>
+                      <li class="bg-white"><a href="dishes.html">Rice & Noodles</a></li>
+                      <li class="bg-white"><a href="dishes.html">Full meal/Combo</a></li>
+                    </ul>
+                  </div>
+                </div>		
+              </div>
+            </li>
+
+            <li class="botnav-cart">
+              <h6> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</h6>			
+              <div class="urcart">
+                <!-- Order  -->
+                <div class="col-md-3 bg-white order">
+                  <div style="position: sticky; top: 0px;">
+                    <div class="row bg-yellow">
+                      <button class="btn btn-default close mr-2" style="position: absolute; right: -5%; top: -2px;">x</button>
+                      <h6>Your cart : 0 items</h6>
+                      <h6 class="money">₹0</h6>
+                    </div>
+
+                    <!-- Changing (order) -->
+                    <div class="text-center" style="display: block;">
+                      <div class="row bdr-btm">
+                          
+                        <div class="empty-cart text-center">
+                          <img src="https://biryaniblues.com/assets/frontend/images/empty-box.png" class="w-50" alt="Empty Box">
+                          <h4>No Orders Yet!</h4>
+                          <p>Your cart is empty. Add Something from the menu</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="items">
+
+                      <div class="row bdr-btm">
+                        <div class="col-6">
+                          <p>Dimsum</p>
+                        </div>
+                        <div class="col-3">
+                          <div class="row">
+                            <i class="fa fa-minus-circle" onclick="minus('mb-one')" aria-hidden="true"></i>
+                            <p class="qnt mb-one">1</p>
+                            <i class="fa fa-plus-circle" onclick="plus('mb-one')" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p>₹ <span class="rt-mb-one 250">250</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row bdr-btm">
+                        <div class="col-6">
+                          <p>Dimsum</p>
+                        </div>
+                        <div class="col-3">
+                          <div class="row">
+                            <i class="fa fa-minus-circle" onclick="minus('mb-two')" aria-hidden="true"></i>
+                            <p class="qnt mb-two">1</p>
+                            <i class="fa fa-plus-circle" onclick="plus('mb-two')" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p>₹ <span class="rt-mb-two 10">10</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row bdr-btm">
+                        <div class="col-6">
+                          <p>Dimsum</p>
+                        </div>
+                        <div class="col-3">
+                          <div class="row">
+                            <i class="fa fa-minus-circle" onclick="minus('mb-three')" aria-hidden="true"></i>
+                            <p class="qnt mb-three">1</p>
+                            <i class="fa fa-plus-circle" onclick="plus('mb-three')" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p>₹ <span class="rt-mb-three 15">15</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row bdr-btm">
+                        <div class="col-6">
+                          <p>Dimsum</p>
+                        </div>
+                        <div class="col-3">
+                          <div class="row">
+                            <i class="fa fa-minus-circle" onclick="minus('mb-four')" aria-hidden="true"></i>
+                            <p class="qnt mb-four">1</p>
+                            <i class="fa fa-plus-circle" onclick="plus('mb-four')" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p>₹ <span class="rt-mb-four 20">20</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row bdr-btm">
+                        <div class="col-6">
+                          <p>Dimsum</p>
+                        </div>
+                        <div class="col-3">
+                          <div class="row">
+                            <i class="fa fa-minus-circle" onclick="minus('mb-five')" aria-hidden="true"></i>
+                            <p class="qnt mb-five">1</p>
+                            <i class="fa fa-plus-circle" onclick="plus('mb-five')" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p>₹ <span class="rt-mb-five 25">25</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row bdr-btm">
+                        <div class="col-6">
+                          <p>Dimsum</p>
+                        </div>
+                        <div class="col-3">
+                          <div class="row">
+                            <i class="fa fa-minus-circle" onclick="minus('mb-six')" aria-hidden="true"></i>
+                            <p class="qnt mb-six">1</p>
+                            <i class="fa fa-plus-circle" onclick="plus('mb-six')" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p>₹ <span class="rt-mb-six 30">30</span></p>
+                        </div>
+                      </div>
+
+                      <div class="gst">
+
+                        <div class="row">
+                          <div class="col-8">
+                            <p><b>Subtotal</b></p>
+                          </div>
+                          <div class="col-4">
+                            <p><b>₹3085</b></p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-8">
+                            <p>Delivery charge</p>
+                          </div>
+                          <div class="col-4">
+                            <p>₹40</p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-8">
+                            <p>CGST @ 2.5%</p>
+                          </div>
+                          <div class="col-4">
+                            <p>₹77</p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-8">
+                            <p>SGST @ 2.5%</p>
+                          </div>
+                          <div class="col-4">
+                            <p>₹77</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <!-- Coupon code -->
+                    <div class="code">
+                      <p style="text-align: left;">Coupon code/Offer code</p>
+                      <form action="">
+                        <div class="row">
+
+                          <div class="col-8">
+                            <input type="text" class="form-control" name="code" placeholder="Coupon code" required>
+                          </div>
+
+                          <div class="col-4">
+                            <button class="btn btn-default bg-yellow">Apply</button>
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="row total pl-3">
+                      <h6 style="color: black;">Total</h6>
+                      <h6 class="money" style="color: black;">₹0</h6>
+                    </div>
+
+                    <a href="cart.html" class="btn btn-default bg-yellow w-100">Proceed to checkout</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Modal Pop-up (caret)-->
+      <div class="modal sign" id="caret">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <div class="modal-header bg-yellow">
+                    <h4 class="modal-title">Select your choice</h4>
+                    <button class="close" type="button" data-dismiss="modal">x</button>
+                </div>
+
+                <div class="modal-body">
+                  <h3>Dimsum</h3>
+                    <form action="" id="caret-form">
+
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="radio" name="dish-type" id="veg">
+                            <label for="veg">Veg</label>
+                          </div>
+                          <div class="col-6">
+                            <p><b>₹ 999/-</b></p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="radio" name="dish-type" id="egg">
+                                <label for="egg">Egg</label>
+                          </div>
+                          <div class="col-6">
+                            <p><b>₹ 999/-</b></p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="radio" name="dish-type" id="chicken">
+                            <label for="chicken">Chicken</label>
+                          </div>
+                          <div class="col-6">
+                            <p><b>₹ 999/-</b></p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="radio" name="dish-type" id="prawn">
+                            <label for="prawn">Prawn</label>
+                          </div>
+                          <div class="col-6">
+                            <p><b>₹ 999/-</b></p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="radio" name="dish-type" id="half">
+                            <label for="half">Half</label>
+                          </div>
+                          <div class="col-6">
+                            <p><b>₹ 999/-</b></p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="radio" name="dish-type" id="full">
+                            <label for="full">Full</label>
+                          </div>
+                          <div class="col-6">
+                            <p><b>₹ 999/-</b></p>
+                          </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                          <button class="btn btn-default bg-yellow w-100" data-toggle="modal" data-target="#add-to-cart" data-dismiss="modal">Add to cart</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div> <!-- [end .modal-content] -->
+        </div> <!-- [end .modal dialog] -->
+    </div> <!-- [end .modal] -->
+
+
+    <!-- Modal Pop-up (add-to-cart)-->
+    <div class="modal sign" id="add-to-cart">
+      <div class="modal-dialog modal-md">
+          <div class="modal-content">
+
+              <div class="modal-header bg-yellow">
+                <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                  <a class="nav-link active" href="#id-1" data-toggle="tab">Delivery</a>
+                  <a class="nav-link" href="#id-2" data-toggle="tab">Take-away</a>
+                </nav>
+                <button class="close" type="button" data-dismiss="modal">x</button>
+              </div>
+
+              <div class="modal-body">
+                <form action="">
+
+                  <div class="tab-content py-3">
+                    <div class="tab-pane active" id="id-1">
+                      <h4>Enter your location</h4>
+                      <input type="text" name="location" placeholder="Location" class="form-conttol py-1 px-2">
+                    </div>
+            
+                    <div class="tab-pane fade" id="id-2">
+                      <h4>Select Takeaway outlet</h4>
+                      <select name="take-away" class="form-contol py-1">
+                        <option value="">Plot No. 9, Palam Vihar Extn.</option>
+                        <option value="">B 110 Supermart 1, DLF Phase IV</option>
+                        <option value="">Sector-49, Gurgaon</option>
+                      </select>
+                    </div>      
+                  </div>
+                          
+                  <div class="modal-footer">
+                    <button class="btn btn-default bg-yellow w-100">Order now</button>
+                  </div>
+
+                </form>
+
+              </div>
+
+          </div> <!-- [end .modal-content] -->
+      </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+
+
+
+
+
+
+         <!-- Compiled and minified jquery  -->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+         <!-- Compiled and minified Popper.js  -->
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ 
+         <!-- Compiled and minified JavaScript  -->
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ 
+         <!-- Owl carousel -->
+         <script src="assets/js/owl.carousel.min.js"></script>
+ 
+         <!-- Validation  -->
+         <script src="assets/js/jquery.validate.min.js"></script>
+ 
+         <!-- System script  -->
+         <script src="assets/js/index.js"></script>
+     </body>
+ </html>

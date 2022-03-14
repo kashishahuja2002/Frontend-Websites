@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Owl Stylesheets -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <title>Sum Yum Asia | Media</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/dish.css">
+
+    </head>
+    <body >
+
+    <!-- Header  -->
+    <div id="overlay"></div>
+
+    <!-- navbar  -->
+    <div class="bg-red">
+      <div class="container ">
+  
+          <!-- Mobile screens  -->
+          <!-- sliding navbar left  -->
+          <div class="d-block d-md-none">
+  
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-long-arrow-left" aria-hidden="true" style="color: white;"></i></a>
+              <h5 class="pl-4 pb-2" style="border-bottom: 1px solid #e7e6e6;">
+                <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+              </h5>
+              <div class="mob-slide">
+                <a href="#" data-toggle="modal" data-target="#add-to-cart" onclick="closeNav()">Order online</a>
+                <a href="index.html#safety" onclick="closeNav()">Safety Standards</a>
+                <a href="index.html#offers" onclick="closeNav()">Offers</a>
+                <a href="#" id="menu-drop">Menu <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <ul class="list-unstyled">
+                  <li class=" dis no-dis">
+                    <div style="background-color: #a11112; box-shadow: inset 1px 0px 45px 0px #00000085;">
+                      <ul class="list-unstyled">
+                            <li><a href="dishes.html">Soups</a></li>
+                            <li><a href="dishes.html">Veg starters</a></li>
+                            <li><a href="dishes.html">Salad</a></li>
+                            <li><a href="dishes.html">Non-veg starters</a></li>
+                            <li><a href="dishes.html">Dimsum</a></li>
+                            <li><a href="dishes.html">Asian curries</a></li>
+                            <li><a href="dishes.html">Main course</a></li>
+                            <li><a href="dishes.html">Chicken</a></li>
+                            <li><a href="dishes.html">Lamb</a></li>
+                            <li><a href="dishes.html">Fish/Prawn</a></li>
+                            <li><a href="dishes.html">Rice & Noodles</a></li>
+                            <li><a href="dishes.html">Full meal/Combo</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                </ul>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact us</a>
+              </div>  
+            </div>
+            
+              <div>
+                <!-- Use any element to open the sidenav -->
+                <span onclick="openNav()" class="bars">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+  
+                <!-- Logo  -->
+                <div class="text-left">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="" class="image-fluid" width="70%">
+                  </a>
+                </div>
+  
+                <!-- Icons  -->
+                  <button class="btn btn-default nav-item nav-but user" data-toggle="modal" data-target="#add-to-cart">
+                    Order online
+                  </button>
+               
+                  <button id="hi-name-sm" class="btn btn-default nav-item nav-but user hi-name">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </button>
+                  <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-6">
+                      <ul class="list-unstyled">
+                        <li class=" see no-see">
+                          <div style="background-color: rgb(243, 242, 242);">
+                            <ul class="list-unstyled menu pl-2 pr-4" style="display: inline-block; width: 150px;">
+                              <li style="border-bottom: 1px solid gray;"><a href="#" data-toggle="modal" data-target="#number-login">Login</a></li>
+                              <li><a href="account.html#nav-profile">Profile</a></li>
+                              <li><a href="account.html#nav-address">Address</a></li>
+                              <li style="border-bottom: 1px solid gray;"><a href="account.html#nav-orders">Orders</a></li>
+                              <li><a href="#">Log-out</a></li>
+                              </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+               
+              </div>
+  
+          </div>
+  
+          <!-- Large screens  -->
+          <div class="d-none d-md-block">
+            <nav class="navbar navbar-expand-md p-0">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="" class="w-90">
+                <span style="font-size:30px; vertical-align: middle;">Sum Yum Asia</span>
+              </a>
+              
+              <div class="navbar-nav nav-lg">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="dishes.html">Our food</a>
+                    <div class="dropdown-menu">
+                      <ul class="list-unstyled menu">
+                        <li><a href="dishes.html">Soups</a></li>
+                        <li><a href="dishes.html">Veg starters</a></li>
+                        <li><a href="dishes.html">Salad</a></li>
+                        <li><a href="dishes.html">Non-veg starters</a></li>
+                        <li><a href="dishes.html">Dimsum</a></li>
+                        <li><a href="dishes.html">Asian curries</a></li>
+                        <li><a href="dishes.html">Main course</a></li>
+                        <li><a href="dishes.html">Chicken</a></li>
+                        <li><a href="dishes.html">Lamb</a></li>
+                        <li><a href="dishes.html">Fish/Prawn</a></li>
+                        <li><a href="dishes.html">Rice & Noodles</a></li>
+                        <li><a href="dishes.html">Full meal/Combo</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item nav-link" href="index.html#offers">Offers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item nav-link" href="media.html">Media</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item nav-link" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-default nav-item nav-but" data-toggle="modal" data-target="#add-to-cart">
+                      Order online
+                    </button>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-toggle btn btn-default nav-item nav-but hi-name" href="#"><i class="fa fa-user" aria-hidden="true" style="font-size:25px"></i></a>
+                    <div class="dropdown-menu">
+                      <ul class="list-unstyled menu px-3">
+                        <li style="border-bottom: 1px solid gray;"><a href="#" data-toggle="modal" data-target="#number-login">Login</a></li>
+                        <li><a href="account.html#nav-profile">Profile</a></li>
+                        <li><a href="account.html#nav-address">Address</a></li>
+                        <li style="border-bottom: 1px solid gray;"><a href="account.html#nav-orders">Orders</a></li>
+                        <li><a href="#">Log-out</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </div>
+  
+            </nav>
+          </div>
+  
+      </div>
+    </div>
+  
+  
+    <!-- Modal Pop-up (number-login) -->
+    <div class="modal sign" id="number-login">
+      <div class="modal-dialog modal-md">
+          <div class="modal-content">
+    
+              <div class="modal-header bg-yellow">
+                <h5 class="modal-title">Login to Sum Yum Asia</h5>
+                <button class="close" type="button" data-dismiss="modal">x</button>
+              </div>
+    
+              <form id="registration">
+                <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                  <div class="row">
+                      <div class="col-12 p-0">
+                        <label for="mob-num">Mobile No.</label>
+                        <input type="tel" id="mob-num" name="num" placeholder="Enter mobile no." class="form-control pl-2" style="width: 90%;">
+                      </div>
+                  </div>
+                      
+                </div>
+    
+                      <div class="modal-footer">
+                        <button class="btn btn-default bg-yellow w-100" data-toggle="modal" data-target="#password-login" data-dismiss="modal">Continue</button>
+                        <button class="btn btn-default bg-yellow w-100" data-toggle="modal" data-target="#signup" data-dismiss="modal">Continue</button>
+                      </div>
+                      
+              </form>
+    
+          </div> <!-- [end .modal-content] -->
+      </div> <!-- [end .modal dialog] -->
+    </div> <!-- [end .modal] -->
+  
+    <!-- Modal Pop-up (password-login)  -->
+    <div class="modal sign" id="password-login">
+      <div class="modal-dialog modal-md">
+          <div class="modal-content">
+    
+              <div class="modal-header bg-yellow">
+                  <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#number-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+                  <h5 class="modal-title" style="margin-left: 15px;">Login to Sum Yum Asia</h5>
+                  <button class="close" type="button" data-dismiss="modal">x</button>
+              </div>
+    
+              <form id="registration">
+                <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                  <div class="row">
+                      <div class="col-12 p-0">
+                        <p class="text-center" style="font-size: 24px;">Hi Kashish!</p>
+                        <p style="margin-bottom: 0;">Mobile no.</p>
+                        <div class="row ml-0">
+                          <p>9876543210</p>
+                          <a href="#number-login" data-toggle="modal" data-target="#number-login" style="position: absolute; right:10%; color: var(--yellow);" data-dismiss="modal">Not you?</a>
+                        </div>
+                        <label for="login-password">Password:</label>
+                        <input type="password" name="login-password" id="login-password" placeholder="Enter password" class="form-control pl-2" style="width: 90%;">
+                        <a href="#" data-toggle="modal" data-target="#forgot-pass" data-dismiss="modal">Forgot password?</a>
+                      </div>
+                  </div>
+                      
+                </div>
+    
+                      <div class="modal-footer">
+                        <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Login</button>
+                      </div>
+                      
+              </form>
+    
+          </div> <!-- [end .modal-content] -->
+      </div> <!-- [end .modal dialog] -->
+    </div> <!-- [end .modal] -->
+  
+  <!-- Modal Pop-up (forgot-pass)-->
+  <div class="modal sign" id="forgot-pass">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+              <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#password-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+              <h4 class="modal-title" style="margin-left: 15px;">Forgot Password</h4>
+              <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <form id="registration">
+              <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-12 p-0">
+                      <p>We have sent otp to +91 9876543210</p>
+                      <input type="tel" name="otp" placeholder="Enter otp" class="form-control pl-2 mb-2" style="width: 90%;">
+                      <input type="password" name="pass" placeholder="Password" class="form-control pl-2 mb-2" style="width: 90%;">
+                      <input type="password" name="con-pass" placeholder="Confirm password" class="form-control pl-2 mb-2" style="width: 90%;">
+                      <p class="mb-0">Resend otp in (00:30) seconds</p>
+                      <p class="mb-0">If you haven’t got OTP - <a href="#"> Resend SMS </a></p>
+                    </div>
+                </div>
+                    
+              </div>
+  
+                    <div class="modal-footer">
+                      <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Continue</button>
+                    </div>
+                    
+            </form>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+  
+  <!-- Modal Pop-up (signup)-->
+  <div class="modal sign" id="signup">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+              <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#number-login" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+              <h4 class="modal-title" style="margin-left: 15px;">Sign-up to Sum Yum Asia</h4>
+              <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <form id="registration">
+              <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 pl-0">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" style="width: 95%;">
+                    </div>
+  
+                    <div class="col-md-6 col-xs-12 pl-0">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" class="form-control" style="width: 95%;">
+                    </div>
+                </div>
+  
+                <div class="row"> 
+                    <div class="col-md-6 col-xs-12 pl-0">
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="pass" class="form-control" style="width: 95%;">  
+                    </div>
+  
+                    <div class="col-md-6 col-xs-12 pl-0">
+                        <label for="conpass">Confirm Password:</label>
+                        <input type="password" id="conpass" name="conpass" class="form-control" style="width: 95%;">
+                    </div>
+                </div>
+                    
+              </div>
+  
+                    <div class="modal-footer">
+                      <button class="btn btn-default bg-yellow w-100 continue" data-toggle="modal" data-target="#otp-login" data-dismiss="modal">Continue</button>
+                    </div>
+                    
+            </form>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+  
+  <!-- Modal Pop-up (otp-login)-->
+  <div class="modal sign" id="otp-login">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+              <i class="fa fa-arrow-left back" data-toggle="modal" data-target="#signup" aria-hidden="true" style="margin-top: 10px;" data-dismiss="modal"></i>
+              <h4 class="modal-title" style="margin-left: 15px;">Enter otp</h4>
+              <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <form id="registration">
+              <div class="modal-body" style="padding-top:20px; padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-12 p-0">
+                      <p>OTP sent to +91 9876543210</p>
+                      <input type="tel" name="otp" placeholder="Enter otp" class="form-control pl-2 mb-2" style="width: 90%;">
+                      <p class="mb-0">Resend otp in (00:30) seconds</p>
+                      <p class="mb-0">OTP not received - <a href="#"> Resend SMS </a></p>
+                    </div>
+                </div>
+                    
+              </div>
+  
+                    <div class="modal-footer">
+                      <button class="btn btn-default bg-yellow w-100" data-dismiss="modal">Sign-up</button>
+                    </div>
+                    
+            </form>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+  
+  <!-- Modal Pop-up (add-to-cart)-->
+  <div class="modal sign" id="add-to-cart">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+  
+            <div class="modal-header bg-yellow">
+              <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                <a class="nav-link active" href="#id-1" data-toggle="tab">Delivery</a>
+                <a class="nav-link" href="#id-2" data-toggle="tab">Take-away</a>
+              </nav>
+              <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+  
+            <div class="modal-body">
+              <form>
+  
+                <div class="tab-content py-3">
+                  <div class="tab-pane active" id="id-1">
+                    <h4>Enter your location</h4>
+                    <input type="text" name="location" placeholder="Location" class="form-conttol py-1 px-2">
+                  </div>
+          
+                  <div class="tab-pane fade" id="id-2">
+                    <h4>Select Takeaway outlet</h4>
+                    <select name="take-away" class="form-contol py-1">
+                      <option value="">Plot No. 9, Palam Vihar Extn.</option>
+                      <option value="">B 110 Supermart 1, DLF Phase IV</option>
+                      <option value="">Sector-49, Gurgaon</option>
+                    </select>
+                  </div>      
+                </div>
+                        
+                <div class="modal-footer">
+                  <a href="dishes.html" class="btn btn-default bg-yellow w-100" >Order now</a>
+                </div>
+  
+              </form>
+  
+            </div>
+  
+        </div> <!-- [end .modal-content] -->
+    </div> <!-- [end .modal dialog] -->
+  </div> <!-- [end .modal] -->
+
+
+
+<!-- Body  -->
+<div class="container text-center bg-white space" style="border-radius: 15px;">
+
+    <h1 class="space-pad">News and Media</h1>
+
+    <iframe class="space d-none d-md-block" width="100%" height="415px" src="https://www.youtube-nocookie.com/embed/wV-NHSDsYVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe class="space d-block d-md-none" width="100%" height="250px" src="https://www.youtube-nocookie.com/embed/wV-NHSDsYVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Owl carousel-->
+    <div class="carousel-wrap space-pad mt-5">
+      <div id="media" class="owl-carousel owl-theme description">
+
+        <div>
+          <a href="#">
+          <img src="assets/images/media.jpg" class="img-fluid"/>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+          <img src="assets/images/media.jpg" class="img-fluid"/>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+          <img src="assets/images/media.jpg" class="img-fluid"/>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+          <img src="assets/images/media.jpg" class="img-fluid"/>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+          <img src="assets/images/media.jpg" class="img-fluid"/>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+          <img src="assets/images/media.jpg" class="img-fluid"/>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer  -->
+<footer>
+  <div class="bg-red">
+    <div class="container text-center txt-white">
+      <div class="row">
+
+        <div class="col-12 col-md-4 bdr-btm">
+          <a href="index.html">
+            <img src="assets/images/footer-logo.png" alt="" width="70%">
+            <h6 class="txt-yellow">Chinese, Thai and Asian Food</h6>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4 pt-2 pb-3 text-left bdr-btm">
+          <h3 class="foot-cat">Categories</h3>
+          <div class="row mt-3">
+            <div class="col-12">
+              <ul class="list-unstyled foot-cat-ul">
+                <li><a href="dishes.html">Soups</a></li>
+                <li><a href="dishes.html">Veg-starters</a></li>
+                <li><a href="dishes.html">Salads</a></li>
+                <li><a href="dishes.html">Non-veg starters</a></li>
+                <li><a href="dishes.html">Dimsum</a></li>
+                <li><a href="dishes.html">Asian Curries</a></li>
+                <li><a href="dishes.html">Main course</a></li>
+                <li><a href="dishes.html">Chicken</a></li>
+                <li><a href="dishes.html">Lamb</a></li>
+                <li><a href="dishes.html">Fish/Prawn</a></li>
+                <li><a href="dishes.html">Rice & Noodles</a></li>
+                <li><a href="dishes.html">Full meal/Combo</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 pt-2 text-left pl-4 bdr-btm">
+          <h3 class="foot-cat" style="margin-left: -15px;">Call for delivery</h3>
+
+            <div class="row mt-3">
+              <a href="#"><i class="fa fa-map-marker txt-yellow" aria-hidden="true"></i>
+                Plot No. 9, Palam Vihar Extn. (Delivery only)</a>
+            </div>
+
+            <div class="row">
+              <a href="tel:9999126251">
+                  <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+                  Call: 9999126251
+              </a>
+            </div>
+
+          <div class="row mt-3">
+            <a href="https://www.google.com/maps/place/Sum+Yum+Asia/@28.462462,77.0850943,17z/data=!3m1!4b1!4m5!3m4!1s0x390d18db307378a3:0xa81cf1452994acd1!8m2!3d28.462462!4d77.087283" target="_blank"><i class="fa fa-map-marker txt-yellow" aria-hidden="true"></i>
+              B 110 Supermart 1, DLF Phase IV, Gurgaon</a>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 pl-0">
+              <a href="tel:0124-4040050">
+                <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+                Call: 0124-4040050
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 pl-0">
+              <a href="tel:9540043393">
+                <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+                Call: 9540043393
+              </a>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <a href="#"><i class="fa fa-map-marker txt-yellow" aria-hidden="true"></i>
+              Sector-49, Gurgaon</a>
+          </div>
+
+          <div class="row">
+            <a href="tel:9999126241">
+              <i class="fa fa-phone txt-yellow" aria-hidden="true"></i>
+              Call: 9999126241
+            </a>
+            
+          </div>
+
+          <div class="row social-icons">
+            <ul class="list-unstyled">
+              <li>Follow us on:</li>
+              <li>
+                <a href="https://www.facebook.com/Sum-Yum-Asia-694882030593220" target="_blank"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sumyumasia/" target="_blank"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- copyright  -->
+  <div class="copyright">
+    <div class="container">
+        <p class="m-0 txt-white" style="font-size: 13px;"> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 Wangshis Foods. All Rights Reserved. | Terms & Conditions. Designed & Developed By <a href="https://www.freelanceritservices.com/" style="color: var(--red);">Freelancer IT Services</a>.</p>
+    </div> 
+  </div>
+
+</footer> 
+
+
+
+
+
+
+ <!-- Compiled and minified jquery  -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+ <!-- Compiled and minified Popper.js  -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+ <!-- Compiled and minified JavaScript  -->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+ <!-- Owl carousel -->
+ <script src="assets/js/owl.carousel.min.js"></script>
+
+ <!-- Validation  -->
+ <script src="assets/js/jquery.validate.min.js"></script>
+
+
+ <!-- System script  -->
+ <script src="assets/js/index.js"></script>
+
+</body>
+</html>

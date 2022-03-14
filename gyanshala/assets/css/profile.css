@@ -1,0 +1,482 @@
+/* Single Profile page  */
+/* Reviews Page  */
+/* Write a review page  */
+/* Dashboard Page  */
+
+
+
+/**************** Profile Page  *****************/
+
+.fa-times{
+    color: var(--red);
+}
+
+.fa-check, .fa-check-circle{
+    color: rgb(21, 209, 21);
+}
+
+
+/* Section (.user-intro) */
+section.user-intro{
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+section.user-intro img{
+    border: 1px solid gray;
+}
+
+section.user-intro p, section.user-intro ul{
+    margin-bottom: .25rem!important;
+}
+
+section.user-intro span.label{
+    background-color: var(--red);
+    color: white;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    right: 2%;
+    top: 0;  
+}
+
+section.user-intro ul li{
+    display: inline-block;
+}
+
+section.user-intro a.btn{
+    float: right;
+}
+
+
+/* Section (.user-nav) */
+section.user-nav{
+    margin-bottom: 15px;
+}
+
+section.user-nav ul{
+    margin-bottom: 0;
+}
+
+section.user-nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+section.user-nav ul li a{
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+section.user-nav ul li.active{
+    border-bottom: 7px solid var(--red);
+}
+
+
+/* Section (.user-details) */
+section.user-details {
+    padding: 20px;
+}
+
+.user-details-item {
+    margin-bottom: 30px;
+}
+
+.user-details-item p{
+    color: rgb(70, 70, 70);
+}
+
+.user-details-item.teaches .row{
+    margin-bottom: 20px;
+}
+
+.user-details-item p{
+    margin-bottom: 0; 
+}
+
+.user-details-item span{
+    display: inline-block;
+    background-color: #EDECEC;
+    color: rgb(70, 70, 70);
+    padding: 2px 5px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.user-details-item.qualification li{
+    margin-bottom: 10px;
+}
+
+.user-details-item li small{
+    margin-left: 25px;
+}
+
+
+/* Modal  */
+.modal-contact {
+	color: #636363;
+	width: 350px;
+}
+.modal-contact .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-contact .modal-header {
+	border-bottom: none;
+	position: relative;
+	justify-content: center;
+}
+.modal-contact h4 {
+	text-align: center;
+    font-size: 26px;
+    color: var(--red);
+}
+.modal-contact  .form-group {
+	position: relative;
+}
+.modal-contact i {
+	position: absolute;
+	left: 13px;
+	top: 11px;
+	font-size: 18px;
+}
+.modal-contact .form-control {
+	padding-left: 40px;
+}
+.modal-contact .form-control:focus {
+    border-color: var(--red);
+    box-shadow: none;
+}
+.modal-contact .form-control, .modal-contact .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+}
+.modal-contact .hint-text {
+	text-align: center;
+	padding-top: 10px;
+}
+.modal-contact .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+.modal-contact .btn, .modal-contact .btn:active {	
+    border: none;
+    box-shadow: none;
+	background: var(--red) !important;
+    line-height: normal;
+    color: white;
+}
+.modal-contact .btn:hover, .modal-contact .btn:focus {
+	background: var(--red) !important;
+}
+
+
+/****************** Reviews Page  *******************/
+
+/* Review block  */
+.review-block{
+    border-bottom: 1px solid gray;
+    margin-bottom: 25px!important;
+}
+
+/* Star-rating  */
+.review-block .star-rating{
+    margin-left: 75px;
+}
+
+.review-block .star-rating .fa{
+    color: #ddd;
+}
+
+.review-block .star-rating .fa.checked{
+    color: #FFD10D;
+}
+
+.letter{
+  background-color: rgb(0, 255, 170);
+  font-size: 26px;
+  padding: 10px 20px;
+  height: 57px;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.name p{
+  font-size: 22px;
+  padding: 0 20px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+.user-review{
+    margin-top: 15px;
+    color: #636262;
+}
+
+.user-review b{
+    color: rgb(70, 70, 70);
+}
+
+.user-block, .user-name{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+ }   
+
+
+.pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.pagination .page-link {
+    color: var(--red);
+}
+
+
+
+/*************** Write a review page  ***************/
+
+/* Section (.review) */
+section.review{
+    padding: 50px 0;
+}
+
+section.review .container.bg-white{
+    padding: 20px;
+}
+
+section.review .container.bg-white h2{
+    color: var(--red);
+}
+
+.review-field{
+    margin-top: 60px;
+}
+
+.review-field textarea{
+    width: 100%;
+    padding: 20px;
+}
+
+/* Star rating  */
+
+  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+    follow these rules. Every browser that supports :checked also supports :not(), so
+    it doesn’t make the test unnecessarily selective */
+    .rating{
+        margin-left: 15px;
+    }
+
+    .rating:not(:checked) > input {
+        position:absolute;
+        top: 1px;
+        clip:rect(0,0,0,0);
+    }
+  
+    .rating:not(:checked) > label {
+        float:right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size: 200%;
+        line-height: 0.7;
+        color:#ddd;
+    }
+  
+    .rating:not(:checked) > label:before {
+        content: '★ ';
+    }
+  
+    .rating > input:checked ~ label {
+        color: #FFD10D;
+        
+    }
+  
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: #FFD10D;
+    }
+  
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color:#FFD10D;
+        
+    }
+  
+    .rating > label{
+        margin-bottom: 0;
+    }
+  
+    .rating > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
+
+
+
+/********************* Dashboard Page  *********************/
+
+.dash-shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.user-dashboard-panel .dash-left, .user-dashboard-panel .dash-left .avtar, .user-dashboard-panel .dash-right {
+    border-radius: 15px;
+} 
+
+/* left panel  */
+.user-dashboard-panel .dash-left .avtar{
+    background-image: linear-gradient(var(--red), black 120%);
+}
+
+.user-dashboard-panel .dash-left .avtar img{
+    position: relative;
+    left: 15px;
+    height: 115px;
+    width: 115px;
+}
+
+.user-dashboard-panel .dash-left .avtar input{
+    display: none;
+}
+
+.user-dashboard-panel .dash-left .avtar label{
+    background-color: white;
+    opacity: 0.7;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: 35px;
+    left: -15px;
+    cursor: pointer;    
+}
+
+.user-dashboard-panel .dash-left .avtar h5{
+    color: white!important;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.user-dashboard-panel .dash-left .avtar p{
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Drop down  */
+.no-dis{
+    display: none;
+}
+
+.user-dashboard-panel .dash-left .dash-options .profile-dropdown a{
+    color: black;
+    display: block;
+}
+
+.user-dashboard-panel .dash-left .dash-options .profile-dropdown li {
+    padding: 2px;
+}
+
+.user-dashboard-panel .dash-left .dash-options .profile-dropdown li a{
+    padding-left: 50px;
+}
+
+.user-dashboard-panel .dash-left .dash-options a .row, .user-dashboard-panel .dash-left .dash-options .profile-dropdown{
+    color: black;
+    margin: 1.5rem;
+    font-size: 20px;
+}
+.user-dashboard-panel .dash-left .dash-options a .row i, .user-dashboard-panel .dash-left .dash-options .profile-dropdown i{
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.user-dashboard-panel .dash-left .dash-options a .row p, .user-dashboard-panel .dash-left .dash-options .profile-dropdown span{
+    margin-bottom: 0;
+}
+
+.user-dashboard-panel .dash-left .dash-options a:hover .row, .user-dashboard-panel .dash-left .dash-options .profile-dropdown a:hover{
+    color: var(--red);
+}
+
+.user-dashboard-panel .dash-left .dash-options a.active .row, .user-dashboard-panel .dash-left .dash-options .profile-dropdown a.active{
+    color: var(--red);
+}
+
+/* right panel  */
+.user-dashboard-panel .dash-right label{
+    width: 100%;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #0000004d ;
+    border-radius: 5px;
+    padding: 0 1.4em 0 1.4em !important;
+    margin: 0 0 .5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border{
+    font-size: 1.2em !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+    color: rgb(173, 173, 173);
+    margin-bottom: 0;
+}
+
+.user-dashboard-panel .dash-right h3{
+    color: var(--red);
+}
+
+/* Select 2 */
+.dash-right .select2-container--default .select2-selection--single {
+    border: none;
+}
+
+.dash-right .select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #aaa!important;
+}
+
+.user-dashboard-panel .dash-right input{
+    border:none;
+    padding-bottom: .5rem;
+    font-size: 16px;
+    width: 100%;
+}
+
+.user-dashboard-panel .dash-right span{
+    font-size: 16px;
+    outline: 0;
+}
+
+.user-dashboard-panel .dash-right input:focus{
+    box-shadow: none!important;
+}
+
+.user-dashboard-panel .dash-right input:focus legend.scheduler-border{
+    color: green!important;
+} 
+
+.user-dashboard-panel .dash-right input[type="radio"], .user-dashboard-panel .dash-right input[type="checkbox"]{
+    width:auto;
+}
+
+.user-dashboard-panel .dash-right .preview-img img{
+    width: 75%;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px 0;
+}

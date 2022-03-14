@@ -1,0 +1,1405 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+          <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Toastr -->
+        <link rel="stylesheet" href="assets/css/toastr.css">
+        
+        <!-- System stylesheets  -->
+        <link rel="stylesheet" href="assets/css/admitcard.css">
+        <link rel="stylesheet" href="assets/css/body.css">
+        <link rel="stylesheet" href="assets/css/country.css">
+        <link rel="stylesheet" href="assets/css/exam.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/new.css">
+        <link rel="stylesheet" href="assets/css/review.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Admission Target | Exams List</title>
+        
+        
+  </head>
+  <body>
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 p-0">
+                <div class="top-contact-details">
+                    <ul>
+                        <li><a href="#" style="padding-left: 8px;"> Top Universities</a></li>
+                        <li><a href="#"> Top Courses</a></li>
+                        <li><a href="#"> Exams</a></li>
+                        <li><a href="#"> News</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 login">
+                <div class="top-user-login top-contact-details">
+                    <ul>
+               
+                         <li><a href="#"><i class=" fa fa-graduation-cap"></i> Register</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<header id="header">
+    <div class="container" id="menu_container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#" class="scrollto"><img width="200" src="assets/images/logo.png"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#">Home</a></li>
+          <li class="menu-has-children" ><a href="#">Study Abroad</a>
+            <ul>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">USA</a></li>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">UK</a></li>
+              <li><a href="#">Germany</a></li>
+              <li><a href="#">Ireland</a></li>
+              <li><a href="#">Malaysia</a></li>
+              <li><a href="#">Netherlands</a></li>
+              <li><a href="#">Singapur</a></li>
+              <li><a href="#">Sweden</a></li>
+              <li><a href="#">HongKong</a></li>
+              
+            </ul>
+          </li>
+        
+          <li class="menu-has-children" ><a href="#">Colleges</a>
+            <ul>
+              <li><a href="#">Management</a></li>
+              <li><a href="#">IT</a></li>
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Engineering</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Medical</a></li>
+              <li><a href="#">ART</a></li>
+              <li><a href="#">LAW</a></li>
+              
+              
+            </ul>
+          </li>
+            <li><a href="#">Top Universities</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+
+    </div>
+  </header><!-- #header -->
+
+
+  <!-- Body  -->
+
+  <!-- Mobile filter  -->
+  <div class="d-block d-md-none" id="mob-fil" onclick="openfp('fp-filter')">
+    <i class="fa fa-filter mob-fil" aria-hidden="true"></i>
+  </div>
+
+  <!-- Full page filter  -->
+  <div class="full-page d-md-none" id="fp-filter">
+    <div class="fp-container">
+
+      <div class="bg-green fil-top">
+        <div class="row">
+          <h4 class="mt-2">FILTER</h4>
+          <button class="btn btn-default" onclick="closefp('fp-filter')">X</button>
+        </div>
+      </div>
+      
+      <div class="row fil">
+        
+        <div class="col-4">
+            <nav class="nav flex-column">
+              <a class="nav-link active" href="#id-1" data-toggle="tab">STREAM</a>
+              <a class="nav-link" href="#id-2" data-toggle="tab">DEGREE</a>
+              <a class="nav-link" href="#id-3" data-toggle="tab">LEVEL</a>
+              <a class="nav-link" href="#id-4" data-toggle="tab">MODE</a>
+            </nav>
+        </div>
+
+        <div class="col-8" style="border-left: 1px solid black; padding-top: 2px;">
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="id-1">
+              <div class="filter">
+                <h5>STREAM</h5>
+                
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="com-bank-mob">
+                      <label for="com-bank-mob">Commerce and Banking</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="design-mob">
+                      <label for="design-mob">Design</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="engineering-mob">
+                      <label for="engineering-mob">Engineering</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="management-mob">
+                      <label for="management-mob">Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="hotel-management-mob">
+                      <label for="hotel-management-mob">Hotel Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="it-mob">
+                      <label for="it-mob">Information Technology</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="mmc-mob">
+                      <label for="mmc-mob">Media and Mass Communication</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="medical-mob">
+                      <label for="medical-mob">Medical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts-humanities-mob">
+                      <label for="arts-humanities-mob">Arts and Humanities</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="law-mob">
+                      <label for="law-mob">Law</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="science-mob">
+                      <label for="science-mob">Science</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="vocational-mob">
+                      <label for="vocational-mob">Vocational</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="others-mob">
+                      <label for="others-mob">Others</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pe-mob">
+                      <label for="pe-mob">Physical Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="education-mob">
+                      <label for="education-mob">Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="paramedical-mob">
+                      <label for="paramedical-mob">Paramedical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agriculture-mob">
+                      <label for="agriculture-mob">Agriculture</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="nursing-mob">
+                      <label for="nursing-mob">Nursing</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pharmacy-mob">
+                      <label for="pharmacy-mob">Pharmacy</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="dental-mob">
+                      <label for="dental-mob">Dental</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts-mob">
+                      <label for="arts-mob">Performing Arts</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tab-pane fade" id="id-2">
+              <div class="filter">
+                <h5>DEGREE</h5>
+                
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="MBA-mob">
+                      <label for="MBA-mob">MBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDM-mob">
+                      <label for="PGDM-mob">PGDM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGPM-mob">
+                      <label for="PGPM-mob">PGPM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDBM-mob">
+                      <label for="PGDBM-mob">PGDBM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Arch-mob">
+                      <label for="M.Arch-mob">M.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Tech-mob">
+                      <label for="M.Tech-mob">M.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMS-mob">
+                      <label for="BHMS-mob">BHMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BAMS-mob">
+                      <label for="BAMS-mob">BAMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Pharm-mob">
+                      <label for="B-Pharm-mob">B.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MCA-mob">
+                      <label for="MCA-mob">MCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Tech-mob">
+                      <label for="B.Tech-mob">B.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BBA-mob">
+                      <label for="BBA-mob">BBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLM-mob">
+                      <label for="LLM-mob">LLM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MS-mob">
+                      <label for="MS-mob">MS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLB-mob">
+                      <label for="LLB-mob">LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Com-mob">
+                      <label for="B-Com-mob">B.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHM-mob">
+                      <label for="BHM-mob">BHM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BCA-mob">
+                      <label for="BCA-mob">BCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Pharm-mob">
+                      <label for="M-Pharm-mob">M.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BSc-mob">
+                      <label for="BSc-mob">BSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMCT-mob">
+                      <label for="BHMCT-mob">BHMCT</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Com-mob">
+                      <label for="M-Com-mob">M.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Arch-mob">
+                      <label for="B-Arch-mob">B.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Ed-mob">
+                      <label for="B-Ed-mob">B.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Ed-mob">
+                      <label for="M-Ed-mob">M.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Phil-mob">
+                      <label for="M-Phil-mob">M.Phil</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MA-mob">
+                      <label for="MA-mob">MA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Des-mob">
+                      <label for="B-Des-mob">B.Des</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA-mob">
+                      <label for="BA-mob">BA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MFA-mob">
+                      <label for="MFA-mob">MFA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MSc-mob">
+                      <label for="MSc-mob">MSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MPEd-mob">
+                      <label for="MPEd-mob">MPEd</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PhD-mob">
+                      <label for="PhD-mob">PhD</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BJMC-mob">
+                      <label for="BJMC-mob">BJMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MTM-mob">
+                      <label for="MTM-mob">MTM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA-LLB-mob">
+                      <label for="BA-LLB-mob">BA+LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMS-mob">
+                      <label for="BMS-mob">BMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMMC-mob">
+                      <label for="BMMC-mob">BMMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Mus-mob">
+                      <label for="B-Mus-mob">B.Mus</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MHA-mob">
+                      <label for="MHA-mob">MHA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BPEd-mob">
+                      <label for="BPEd-mob">BPEd</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>      
+            
+            <div class="tab-pane fade" id="id-3">
+              <div class="filter">
+                <h5>LEVEL</h5>
+
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="PG-mob">
+                      <label for="PG-mob">PG</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="UG-mob">
+                      <label for="UG-mob">UG</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="Phd-mob">
+                      <label for="Phd-mob">Ph.D</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+                  
+            <div class="tab-pane fade" id="id-4">
+              <div class="filter">
+                <h5>MODE</h5>
+
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="Online-mob">
+                      <label for="Online-mob">Online</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="Offline-mob">
+                      <label for="Offline-mob">Offline</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="on-off-mob">
+                      <label for="on-off-mob">Both Online & Offline</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="row text-center bg-green fixed-bottom fil-bot py-1">
+        <div class="col-6" style="border-right: 1px solid white;">
+          <h5>
+            <button class="btn btn-default p-0" style="position: relative; font-weight: 400;">Clear all</button>
+          </h5>
+        </div>
+        <div class="col-6">
+          <h5>
+            <button class="btn btn-default p-0" style="position: relative; font-weight: 400;">Apply now</button>
+          </h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+  <div id="main">
+      <div class="container my-3">
+          <h4 class="txt-green">ENGINEERING EXAMS 2020-2021, DATES, APPLICATION FORM & ALERTS</h4>
+      </div>
+
+
+      <!-- Main Content  -->
+      <div class="container-fluid exam">
+        <div class="row px-4">
+
+          <div class="col-md-3 d-none d-md-block">
+            <div class="bg-white side-sec" >
+              
+              <div class="filter">
+                <h5  onclick="filter('stream')">STREAM <i class="fa fa-angle-up stream-up" aria-hidden="true"></i> <i class="fa fa-angle-down stream-down" aria-hidden="true"></i> </h5>
+                
+                <div class="filter-sec stream">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="com-bank">
+                      <label for="com-bank">Commerce and Banking</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="design">
+                      <label for="design">Design</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="engineering">
+                      <label for="engineering">Engineering</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="management">
+                      <label for="management">Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="hotel-management">
+                      <label for="hotel-management">Hotel Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="it">
+                      <label for="it">Information Technology</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="mmc">
+                      <label for="mmc">Media and Mass Communication</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="medical">
+                      <label for="medical">Medical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts-humanities">
+                      <label for="arts-humanities">Arts and Humanities</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="law">
+                      <label for="law">Law</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="science">
+                      <label for="science">Science</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="vocational">
+                      <label for="vocational">Vocational</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="others">
+                      <label for="others">Others</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pe">
+                      <label for="pe">Physical Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="education">
+                      <label for="education">Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="paramedical">
+                      <label for="paramedical">Paramedical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agriculture">
+                      <label for="agriculture">Agriculture</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="nursing">
+                      <label for="nursing">Nursing</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pharmacy">
+                      <label for="pharmacy">Pharmacy</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="dental">
+                      <label for="dental">Dental</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts">
+                      <label for="arts">Performing Arts</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5 onclick="filter('degree')">DEGREE <i class="fa fa-angle-up degree-up" aria-hidden="true"></i> <i class="fa fa-angle-down degree-down" aria-hidden="true"></i> </h5>
+                
+                <div class="filter-sec degree">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="MBA">
+                      <label for="MBA">MBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDM">
+                      <label for="PGDM">PGDM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGPM">
+                      <label for="PGPM">PGPM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDBM">
+                      <label for="PGDBM">PGDBM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Arch">
+                      <label for="M.Arch">M.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Tech">
+                      <label for="M.Tech">M.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMS">
+                      <label for="BHMS">BHMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BAMS">
+                      <label for="BAMS">BAMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Pharm">
+                      <label for="B-Pharm">B.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MCA">
+                      <label for="MCA">MCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Tech">
+                      <label for="B.Tech">B.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BBA">
+                      <label for="BBA">BBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLM">
+                      <label for="LLM">LLM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MS">
+                      <label for="MS">MS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLB">
+                      <label for="LLB">LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Com">
+                      <label for="B.Com">B.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHM">
+                      <label for="BHM">BHM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BCA">
+                      <label for="BCA">BCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Pharm">
+                      <label for="M-Pharm">M.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BSc">
+                      <label for="BSc">BSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMCT">
+                      <label for="BHMCT">BHMCT</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Com">
+                      <label for="M.Com">M.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Arch">
+                      <label for="B.Arch">B.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Ed">
+                      <label for="B.Ed">B.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Ed">
+                      <label for="M.Ed">M.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Phil">
+                      <label for="M.Phil">M.Phil</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MA">
+                      <label for="MA">MA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Des">
+                      <label for="B.Des">B.Des</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA">
+                      <label for="BA">BA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MFA">
+                      <label for="MFA">MFA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MSc">
+                      <label for="MSc">MSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MPEd">
+                      <label for="MPEd">MPEd</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PhD">
+                      <label for="PhD">PhD</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BJMC">
+                      <label for="BJMC">BJMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MTM">
+                      <label for="MTM">MTM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA+LLB">
+                      <label for="BA+LLB">BA+LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMS">
+                      <label for="BMS">BMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMMC">
+                      <label for="BMMC">BMMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Mus">
+                      <label for="B.Mus">B.Mus</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MHA">
+                      <label for="MHA">MHA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BPEd">
+                      <label for="BPEd">BPEd</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5  onclick="filter('level')">LEVEL <i class="fa fa-angle-up level-up" aria-hidden="true"></i> <i class="fa fa-angle-down level-down" aria-hidden="true"></i> </h5>
+
+                <div class="filter-sec level">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="PG">
+                      <label for="PG">PG</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="UG">
+                      <label for="UG">UG</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="PhD">
+                      <label for="PhD">Ph.D</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5 onclick="filter('mode')">MODE <i class="fa fa-angle-up mode-up" aria-hidden="true"></i> <i class="fa fa-angle-down mode-down" aria-hidden="true"></i> </h5>
+
+                <div class="filter-sec mode">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="Online">
+                      <label for="Online">Online</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="Offline">
+                      <label for="Offline">Offline</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="on-off">
+                      <label for="on-off">Both Online & Offline</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-9">
+            
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/jee main.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">JEE MAIN 2020</a></h4>
+                      <p>Joint Entrance Exam Main</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">03 SEP 19 - 02 OCT 19 <br>
+                    <span>application form</span> </p>
+                    <p class="d-none d-md-block pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                    <p class="pl-md-3">15 SEP 20 - 15 SEP 20 <br>
+                      <span>result announce</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"JEE Main 2020 is the national level undergraduate engineering entrance exam. This exam is acceptable for the admission in various B.Tech/B.E Programs."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/jee advanced.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">JEE ADVANCED 2020</a></h4>
+                      <p>Joint Entrance Exam Advanced</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"JEE Main 2020 is the national level undergraduate engineering entrance exam. This exam is acceptable for the admission in various B.Tech/B.E Programs."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/gate.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">GATE 2021</a></h4>
+                      <p>GRADUATE APTITUDE TEST IN ENGINEERING</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"GATE 2021 is an Entrance Test for PG Engineering Programs. GATE Exam is acceptable across the India for M.Tech and M.E. Admission"</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/bitsat.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">BITSAT 2020</a></h4>
+                      <p>BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE ADMISSION TEST</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"BITSAT is a university level exam. BITSAT is conducted for admission in B.E, B.Pharma and M.Sc."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/keam.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">KEAM 2020</a></h4>
+                      <p>KERALA ENGINEERING AGRICULTURAL MEDICAL ENTRANCE EXAMINATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"KEAM is a state level exam conducted by the Commissioner of Entrance Examination (CEE), Kerala, for admission into the UG Engineering programs."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/wbjee.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">WBJEE 2020</a></h4>
+                      <p>WEST BENGAL JOINT ENTRANCE EXAMINATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"WBJEE exam is conducted for admissions in the undergraduate courses in engineering and pharmacy."
+                </p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/jee advanced.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">JEE ADVANCED 2020</a></h4>
+                      <p>Joint Entrance Exam Advanced</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"JEE Main 2020 is the national level undergraduate engineering entrance exam. This exam is acceptable for the admission in various B.Tech/B.E Programs."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/jee advanced.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">JEE ADVANCED 2020</a></h4>
+                      <p>Joint Entrance Exam Advanced</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"JEE Main 2020 is the national level undergraduate engineering entrance exam. This exam is acceptable for the admission in various B.Tech/B.E Programs."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/jee advanced.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">JEE ADVANCED 2020</a></h4>
+                      <p>Joint Entrance Exam Advanced</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"JEE Main 2020 is the national level undergraduate engineering entrance exam. This exam is acceptable for the admission in various B.Tech/B.E Programs."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- EXAM Section -->
+            <div class="bg-white p-3 mt-4 exam-section">
+              
+              <div class="row">   <!-- Image row -->
+                <div class="col-12 col-md-6">
+                  <div class="row ml-md-3 exam-logo">
+                    <img src="assets/images/jee advanced.png" alt="" class="img-fluid d-none d-md-block">
+                    <div>
+                      <h4> <a href="#">JEE ADVANCED 2020</a></h4>
+                      <p>Joint Entrance Exam Advanced</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 side-three">
+                  <div class="row">
+                    <p class="d-none d-md-block">15 SEP 20 - 19 SEP 20<br>
+                      <span>application form</span></p>
+                    <p class="d-none d-md-block pl-md-3">27 SEP 20<br>
+                    <span>examination</span></p>
+                    <p class="pl-md-3">01 SEP 20 - 06 SEP 20 <br>
+                      <span>examination</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-content" style="border-bottom: 1px solid gray;">
+                <p>"JEE Main 2020 is the national level undergraduate engineering entrance exam. This exam is acceptable for the admission in various B.Tech/B.E Programs."</p>
+              </div>
+
+              <div class="exam-link ">
+                <ul class="list-unstyled m-0 mt-2">
+                  <li><a href="#">APPLICATION PROCESS</a></li>
+                  <li><a href="#">EXAM PATTERN</a></li>
+                  <li><a href="#">PRACTICE PAPERS</a></li>
+                  <li><a href="#">PREPARATION TIPS</a></li>
+                  <li class="apply"><a href="#">APPLY NOW</a></li>
+                </ul>
+              </div>
+
+            </div>
+              
+          </div>
+
+        </div>
+      </div>
+      
+  </div>
+
+
+
+  <!-- Footer  -->
+
+  <!--================================subscription===================================-->
+<section class="py-5 mt-4" style="background: url('http://maxcity.mu/wp-content/uploads/2017/08/contact-us-banner-overlay.jpg');">
+  <div class="container">
+    <h2 class="text-center text-white mb-5">Get A Quick Inquiry</h2>
+    <div class="row">
+
+      <div class="col-12 col-md-6">
+        <img src="https://timescareer.org/wp-content/uploads/2019/06/b2btripyourinquiry.png" class="img-fluid">
+      </div> 
+      <div class="col-12 col-md-6">
+       <div class="card card-body bg-light">
+        <form id="applyNowForm" name="apply_now_form" method="POST" action="#" data-toggle="validator" >
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="apply_full_name">Full Name:</label>
+            <input type="text" name="apply_full_name" id="apply_full_name" class="form-control" placeholder="Please enter your full name*" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="apply_phone">Mobile Number:</label>
+            <input type="text" name="apply_phone" id="apply_phone" class="form-control" placeholder="Please enter your 10 digits valid mobile number*" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="apply_course">Select Course:</label>
+            <select name="apply_course" id="apply_course" class="form-control">
+              <option value="">Select course</option><option value="1">ANM</option><option value="2">B.Arch.</option><option value="3">B.Com</option><option value="4">B.Com+B.Ed.</option><option value="5">B.Com+LLB</option><option value="6">B.Design</option><option value="7">B.Ed.</option><option value="8">B.El.Ed.</option><option value="9">B.Lib.</option><option value="10">B.P.Ed.</option><option value="11">B.Pharm.</option><option value="12">B.Sc.</option><option value="13">B.Sc. Agriculture</option><option value="14">B.Sc.+B.Ed.</option><option value="15">B.Sc.+LLB</option><option value="16">B.Tech</option><option value="18">BA</option><option value="19">BA+B.Ed.</option><option value="20">BA+LLB</option><option value="96">BAMS</option><option value="21">BBA</option><option value="22">BCA</option><option value="23">BDS</option><option value="24">BFA</option><option value="25">BHM</option><option value="27">BMLT</option><option value="100">BPE</option><option value="32">BPT</option><option value="83">BSW</option><option value="35">D.Ed.</option><option value="36">D.El.Ed.</option><option value="97">D.Litt.</option><option value="37">D.P.Ed.</option><option value="38">D.Pharm.</option><option value="39">DCA</option><option value="42">Diploma In Engineering</option><option value="43">DMLT</option><option value="44">GNM</option><option value="45">ITI</option><option value="47">LLB</option><option value="48">LLM</option><option value="50">M.Com</option><option value="52">M.Ed.</option><option value="54">M.P.Ed.</option><option value="55">M.Pharm.</option><option value="56">M.Phil.</option><option value="57">M.Sc.</option><option value="58">M.Tech</option><option value="60">MA</option><option value="61">MBA</option><option value="62">MBBS</option><option value="63">MCA</option><option value="66">MFA</option><option value="91">MPH</option><option value="71">MPHW</option><option value="72">MPT</option><option value="82">MSW</option><option value="73">NTT</option><option value="77">PGDCA</option><option value="79">Ph.D.</option><option value="80">STC</option><option value="81">VLDA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="apply_state">Select State:</label>
+            <select name="apply_state" id="apply_state" class="form-control"><option value="">Select state</option><option value="1">Andaman and Nicobar Islands</option><option value="2">Andhra Pradesh</option><option value="3">Arunachal Pradesh</option><option value="4">Assam</option><option value="5">Bihar</option><option value="6">Chandigarh</option><option value="7">Chhattisgarh</option><option value="8">Dadra and Nagar Haveli</option><option value="9">Daman and Diu</option><option value="10">Delhi</option><option value="11">Goa</option><option value="12">Gujarat</option><option value="13">Haryana</option><option value="14">Himachal Pradesh</option><option value="15">Jammu and Kashmir</option><option value="16">Jharkhand</option><option value="17">Karnataka</option><option value="18">Kenmore</option><option value="19">Kerala</option><option value="20">Lakshadweep</option><option value="21">Madhya Pradesh</option><option value="22">Maharashtra</option><option value="23">Manipur</option><option value="24">Meghalaya</option><option value="25">Mizoram</option><option value="26">Nagaland</option><option value="27">Narora</option><option value="28">Natwar</option><option value="29">Odisha</option><option value="30">Paschim Medinipur</option><option value="31">Pondicherry</option><option value="32">Punjab</option><option value="33">Rajasthan</option><option value="34">Sikkim</option><option value="35">Tamil Nadu</option><option value="36">Telangana</option><option value="37">Tripura</option><option value="38">Uttar Pradesh</option><option value="39">Uttarakhand</option><option value="40">Vaishali</option><option value="41">West Bengal</option></select>
+          </div>
+        </div>
+        <div class="modal-footer AlgnCenter">
+          <button type="submit" class="btn-success buttonApplySubmit">Apply Now</button>
+        </div>
+      </form>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================================Footer===================================-->
+<div class="container-fluid">
+<div class="row pt-5 pb-5" style="background-color: #008938;">
+  <div class="col-1 d-none d-md-block">
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li><a href="#"><h5>Uni/Colleges In India</h5></a></li>
+      <li><a href="#">Engineering</a></li>
+      <li><a href='#'>Management</a></li>
+      <li><a href="#">Medical</a></li>
+      <li><a href="#">Science</a></li>
+      <li><a href='#'>Law</a></li>
+      <li><a href="#">Pharmacy</a></li>
+      <li><a href="#">Arts & Humanities</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li>  <a href="#"><h5>Distance Eduaction</h5></a></li>
+      <li><a href="#">MBA</a></li>
+      <li><a href='#'>BBA</a></li>
+      <li><a href="#">BCA </a></li>
+      <li><a href="#">MCA</a></li>
+      <li><a href='#'>BA</a></li>
+      <li><a href="#">MA</a></li>
+      <li><a href="#">B.COM </a></li>
+      <li><a href="#">M.COM </a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li><a href="#"><h5>MBBS ABROAD</h5></a></li>
+      <li><a href="#">CHINA</a></li>
+      <li><a href='#'>PHILIPPINES</a></li>
+      <li><a href="#">NEPAL</a></li>
+      <li><a href="#">UKRAINE</a></li>
+      <li><a href='#'>RUSSIA</a></li>
+      <li><a href="#">POLAND</a></li>
+      <li><a href="#">BANGLADESH</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li><a href="#"><h5>STUDY ABROAD</h5></a></li>
+      <li><a href="#">CANADA</a></li>
+      <li><a href='#'>USA</a></li>
+      <li><a href="#">UK</a></li>
+      <li><a href="#">AUSTRALIA</a></li>
+      <li><a href='#'>GERMANY</a></li>
+      <li><a href="#">SWEDEN</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4" >
+    <ul>
+      <li><a href="#"><h5>OTHER LINKS</h5></a></li>
+      <li><a href="#">ABOUT EDUPEDIA</a></li>
+      <li><a href='#'>CONTACT US</a></li>
+      <li><a href="#">ADVERTISING</a></li>
+      <li><a href="#">CAREERS</a></li>
+      <li><a href='#'>PRIVACY</a></li>
+      <li><a href="#">TERMS & CONDITIONS</a></li>
+    </ul>
+  </div>
+  <div class="col-1 d-none d-md-block">
+  </div>
+</div>
+<div class="row " style="background-color: #06A94D;">
+  <div class="col-6 p-0 footer_img">
+    
+  </div>
+  <div class="col-6 text-right footer_img pr-5">
+    <a href="#" ><img src="http://admissiontarget.com/assets/images/facebook_icon.png"></a>
+    <a href="#"><img src="http://admissiontarget.com/assets/images/linkdin_icon.png"></a>
+    <a href="#"><img src="http://admissiontarget.com/assets/images/twiter_icon.png"></a>
+    <a href="#"><img src="http://admissiontarget.com/assets/images/youtube_icon.png"></a>
+  </div>
+  <div class="col-12 text-center p-3 p-sm-5 copyright" style="background-color: #008938; color:white;">
+    <h6>Copyright © 2020 Admission Target || All Rights Reserved.</h6>
+  </div>
+</div>
+</div>
+<div id="applynowModal" class="applyNowPopup modal fade">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">Admission Enquiry</h4>
+    </div>
+    <form id="applyNowForm" name="apply_now_form" method="POST" action="#" data-toggle="validator" >
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="apply_full_name">Full Name:</label>
+          <input type="text" name="apply_full_name" id="apply_full_name" class="form-control" placeholder="Please enter your full name*" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="apply_phone">Mobile Number:</label>
+          <input type="text" name="apply_phone" id="apply_phone" class="form-control" placeholder="Please enter your 10 digits valid mobile number*" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="apply_course">Select Course:</label>
+          <select name="apply_course" id="apply_course" class="form-control">
+            <option value="">Select course</option><option value="1">ANM</option><option value="2">B.Arch.</option><option value="3">B.Com</option><option value="4">B.Com+B.Ed.</option><option value="5">B.Com+LLB</option><option value="6">B.Design</option><option value="7">B.Ed.</option><option value="8">B.El.Ed.</option><option value="9">B.Lib.</option><option value="10">B.P.Ed.</option><option value="11">B.Pharm.</option><option value="12">B.Sc.</option><option value="13">B.Sc. Agriculture</option><option value="14">B.Sc.+B.Ed.</option><option value="15">B.Sc.+LLB</option><option value="16">B.Tech</option><option value="18">BA</option><option value="19">BA+B.Ed.</option><option value="20">BA+LLB</option><option value="96">BAMS</option><option value="21">BBA</option><option value="22">BCA</option><option value="23">BDS</option><option value="24">BFA</option><option value="25">BHM</option><option value="27">BMLT</option><option value="100">BPE</option><option value="32">BPT</option><option value="83">BSW</option><option value="35">D.Ed.</option><option value="36">D.El.Ed.</option><option value="97">D.Litt.</option><option value="37">D.P.Ed.</option><option value="38">D.Pharm.</option><option value="39">DCA</option><option value="42">Diploma In Engineering</option><option value="43">DMLT</option><option value="44">GNM</option><option value="45">ITI</option><option value="47">LLB</option><option value="48">LLM</option><option value="50">M.Com</option><option value="52">M.Ed.</option><option value="54">M.P.Ed.</option><option value="55">M.Pharm.</option><option value="56">M.Phil.</option><option value="57">M.Sc.</option><option value="58">M.Tech</option><option value="60">MA</option><option value="61">MBA</option><option value="62">MBBS</option><option value="63">MCA</option><option value="66">MFA</option><option value="91">MPH</option><option value="71">MPHW</option><option value="72">MPT</option><option value="82">MSW</option><option value="73">NTT</option><option value="77">PGDCA</option><option value="79">Ph.D.</option><option value="80">STC</option><option value="81">VLDA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="apply_state">Select State:</label>
+          <select name="apply_state" id="apply_state" class="form-control"><option value="">Select state</option><option value="1">Andaman and Nicobar Islands</option><option value="2">Andhra Pradesh</option><option value="3">Arunachal Pradesh</option><option value="4">Assam</option><option value="5">Bihar</option><option value="6">Chandigarh</option><option value="7">Chhattisgarh</option><option value="8">Dadra and Nagar Haveli</option><option value="9">Daman and Diu</option><option value="10">Delhi</option><option value="11">Goa</option><option value="12">Gujarat</option><option value="13">Haryana</option><option value="14">Himachal Pradesh</option><option value="15">Jammu and Kashmir</option><option value="16">Jharkhand</option><option value="17">Karnataka</option><option value="18">Kenmore</option><option value="19">Kerala</option><option value="20">Lakshadweep</option><option value="21">Madhya Pradesh</option><option value="22">Maharashtra</option><option value="23">Manipur</option><option value="24">Meghalaya</option><option value="25">Mizoram</option><option value="26">Nagaland</option><option value="27">Narora</option><option value="28">Natwar</option><option value="29">Odisha</option><option value="30">Paschim Medinipur</option><option value="31">Pondicherry</option><option value="32">Punjab</option><option value="33">Rajasthan</option><option value="34">Sikkim</option><option value="35">Tamil Nadu</option><option value="36">Telangana</option><option value="37">Tripura</option><option value="38">Uttar Pradesh</option><option value="39">Uttarakhand</option><option value="40">Vaishali</option><option value="41">West Bengal</option></select>
+        </div>
+      </div>
+      <div class="modal-footer AlgnCenter">
+        <button type="submit" class="btn-success buttonApplySubmit">Apply Now</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+  
+ <!-- Scripts  -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript" src="assets/js/validation.js"></script>
+<script type="text/javascript" src="assets/js/cookies.js"></script>
+<script type="text/javascript" src="assets/js/menu.js"></script>
+<script src="assets/js/toastr.js"></script>
+<script src="assets/js/sweetalert.js"></script>
+<script src="assets/js/fancybox.js"></script>
+   
+ <!-- System script  -->
+ <script src="assets/js/index.js"></script>
+ <script src="assets/js/footer.js"></script>  
+ 
+   </body>
+   </html>

@@ -1,0 +1,89 @@
+/* Body  */
+
+.cat-change{
+    margin-left: 10px;
+    margin-right: 68px;
+    margin-top: 20px;
+}
+
+.cat-head{
+    /* border-bottom: 2px solid #f6f6f6; */
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.cat-change h3{
+    color: black; 
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.cat-change li{
+    border-bottom: 1px solid #c7c6c6;
+}
+
+.cat-change li a{
+    color: #292828;
+}
+
+.cat-change li a:hover{
+    color: goldenrod;
+}
+
+/* Adding customised bullets  */
+.cat-change ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: black; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: 0px; /* Also needed for space (tweak if needed) */
+}
+
+.new{
+    border-right: 1px solid gray;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    border-bottom:1px solid gray;
+}
+
+.page-link {
+    color: black;
+}
+
+.page-link:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
+.page-item.active .page-link {
+    background-color: goldenrod;
+    border-color: black;
+    box-shadow: none;
+}
+
+.page-item .page-link {
+    box-shadow: none;
+}
+
+.top{
+    border-bottom: 2px solid rgb(202, 201, 201); 
+    padding-bottom: 15px; 
+    padding-top: 15px; 
+    font-family: 'Tangerine', serif;
+    font-weight:lighter;
+    font-size: 68px;
+    color: goldenrod;
+    /* text-shadow: 4px 4px 4px goldenrod; */
+    /* text-shadow: 4px 4px 4px #aaa; */
+}
+
+.tail{
+    border-bottom: 2px solid rgb(202, 201, 201); 
+    font-family: 'Tangerine', serif;
+    font-weight:lighter;
+    font-size: 68px;
+    color: goldenrod;
+    line-height: 1.5;
+}

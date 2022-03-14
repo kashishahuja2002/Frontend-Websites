@@ -1,0 +1,486 @@
+/* Index (Home) Page */
+/* Listing Page  */
+
+
+/* Font family  */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/************* Starting CSS  **************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+   text-decoration: none;
+}
+
+.in-bl{
+    display: inline-block;
+}
+
+.space-mar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.space-pad{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Buttons */
+.btn-red{
+    border: 1px solid white;
+    background-color: var(--red);
+    color: white;
+    margin: 20px;
+}
+
+.btn-red:hover{
+    border: 1px solid var(--red);
+    background-color: white;
+    color: var(--red);
+}
+
+.btn-red:focus{
+    border: 1px solid var(--red);
+    box-shadow: none;
+    outline: 0;
+}
+
+/* Heading  */
+.ribbon{
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0 40px 0 18px;
+    font-size: 22px;
+    background: var(--red);
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.ribbon:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+}
+
+.ribbon:after {
+    top: 0;
+    right: 0;
+    border-width: 30px 15px 30px 0px;
+    border-color: transparent var(--gray) transparent transparent;
+    border-style: solid;
+}
+
+
+
+/************** Index page  **************/
+
+/* Section (.slider) */
+/* Image carousel  */
+section.slider img{
+    height: 530px;
+}
+
+
+/* Section (.service-Box) */
+section.service-box{
+    padding: 50px 0;
+}
+
+.service-content-box {
+    background: white;
+    box-shadow: 0px 5px 15px #00000059;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.service-content-box img{
+    border-radius: 10px;
+}
+
+.service-content-box h2 {
+    color: var(--red);
+    font-size: 34px;
+    padding: 8px;
+}
+.service-content-box a{
+    position: relative;
+    display: block;
+}
+
+.service-content-box a::after {
+    background: var(--red);
+    position: absolute;
+    left: -15px;
+    bottom: -8px;
+    width: 0;
+    content: "";
+    height: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.service-content-box:hover a::after {
+    width: 110%;
+}
+
+
+/* Section (.banner) */
+.banner img{
+    object-fit: cover;
+}
+
+
+/* Section (.top-owl) */
+section.top-owl{
+    padding: 50px 0;
+}
+
+/* Owl carousel  */
+.owl-carousel .owl-nav{
+    overflow: hidden;
+    height: 0px;
+}
+
+.owl-carousel .nav-btn {
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 35% !important;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.owl-carousel .prev-slide{
+        
+    left: 0px;
+}
+
+.owl-carousel .next-slide{
+   
+    right: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--red);
+}
+
+.owl-carousel .item {
+    text-align: center;
+    max-height: 300px;
+}
+
+.item img{
+    display: inline-block!important;
+    height: auto;
+    max-height: 240px;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.top-owl a:visited, .top-owl a:link:visited, .top-owl a:visited:visited {
+    text-decoration: none;
+}
+
+.top-owl a, .top-owl a:link, .top-owl a:visited {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+}
+
+
+/* Section (.coaching-tution) */
+section.coaching-tution{
+    padding: 50px 0;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--red);
+    font-size: 24px;
+}
+
+.nav-pills .nav-link, .nav-pills .show>.nav-link {
+    color: var(--red);
+    font-size: 24px;
+}
+
+section.coaching-tution .tab-content{
+    padding-top: 40px;
+}
+
+section.coaching-tution .tab-pane{
+    padding: 0px 40px;
+}
+
+section.coaching-tution .tab-pane h6{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section.coaching-tution .tab-pane ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+section.coaching-tution .tab-pane ul li a::before{ 
+    content: "\f054";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: var(--red);
+    padding: 8px; 
+} 
+
+section.coaching-tution .tab-pane ul li a{
+    color: black;
+    font-size: 18px;
+    display: block;
+}
+
+section.coaching-tution .tab-pane ul li:hover a{
+    color: var(--red);
+}
+
+section.coaching-tution .tab-pane ul li a:hover:before{
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+
+/* Section (.edulogy) */
+section.edulogy{        
+    padding: 50px 0;
+}
+
+
+
+/************************ Listing Page  ************************/
+.img-fluid.rounded{
+    height: 150px;
+    object-fit: contain;
+}
+
+.side-sec{
+    box-shadow: 1px 1px 20px 1px #ddd;
+}
+
+/***** Filters  ******/
+
+/* Mobile screen  */
+.mob-fil-btn{
+    font-size: 30px;
+    color: var(--red);
+}
+
+.mob-fil-btn:focus{
+    outline: 0;
+    border: none;
+    box-shadow: none;
+    color: var(--red);
+}
+
+section.slide-mobile-filter{
+    margin-top: 40px;
+}
+
+.close-fil{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--red);
+    text-shadow: 0 1px 0 #fff;
+    opacity: .7;
+    position: relative;
+    left: 85%;
+}
+
+/****** Full page pop-ups  ********/
+.full-page{
+    height: 100%;
+    pointer-events: all;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000; 
+    position: fixed!important;
+    display: none;
+}
+
+.full-page-open {
+    display: block;
+}
+
+.fp-container {
+    background-color: white;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.fp-container .row{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fp-container ul{
+    width: 100%;
+}
+
+.fp-container li{
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.fp-container li a{
+  color: rgb(65, 65, 65);
+  font-size: 14px;
+}
+
+.fp-container h4{
+    font-size: 18px;
+}
+
+/* Large screens  */
+.filter ul{
+    margin-bottom: 0%;
+}
+
+.filter{
+    padding-bottom: 5px; 
+}
+
+.filter-sec{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.filter-sec ul, .filter-sec-mob ul{
+    padding-left: 15px;
+    max-height: 200px;
+    overflow-x: auto;
+}
+
+.filter-sec li{
+    color: black;
+}
+
+.filter h5{
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-left: 3px solid var(--red);
+    font-size: 16px;
+    margin-bottom: 0%;
+}
+
+.filter .fa-angle-up{
+    float: right;
+}
+
+.filter .fa-angle-down{
+    float: right;
+    display: none;
+}
+
+.no-dis{
+    display: none;
+}
+
+.filter-search input{
+    margin: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 85%;
+}
+
+.filter-search input:focus{
+    border: 1px solid #2e2e2e;
+    outline: 0;
+    box-shadow: none;
+}
+
+.filter-search .fa-search{
+    position: relative;
+    left: -50px;
+    color: #8d8d8d;
+}
+
+/* Links  */
+.filter-sec ul li{
+    margin-bottom: 10px;
+}
+
+.filter-sec ul li a::before{
+    content: "\f054";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: var(--red);
+    padding: 8px;
+}
+
+.filter-sec ul li a:hover:before{
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.filter-sec ul li a{
+    color: rgb(70, 70, 70);
+    display: block;
+}
+
+.filter-sec ul li:hover a{
+    color: var(--red);
+}
+
+
+/* Listings  */
+section.user-intro{
+    margin-bottom: 30px;
+}
+
+section.user-intro span{
+    display: inline-block;
+    background-color: #EDECEC;
+    color: rgb(70, 70, 70);
+    padding: 2px 5px;
+    margin: 3px;
+    border-radius: 5px;
+}

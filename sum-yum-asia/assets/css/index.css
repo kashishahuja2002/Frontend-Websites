@@ -1,0 +1,762 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    /* --red:#BC0001; */
+    --red:#CC262D;
+    /* --yellow:#f19933; */
+    --yellow:#FFC931;
+}
+
+.error{
+    color:red;
+  }
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'Philosopher', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+}
+
+input:focus, button:focus{
+    outline: none!important;
+    box-shadow: none!important;
+    border: 1px solid black!important;
+}
+
+.rel{
+    position: relative;
+}
+
+.in-bl{
+    display: inline-block;
+}
+
+/******* Header  *******/
+
+/* navbar */
+.bg-red{
+    /* background: red; */
+    background-color: var(--red);
+    /* background-color: #CB262C; */
+}
+
+.bg-red a{
+    color: white;
+    font-size: 14px;
+}
+
+.bg-red a:hover, .bg-red i:hover{
+    text-shadow: 1px 6px 5px black;
+    transition: .5s all;
+}
+
+.menu a{
+    color: rgb(121, 119, 119);
+    font-size: 15px!important;
+    margin: 20px 15px;
+}
+
+.menu a:hover{
+    color: var(--red);
+    text-shadow: none;
+    font-weight: 900px;
+}
+
+/* Mobile screen  */
+/* Mobile navbar  */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: var(--red);
+    box-shadow: 1px 1px 10px 1px ;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px; /*Place content 60px from the top*/
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    /* color: #f1f1f1; */
+    text-shadow: none;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.mob-slide a{
+    border-bottom: 1px solid white;
+}
+
+.dis li a {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.no-dis{
+    display: none;
+}
+
+.bars{
+    position: absolute; 
+    top: 18px;
+    color: white;
+}
+
+.bars i{
+    font-size: 24px;
+}
+
+.user{
+    position: absolute!important;
+    right: 55px;
+    top: 13px!important;
+    color: white;
+}
+
+.no-see{
+    display: none;
+}
+
+/* Large screens  */
+.nav-lg{
+    position: absolute;
+    right: 20px;
+}
+
+.nav-lg a{
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.nav-but{
+    background-color: var(--yellow);
+    color: black;
+    position: relative; 
+    top: 18%; 
+    font-size: 15px!important; 
+    font-weight: 600;
+}
+
+.nav-but:hover{ 
+    text-shadow: none!important;
+}
+
+.nav-but:focus{
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.hi-name{
+    background-color: var(--red);
+    color: white;
+    border: none!important;
+}
+
+.hi-name:hover, .hi-name:focus{
+    background-color: var(--red);
+    color: white;
+    border: none!important;
+}
+
+@media screen and (max-width:767px){
+    .nav-but{
+        background-color: var(--yellow);
+        /* color:  var(--red); */
+        color: black;
+        position: relative; 
+        top: 18%; 
+        padding: 5px 5px;
+        margin: 0px;
+        font-size: 15px!important;
+        font-weight: 600;
+    }
+
+    #hi-name-sm{
+        background-color: var(--red)!important;
+        padding: 0px;
+        margin: 0px;
+        position: absolute!important;
+        right: 20px;
+        top: 19px!important;
+        color: white;
+    }
+
+    #hi-name-sm i{
+        font-size: 22px;
+    }
+}
+
+/******* Body  ********/
+
+/* Image carousel  */
+.img-car img{
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-indicators li {
+    position: relative;
+    top: 14px;
+}
+
+/* Coupon  */
+.space{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.space-pad{
+    padding-top: 20px;
+}
+
+.container.bg-white.space-pad {
+    padding-bottom: 20px;
+}
+
+.first{
+    position: relative;
+    top: 5px;
+ }
+
+/* large screen  */
+.coupon .row{
+    box-shadow: 1px 5px 8px 0px gray;
+    border-radius: 15px;
+}
+
+.coupon img{
+    border-radius:15px;
+} 
+
+.sign-order button{
+    background-color: var(--red);
+    color: white;
+    position: relative;
+    top: 30%;
+    width: 150px;
+    font-size: 18px;
+    padding-left: 0px;
+    padding-right: 0px
+}
+
+.sign-order button:hover{
+    color: white;
+}
+
+.sign-order button:focus{
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+    background-color: var(--red);
+    color: white;
+}
+
+
+/* small screens */
+.coupon-sm .row{
+    box-shadow: 1px 5px 8px 0px gray;
+    border-radius: 15px;
+}
+
+.coupon-sm img{
+    height: 70px;
+    border-radius: 15px 15px 0px 0px;
+} 
+
+.sign-order-sm button{
+    background-color: var(--red);
+    color: white;
+    position: relative;
+    top: 26%;
+    font-size: 15px;
+    padding: 3px 0px 3px 0px;
+    border-radius: 15px;
+    width: 135px;
+    margin-bottom: 20px;
+}
+
+.sign-order-sm button:hover{
+    background-color: var(--red);
+    color: white;
+}
+
+.sign-order-sm button:focus{
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+    background-color: var(--red);
+    color: white;
+}
+
+/* Delivery  */
+/* Offers  */
+/* Promise  */
+.delivery .row{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.delivery h3{
+    text-align:center;
+    display: grid;
+    grid-template-rows: 20px 0;
+    grid-gap: 20px;
+    justify-content:center;
+    /* color: var(--yellow); */
+    color: var(--red);
+    font-size: 35px;
+}
+    
+.delivery h3:after, .delivery h3:before {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.deli-lg h3{
+    grid-template-columns: 250px max-content 250px;
+}
+
+.deli-sm h3{
+    grid-template-columns: 20px max-content 20px;
+}
+
+#wom p, .delivery h5,  .delivery h4{
+    color: var(--red);
+}
+
+#wom p{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+#wom img{
+    border-radius: 10px 10px 0 0;
+}
+
+.offer-sm h3{
+    grid-template-columns: 55px max-content 55px;
+}
+
+.prom-sm h3{
+    grid-template-columns: 68px max-content 68px;
+}
+
+.feature-sm h3{
+    grid-template-columns: 45px max-content 45px;
+}
+
+.safety-sm h3{
+    grid-template-columns: 45px max-content 45px;
+}
+
+.testimonial-sm h3{
+    grid-template-columns: 70px max-content 70px;
+}
+
+
+/* Owl carousel  */
+.owl-carousel .owl-nav{
+    overflow: hidden;
+    height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--yellow);
+}
+
+.owl-carousel .item {
+    text-align: center;
+}
+
+.item img{
+    width: 80%!important;
+    display: inline-block!important;
+    height: auto;
+}
+
+.owl-carousel .nav-btn {
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 68px !important;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+  
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.owl-carousel .prev-slide{   
+    left: 0px;
+}
+
+.owl-carousel .next-slide{
+    right: 0px;
+}
+  
+.description a h2 {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 23px;
+    display: block;
+    text-transform: capitalize;
+}
+  
+.description {
+    padding-top: 5px;
+}
+
+.description a:visited, .description a:link:visited, .description a:visited:visited {
+    text-decoration: none;
+}
+
+.description a, .description a:link, .description a:visited {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+}
+  
+/* Testimonial  */
+.testimonial img{
+    width: 120px!important;
+    display: inline-block!important;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Footer  */
+.txt-white{
+    color: white;
+}
+
+.foot-cat{
+    position: relative;
+}
+
+.foot-cat:before{
+    content: '';
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 45px;
+    height: 3px;
+    top: 100%;
+}
+
+
+/* Recently added  */
+.bdr-btm{
+    border-bottom:1px solid white ;
+}
+
+.txt-yellow {
+    color: var(--yellow);
+    border: 1px solid;
+    padding: 3px 5px;
+    margin: 4px;
+}
+
+/******* Contact us page  ********/
+.contact{
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.contact .bdr-btm{
+    border-bottom: 1px solid rgb(190, 189, 189);
+}
+
+.contact-us a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+.contact-us a:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+.sub{
+    background-color: var(--yellow);
+    color: black;
+}
+
+/* Modal (login) */
+#login .col-md-6, #login input{
+    padding: 0px;
+    margin: 0px;
+}
+
+#login .row{
+    padding: 0px;
+    margin: 15px;
+}
+
+#otp .col-12, #otp input{
+    padding: 0px;
+    margin: 0px;
+}
+
+#otp i{
+    color: black;
+    position: absolute;
+    top: 8%;
+}
+
+#otp i:hover{
+    color: black;
+}
+
+#otp h4{
+    position: relative;
+    left: 10%;
+}
+
+.close:focus{
+    border: none!important;
+    outline: none;
+}
+
+.cover-pics img{
+    height: 225px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cover-pics p{
+    font-size: 26px;
+}
+
+@media screen and (max-width:767px){
+    .cover-pics img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .cover-pics p {
+        font-size: 22px;
+    }
+    
+    .carousel-item img{
+        height: 400px!important;
+    }
+
+    .delivery h3{
+        font-size: 26px!important;
+    }
+}
+
+.social-icons ul li{
+    display: inline-block;
+    border: none!important;
+    margin: 10px;
+}
+
+.copyright{
+    background-color: var(--yellow);
+}
+
+.dropdown-menu{
+    margin: 0;
+}
+
+.foot-cat-ul{
+    /* display: -webkit-box; */
+    columns: 2;
+}
+
+.social-icons .fa {
+    padding: 5px 5px;
+    border-radius: 10%;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-icons .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.social-icons .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+    padding: 5px 6px;
+}
+ 
+.navbar-brand{
+    margin-left: 30px;
+}
+
+.navbar-brand .w-25{
+    width: 25%;
+}
+
+
+
+/******** Index Page ********/
+/******** header ********/
+
+/* Modal on page load  */
+.load{
+    width:100%; 
+    height:auto;
+    border:5px solid var(--yellow);
+}
+
+.load button{
+    color: black;
+    position: absolute;
+    top: 2px;
+    background-color: var(--yellow);
+    width: 25px;
+    right: 2px;
+}
+
+/***** Overlay  *****/
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+/* Side-vectorr  */
+@media screen and (max-width:1180px){
+
+    img.side-vector {
+        display: none;
+    }
+
+}
+
+img.side-vector {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+}
+
+img.side-vector.vector-noodles{
+    top: 670px;
+    left: 2%;
+}
+
+img.side-vector.vector-chicken{
+    top: 1600px;
+    right: 2%;
+}
+
+img.side-vector.vector-dimsum{
+    top: 2000px;
+    left: 2%;
+}
+img.side-vector.vector-meal-box{
+    top: 2600px;
+    right: 2%;
+}
+
+img.side-vector.vector-meal{
+    top: 3130px;
+    left: 2%;
+}
+
+
+img.side-vector.vector-cute-dimsum{
+    top: 3630px;
+    right: 2%;
+}
+
+/* Border radius  */
+.bg-white.radius{
+    border-radius: 15px;
+}
+
+/* Newly added  */
+#wom a {
+    display: block;
+    /* box-shadow: 0 0 30px #0000001f; */
+    border-radius: 10px;
+    background-color: var(--yellow);
+}
+
+
+/********************* Our Story Page  *********************/
+.story{
+    border-radius: 15px;
+    padding: 30px;
+}

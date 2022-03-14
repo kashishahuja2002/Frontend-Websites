@@ -1,0 +1,26 @@
+/* Theme colors  */
+:root{
+    --blue: #41CAF4;
+    --red: #FF194F;
+    --gray: #EDECEC;
+}
+
+.text-blue{
+    color: var(--blue);
+}
+
+.text-red{
+    color: var(--red);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.bg-red{
+    background-color: var(--red);
+}
+
+.bg-gray{
+    background-color: var(--gray);
+}

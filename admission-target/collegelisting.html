@@ -1,0 +1,1964 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+          <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Toastr -->
+        <link rel="stylesheet" href="assets/css/toastr.css">
+        
+        <!-- System stylesheets  -->
+        <link rel="stylesheet" href="assets/css/admitcard.css">
+        <link rel="stylesheet" href="assets/css/body.css">
+        <link rel="stylesheet" href="assets/css/country.css">
+        <link rel="stylesheet" href="assets/css/exam.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/new.css">
+        <link rel="stylesheet" href="assets/css/review.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Admission Target | College Listing</title>
+        
+  </head>
+  <body>
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 p-0">
+                <div class="top-contact-details">
+                    <ul>
+                        <li><a href="#" style="padding-left: 8px;"> Top Universities</a></li>
+                        <li><a href="#"> Top Courses</a></li>
+                        <li><a href="#"> Exams</a></li>
+                        <li><a href="#"> News</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 login">
+                <div class="top-user-login top-contact-details">
+                    <ul>
+               
+                         <li><a href="#"><i class=" fa fa-graduation-cap"></i> Register</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<header id="header">
+    <div class="container" id="menu_container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#" class="scrollto"><img width="200" src="assets/images/logo.png"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#">Home</a></li>
+          <li class="menu-has-children" ><a href="#">Study Abroad</a>
+            <ul>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">USA</a></li>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">UK</a></li>
+              <li><a href="#">Germany</a></li>
+              <li><a href="#">Ireland</a></li>
+              <li><a href="#">Malaysia</a></li>
+              <li><a href="#">Netherlands</a></li>
+              <li><a href="#">Singapur</a></li>
+              <li><a href="#">Sweden</a></li>
+              <li><a href="#">HongKong</a></li>
+              
+            </ul>
+          </li>
+        
+          <li class="menu-has-children" ><a href="#">Colleges</a>
+            <ul>
+              <li><a href="#">Management</a></li>
+              <li><a href="#">IT</a></li>
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Engineering</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Medical</a></li>
+              <li><a href="#">ART</a></li>
+              <li><a href="#">LAW</a></li>
+              
+              
+            </ul>
+          </li>
+            <li><a href="#">Top Universities</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+
+    </div>
+  </header><!-- #header -->
+
+
+  <!-- Body  -->
+
+  <!-- Mobile filter  -->
+  <div class="d-block d-md-none" id="mob-fil" onclick="openfp('fp-filter')">
+    <i class="fa fa-filter mob-fil" aria-hidden="true"></i>
+  </div>
+
+  <!-- Full page filter  -->
+  <div class="full-page d-md-none" id="fp-filter">
+    <div class="fp-container">
+
+      <div class="bg-green fil-top">
+        <div class="row">
+          <h4 class="mt-2">FILTER</h4>
+          <button class="btn btn-default" onclick="closefp('fp-filter')">X</button>
+        </div>
+      </div>
+      
+      <div class="row fil">
+        
+        <div class="col-4">
+            <nav class="nav flex-column">
+              <a class="nav-link active" href="#id-1" data-toggle="tab">STREAM</a>
+              <a class="nav-link" href="#id-2" data-toggle="tab">COURSE</a>
+              <a class="nav-link" href="#id-3" data-toggle="tab">STATE</a>
+              <a class="nav-link" href="#id-4" data-toggle="tab">PROGRAM TYPE</a>
+              <a class="nav-link" href="#id-5" data-toggle="tab">COLLEGE TYPE</a>
+              <a class="nav-link" href="#id-6" data-toggle="tab">AVERAGE FEES</a>
+            </nav>
+        </div>
+
+        <div class="col-8" style="border-left: 1px solid black; padding-top: 2px;">
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="id-1">
+              <div class="filter">
+                <h5>STREAM</h5>
+                
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="com-bank-mob">
+                      <label for="com-bank-mob">Commerce and Banking</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="design-mob">
+                      <label for="design-mob">Design</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="engineering-mob">
+                      <label for="engineering-mob">Engineering</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="management-mob">
+                      <label for="management-mob">Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="hotel-management-mob">
+                      <label for="hotel-management-mob">Hotel Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="it-mob">
+                      <label for="it-mob">Information Technology</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="mmc-mob">
+                      <label for="mmc-mob">Media and Mass Communication</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="medical-mob">
+                      <label for="medical-mob">Medical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts-humanities-mob">
+                      <label for="arts-humanities-mob">Arts and Humanities</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="law-mob">
+                      <label for="law-mob">Law</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="science-mob">
+                      <label for="science-mob">Science</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="vocational-mob">
+                      <label for="vocational-mob">Vocational Courses</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="others-mob">
+                      <label for="others-mob">Others</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pe-mob">
+                      <label for="pe-mob">Physical Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="education-mob">
+                      <label for="education-mob">Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="paramedical-mob">
+                      <label for="paramedical-mob">Paramedical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agriculture-mob">
+                      <label for="agriculture-mob">Agriculture</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="nursing-mob">
+                      <label for="nursing-mob">Nursing</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pharmacy-mob">
+                      <label for="pharmacy-mob">Pharmacy</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="dental-mob">
+                      <label for="dental-mob">Dental</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts-mob">
+                      <label for="arts-mob">Performing Arts</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="comp-mob">
+                      <label for="comp-mob">Computer Application</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="animation-mob">
+                      <label for="animation-mob">Animation</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="aviation-mob">
+                      <label for="aviation-mob">Aviation</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="veterinary-mob">
+                      <label for="veterinary-mob">Veterinary Science</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="archi-mob">
+                      <label for="archi-mob">Architecture</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tab-pane fade" id="id-2">
+              <div class="filter">
+                <h5>Course</h5>
+                
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="MBA-mob">
+                      <label for="MBA-mob">MBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDM-mob">
+                      <label for="PGDM-mob">PGDM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGPM-mob">
+                      <label for="PGPM-mob">PGPM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDBM-mob">
+                      <label for="PGDBM-mob">PGDBM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Arch-mob">
+                      <label for="M.Arch-mob">M.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Tech-mob">
+                      <label for="M.Tech-mob">M.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMS-mob">
+                      <label for="BHMS-mob">BHMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BAMS-mob">
+                      <label for="BAMS-mob">BAMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Pharm-mob">
+                      <label for="B-Pharm-mob">B.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MCA-mob">
+                      <label for="MCA-mob">MCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Tech-mob">
+                      <label for="B.Tech-mob">B.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BBA-mob">
+                      <label for="BBA-mob">BBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLM-mob">
+                      <label for="LLM-mob">LLM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MS-mob">
+                      <label for="MS-mob">MS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLB-mob">
+                      <label for="LLB-mob">LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Com-mob">
+                      <label for="B-Com-mob">B.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHM-mob">
+                      <label for="BHM-mob">BHM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BCA-mob">
+                      <label for="BCA-mob">BCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Pharm-mob">
+                      <label for="M-Pharm-mob">M.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BSc-mob">
+                      <label for="BSc-mob">BSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMCT-mob">
+                      <label for="BHMCT-mob">BHMCT</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Com-mob">
+                      <label for="M-Com-mob">M.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Arch-mob">
+                      <label for="B-Arch-mob">B.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Ed-mob">
+                      <label for="B-Ed-mob">B.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Ed-mob">
+                      <label for="M-Ed-mob">M.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Phil-mob">
+                      <label for="M-Phil-mob">M.Phil</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MA-mob">
+                      <label for="MA-mob">MA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Des-mob">
+                      <label for="B-Des-mob">B.Des</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA-mob">
+                      <label for="BA-mob">BA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MFA-mob">
+                      <label for="MFA-mob">MFA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MSc-mob">
+                      <label for="MSc-mob">MSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MPEd-mob">
+                      <label for="MPEd-mob">MPEd</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PhD-mob">
+                      <label for="PhD-mob">PhD</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BJMC-mob">
+                      <label for="BJMC-mob">BJMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MTM-mob">
+                      <label for="MTM-mob">MTM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA-LLB-mob">
+                      <label for="BA-LLB-mob">BA+LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMS-mob">
+                      <label for="BMS-mob">BMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMMC-mob">
+                      <label for="BMMC-mob">BMMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Mus-mob">
+                      <label for="B-Mus-mob">B.Mus</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MHA-mob">
+                      <label for="MHA-mob">MHA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BPEd-mob">
+                      <label for="BPEd-mob">BPEd</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> 
+
+            <div class="tab-pane fade" id="id-3">
+              <div class="filter">
+                <h5>States</h5>
+                
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="MH-mob">
+                      <label for="MH-mob">Maharashtra</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="TN-mob">
+                      <label for="TN-mob">Tamil Nadu</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="UP-mob">
+                      <label for="UP-mob">Uttar Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kar-mob">
+                      <label for="kar-mob">Karnataka</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="delhi-mob">
+                      <label for="delhi-mob">Delhi</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kerela-mob">
+                      <label for="kerela-mob">Kerela</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="GUJ-mob">
+                      <label for="GUJ-mob">Gujarat</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="WB-mob">
+                      <label for="WB-mob">West Bengal</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="telan-mob">
+                      <label for="telan-mob">Telangana</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="AP-mob">
+                      <label for="AP-mob">Andra Praddesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MP-mob">
+                      <label for="MP-mob">Madhya Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="haryana-mob">
+                      <label for="haryana-mob">Haryana</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="punjab-mob">
+                      <label for="punjab-mob">Punjab</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="rajas-mob">
+                      <label for="rajas-mob">Rajasthan</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="orissa-mob">
+                      <label for="orissa-mob">Orissa</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="bihar-mob">
+                      <label for="bihar-mob">Bihar</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="goa-mob">
+                      <label for="goa-mob">Goa</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="sik-mob">
+                      <label for="sik-mob">Sikkim</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="miz-mob">
+                      <label for="miz-mob">Mizoram/label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="naga-mob">
+                      <label for="naga-mob">Nagaland</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="mani-mob">
+                      <label for="mani-mob">Manipur</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="HP-mob">
+                      <label for="HP-mob">Himachal Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arun-mob">
+                      <label for="arun-mob">Arunachal Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="megh-mob">
+                      <label for="megh-mob">Meghalaya</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="trip-mob">
+                      <label for="trip-mob">Tripura</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chand-mob">
+                      <label for="chand-mob">Chandigarh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chat-mob">
+                      <label for="chat-mob">Chattisgarh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="jhar-mob">
+                      <label for="jhar-mob">Jharkhand</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="uttar-mob">
+                      <label for="uttar-mob">Uttarakhand</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="JK-mob">
+                      <label for="JK-mob">Jammu & Kashmir</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="DD-mob">
+                      <label for="DD-mob">Daman & Diu</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="DNH-mob">
+                      <label for="DNH-mob">Dadra & Nagar Haveli</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="AN-mob">
+                      <label for="AN-mob">Andaman & Nicobar Island</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PC-mob">
+                      <label for="PC-mob">Puducherry</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>      
+
+            <div class="tab-pane fade" id="id-4">
+              <div class="filter">
+                <h5>Program Type</h5>
+
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="FT-mob">
+                      <label for="FT-mob">Full Time</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="PT-mob">
+                      <label for="PT-mob">Part Time</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="distance-mob">
+                      <label for="distance-mob">Distance</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="id-5">
+              <div class="filter">
+                <h5>College Type</h5>
+
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="private-mob">
+                      <label for="private-mob">Private</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="public-mob">
+                      <label for="public-mob">Public</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="id-6">
+              <div class="filter">
+                <h5>Average Fees</h5>
+
+                <div class="filter-sec">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="0-25-mob">
+                      <label for="0-25-mob">0 - 25K</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="25-50-mob">
+                      <label for="25-50-mob">25 - 50K</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="50-75-mob">
+                      <label for="50-75-mob">50 - 75K</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="75-1-mob">
+                      <label for="75-1-mob">75K - 1L</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="1-2-mob">
+                      <label for="1-2-mob">1 - 2L</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="2-mob">
+                      <label for="2-mob">Above 2L</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="row text-center bg-green fixed-bottom fil-bot py-1">
+        <div class="col-6" style="border-right: 1px solid white;">
+          <h5>
+            <button class="btn btn-default p-0" style="position: relative; font-weight: 400;">Clear all</button>
+          </h5>
+        </div>
+        <div class="col-6">
+          <h5>
+            <button class="btn btn-default p-0" style="position: relative; font-weight: 400;" onclick="closefp('fp-filter')">Apply now</button>
+          </h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+  <div id="main">
+      <div class="container my-4">
+          <h2 class="txt-green">LIST OF TOP COLLEGES IN INDIA BASED ON 2020 RANKING</h2>
+      </div>
+
+
+      <!-- Main Content  -->
+      <div class="container-fluid exam">
+        <div class="row px-4">
+
+          <div class="col-md-3 d-none d-md-block">
+            <div class="bg-white side-sec" >
+              
+              <div class="filter">
+                <h5 onclick="filter('stream')">STREAM <i class="fa fa-angle-up stream-up" aria-hidden="true"></i> <i class="fa fa-angle-down stream-down" aria-hidden="true"></i> </h5>
+                
+                <div class="filter-sec stream">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="com-bank">
+                      <label for="com-bank">Commerce and Banking</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="design">
+                      <label for="design">Design</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="engineering">
+                      <label for="engineering">Engineering</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="management">
+                      <label for="management">Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="hotel-management">
+                      <label for="hotel-management">Hotel Management</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="it">
+                      <label for="it">Information Technology</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="mmc">
+                      <label for="mmc">Media and Mass Communication</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="medical">
+                      <label for="medical">Medical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts-humanities">
+                      <label for="arts-humanities">Arts and Humanities</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="law">
+                      <label for="law">Law</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="science">
+                      <label for="science">Science</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="vocational">
+                      <label for="vocational">Vocational Courses</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="others">
+                      <label for="others">Others</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pe">
+                      <label for="pe">Physical Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="education">
+                      <label for="education">Education</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="paramedical">
+                      <label for="paramedical">Paramedical</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agriculture">
+                      <label for="agriculture">Agriculture</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="nursing">
+                      <label for="nursing">Nursing</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="pharmacy">
+                      <label for="pharmacy">Pharmacy</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="dental">
+                      <label for="dental">Dental</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arts">
+                      <label for="arts">Performing Arts</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="comp">
+                      <label for="comp">Computer Application</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="animation">
+                      <label for="animation">Animation</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="aviation">
+                      <label for="aviation">Aviation</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="veterinary">
+                      <label for="veterinary">Veterinary Science</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="archi">
+                      <label for="archi">Architecture</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5 onclick="filter('degree')">Course<i class="fa fa-angle-up degree-up" aria-hidden="true"></i> <i class="fa fa-angle-down degree-down" aria-hidden="true"></i> </h5>
+                
+                <div class="filter-sec degree">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="MBA">
+                      <label for="MBA">MBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDM">
+                      <label for="PGDM">PGDM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGPM">
+                      <label for="PGPM">PGPM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PGDBM">
+                      <label for="PGDBM">PGDBM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Arch">
+                      <label for="M.Arch">M.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Tech">
+                      <label for="M.Tech">M.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMS">
+                      <label for="BHMS">BHMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BAMS">
+                      <label for="BAMS">BAMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B-Pharm">
+                      <label for="B-Pharm">B.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MCA">
+                      <label for="MCA">MCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Tech">
+                      <label for="B.Tech">B.Tech</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BBA">
+                      <label for="BBA">BBA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLM">
+                      <label for="LLM">LLM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MS">
+                      <label for="MS">MS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LLB">
+                      <label for="LLB">LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Com">
+                      <label for="B.Com">B.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHM">
+                      <label for="BHM">BHM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BCA">
+                      <label for="BCA">BCA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M-Pharm">
+                      <label for="M-Pharm">M.Pharm</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BSc">
+                      <label for="BSc">BSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BHMCT">
+                      <label for="BHMCT">BHMCT</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Com">
+                      <label for="M.Com">M.Com</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Arch">
+                      <label for="B.Arch">B.Arch</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Ed">
+                      <label for="B.Ed">B.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Ed">
+                      <label for="M.Ed">M.Ed</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="M.Phil">
+                      <label for="M.Phil">M.Phil</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MA">
+                      <label for="MA">MA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Des">
+                      <label for="B.Des">B.Des</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA">
+                      <label for="BA">BA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MFA">
+                      <label for="MFA">MFA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MSc">
+                      <label for="MSc">MSc</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MPEd">
+                      <label for="MPEd">MPEd</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PhD">
+                      <label for="PhD">PhD</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BJMC">
+                      <label for="BJMC">BJMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MTM">
+                      <label for="MTM">MTM</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BA+LLB">
+                      <label for="BA+LLB">BA+LLB</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMS">
+                      <label for="BMS">BMS</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BMMC">
+                      <label for="BMMC">BMMC</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="B.Mus">
+                      <label for="B.Mus">B.Mus</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MHA">
+                      <label for="MHA">MHA</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="BPEd">
+                      <label for="BPEd">BPEd</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5  onclick="filter('state')">State
+                  <i class="fa fa-angle-up state-up" aria-hidden="true"></i> 
+                  <i class="fa fa-angle-down state-down" aria-hidden="true"></i> 
+                </h5>
+
+                <div class="filter-sec state">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="MH">
+                      <label for="MH">Maharashtra</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="TN">
+                      <label for="TN">Tamil Nadu</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="UP">
+                      <label for="UP">Uttar Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kar">
+                      <label for="kar">Karnataka</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="delhi">
+                      <label for="delhi">Delhi</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="kerela">
+                      <label for="kerela">Kerela</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="GUJ">
+                      <label for="GUJ">Gujarat</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="WB">
+                      <label for="WB">West Bengal</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="telan">
+                      <label for="telan">Telangana</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="AP">
+                      <label for="AP">Andra Praddesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="MP">
+                      <label for="MP">Madhya Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="haryana">
+                      <label for="haryana">Haryana</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="punjab">
+                      <label for="punjab">Punjab</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="rajas">
+                      <label for="rajas">Rajasthan</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="orissa">
+                      <label for="orissa">Orissa</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="bihar">
+                      <label for="bihar">Bihar</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="goa">
+                      <label for="goa">Goa</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="sik">
+                      <label for="sik">Sikkim</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="miz">
+                      <label for="miz">Mizoram/label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="naga">
+                      <label for="naga">Nagaland</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="mani">
+                      <label for="mani">Manipur</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="HP">
+                      <label for="HP">Himachal Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="arun">
+                      <label for="arun">Arunachal Pradesh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="megh">
+                      <label for="megh">Meghalaya</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="trip">
+                      <label for="trip">Tripura</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chand">
+                      <label for="chand">Chandigarh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chat">
+                      <label for="chat">Chattisgarh</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="jhar">
+                      <label for="jhar">Jharkhand</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="uttar">
+                      <label for="uttar">Uttarakhand</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="JK">
+                      <label for="JK">Jammu & Kashmir</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="DD">
+                      <label for="DD">Daman & Diu</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="DNH">
+                      <label for="DNH">Dadra & Nagar Haveli</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="AN">
+                      <label for="AN">Andaman & Nicobar Island</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="PC">
+                      <label for="PC">Puducherry</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5  onclick="filter('prog')">Program Type<i class="fa fa-angle-up prog-up" aria-hidden="true"></i> <i class="fa fa-angle-down prog-down" aria-hidden="true"></i> </h5>
+
+                <div class="filter-sec prog">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="FT">
+                      <label for="FT">Full Time</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="PT">
+                      <label for="PT">Part Time</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="distance">
+                      <label for="distance">Distance</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5 onclick="filter('college')">College Type<i class="fa fa-angle-up college-up" aria-hidden="true"></i> <i class="fa fa-angle-down college-down" aria-hidden="true"></i> </h5>
+
+                <div class="filter-sec college">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="private">
+                      <label for="private">Private</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="public">
+                      <label for="public">Public</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter">
+                <h5 onclick="filter('fees')">Average Fees<i class="fa fa-angle-up fees-up" aria-hidden="true"></i> <i class="fa fa-angle-down fees-down" aria-hidden="true"></i> </h5>
+
+                <div class="filter-sec fees">
+                  <ul class="list-unstyled">
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="0-25">
+                      <label for="0-25">0 - 25K</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="25-50">
+                      <label for="25-50">25 - 50K</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="50-75">
+                      <label for="50-75">50 - 75K</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="75-1">
+                      <label for="75-1">75K - 1L</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="1-2">
+                      <label for="1-2">1 - 2L</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="checkbox-circle" id="2">
+                      <label for="2">Above 2L</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-9 sticky-body" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+            
+            <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;"><div class="all-course-right">
+              <div class="row filter_data">
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- College Card Section -->
+                <div class="col-sm-4 course_grid js-clg-snippet">
+                  <div class="listing-block">
+                    <div class="top-block">
+                      <img class="snippet-banner" src="http://admissiontarget.com//assets/images/cover/feb_2.jpg">
+                      <div class="img-overlay"></div>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-envelope"></i> 8
+                      </a>
+                      <a class="data-icon" target="_blank" href="">
+                        <i class="fa fa-heart"></i>  1
+                      </a>
+                      <a class="data-icon pull-right margin-right-0"><span class="sup-cript">Rating</span><span class="rating-text">10/10</span> </a>
+                      <div class="clg-name-address">
+                        <a target="_blank" href="http://admissiontarget.com//single/7/lady-shri-ram-college-for-women-lsr-delhi" class="college_name"><h3>Lady Shri Ram College for Women (LSR), Delhi , </h3></a>
+                      </div>
+                    </div>
+                    <div class="course_bottom">
+                      <div class="clg-head">
+                        <div class="clg-logo">
+                          <img src="http://admissiontarget.com//assets/images/profile/Capture.png" class="img-responsive bg-logo">
+                        </div>
+                        <span class="location-badge">
+                          Maharashtra , Mumbai
+                        </span>
+                      </div>
+                      <div class="course-price-container">
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Computational Science and Engineering"> M.Sc Computational Scie..  </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                        <div class="course">
+                          <a target="_blank" href="" class="course-name" title="M.Sc Applied Computation">
+                            M.Sc Applied Computatio..
+                          </a>
+                          <div class="course-price">$ 55K/Yr</div>
+                          <div class="exam-name">GRE <span class="exam-score"> 292 </span></div>
+                          <div class="exam-name more-exam">TOEFL <span class="exam-score"> 100 </span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clg-links">
+                      <a href="" target="_blank" class="course_tab first_tab">Admission </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Programs </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Reviews </a>
+                      <a href="#" target="_blank" class="course_tab first_tab">Ranking </a>
+                    </div>
+                    <a class="btnapply apply-now-button listing-btn" type="button" data-college="Lady Shri Ram College for Women (LSR), Delhi" data-img="http://admissiontarget.com//assets/images/profile/Capture.png" data-toggle="modal" data-target=".bd-example-modal-lg"> Apply Now </a>
+                    <a class="btnbrochure apply-now-button  listing-btn" href="">Brochure</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+               
+              </div>
+
+               <!-- Pegination  -->
+               <div class="row">
+                <div class="col-md-9 d-none d-md-block"></div>
+                <div class="col-12 col-md-3">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      
+  </div>
+
+
+
+  <!-- Footer  -->
+
+  <!--================================subscription===================================-->
+<section class="py-5 mt-2" style="background: url('http://maxcity.mu/wp-content/uploads/2017/08/contact-us-banner-overlay.jpg');">
+  <div class="container">
+    <h2 class="text-center text-white mb-5">Get A Quick Inquiry</h2>
+    <div class="row">
+
+      <div class="col-12 col-md-6">
+        <img src="https://timescareer.org/wp-content/uploads/2019/06/b2btripyourinquiry.png" class="img-fluid">
+      </div> 
+      <div class="col-12 col-md-6">
+       <div class="card card-body bg-light">
+        <form id="applyNowForm" name="apply_now_form" method="POST" action="#" data-toggle="validator" >
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="apply_full_name">Full Name:</label>
+            <input type="text" name="apply_full_name" id="apply_full_name" class="form-control" placeholder="Please enter your full name*" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="apply_phone">Mobile Number:</label>
+            <input type="text" name="apply_phone" id="apply_phone" class="form-control" placeholder="Please enter your 10 digits valid mobile number*" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="apply_course">Select Course:</label>
+            <select name="apply_course" id="apply_course" class="form-control">
+              <option value="">Select course</option><option value="1">ANM</option><option value="2">B.Arch.</option><option value="3">B.Com</option><option value="4">B.Com+B.Ed.</option><option value="5">B.Com+LLB</option><option value="6">B.Design</option><option value="7">B.Ed.</option><option value="8">B.El.Ed.</option><option value="9">B.Lib.</option><option value="10">B.P.Ed.</option><option value="11">B.Pharm.</option><option value="12">B.Sc.</option><option value="13">B.Sc. Agriculture</option><option value="14">B.Sc.+B.Ed.</option><option value="15">B.Sc.+LLB</option><option value="16">B.Tech</option><option value="18">BA</option><option value="19">BA+B.Ed.</option><option value="20">BA+LLB</option><option value="96">BAMS</option><option value="21">BBA</option><option value="22">BCA</option><option value="23">BDS</option><option value="24">BFA</option><option value="25">BHM</option><option value="27">BMLT</option><option value="100">BPE</option><option value="32">BPT</option><option value="83">BSW</option><option value="35">D.Ed.</option><option value="36">D.El.Ed.</option><option value="97">D.Litt.</option><option value="37">D.P.Ed.</option><option value="38">D.Pharm.</option><option value="39">DCA</option><option value="42">Diploma In Engineering</option><option value="43">DMLT</option><option value="44">GNM</option><option value="45">ITI</option><option value="47">LLB</option><option value="48">LLM</option><option value="50">M.Com</option><option value="52">M.Ed.</option><option value="54">M.P.Ed.</option><option value="55">M.Pharm.</option><option value="56">M.Phil.</option><option value="57">M.Sc.</option><option value="58">M.Tech</option><option value="60">MA</option><option value="61">MBA</option><option value="62">MBBS</option><option value="63">MCA</option><option value="66">MFA</option><option value="91">MPH</option><option value="71">MPHW</option><option value="72">MPT</option><option value="82">MSW</option><option value="73">NTT</option><option value="77">PGDCA</option><option value="79">Ph.D.</option><option value="80">STC</option><option value="81">VLDA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="apply_state">Select State:</label>
+            <select name="apply_state" id="apply_state" class="form-control"><option value="">Select state</option><option value="1">Andaman and Nicobar Islands</option><option value="2">Andhra Pradesh</option><option value="3">Arunachal Pradesh</option><option value="4">Assam</option><option value="5">Bihar</option><option value="6">Chandigarh</option><option value="7">Chhattisgarh</option><option value="8">Dadra and Nagar Haveli</option><option value="9">Daman and Diu</option><option value="10">Delhi</option><option value="11">Goa</option><option value="12">Gujarat</option><option value="13">Haryana</option><option value="14">Himachal Pradesh</option><option value="15">Jammu and Kashmir</option><option value="16">Jharkhand</option><option value="17">Karnataka</option><option value="18">Kenmore</option><option value="19">Kerala</option><option value="20">Lakshadweep</option><option value="21">Madhya Pradesh</option><option value="22">Maharashtra</option><option value="23">Manipur</option><option value="24">Meghalaya</option><option value="25">Mizoram</option><option value="26">Nagaland</option><option value="27">Narora</option><option value="28">Natwar</option><option value="29">Odisha</option><option value="30">Paschim Medinipur</option><option value="31">Pondicherry</option><option value="32">Punjab</option><option value="33">Rajasthan</option><option value="34">Sikkim</option><option value="35">Tamil Nadu</option><option value="36">Telangana</option><option value="37">Tripura</option><option value="38">Uttar Pradesh</option><option value="39">Uttarakhand</option><option value="40">Vaishali</option><option value="41">West Bengal</option></select>
+          </div>
+        </div>
+        <div class="modal-footer AlgnCenter">
+          <button type="submit" class="btn-success buttonApplySubmit">Apply Now</button>
+        </div>
+      </form>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================================Footer===================================-->
+<div class="container-fluid">
+<div class="row pt-5 pb-5" style="background-color: #008938;">
+  <div class="col-1 d-none d-md-block">
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li><a href="#"><h5>Uni/Colleges In India</h5></a></li>
+      <li><a href="#">Engineering</a></li>
+      <li><a href='#'>Management</a></li>
+      <li><a href="#">Medical</a></li>
+      <li><a href="#">Science</a></li>
+      <li><a href='#'>Law</a></li>
+      <li><a href="#">Pharmacy</a></li>
+      <li><a href="#">Arts & Humanities</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li>  <a href="#"><h5>Distance Eduaction</h5></a></li>
+      <li><a href="#">MBA</a></li>
+      <li><a href='#'>BBA</a></li>
+      <li><a href="#">BCA </a></li>
+      <li><a href="#">MCA</a></li>
+      <li><a href='#'>BA</a></li>
+      <li><a href="#">MA</a></li>
+      <li><a href="#">B.COM </a></li>
+      <li><a href="#">M.COM </a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li><a href="#"><h5>MBBS ABROAD</h5></a></li>
+      <li><a href="#">CHINA</a></li>
+      <li><a href='#'>PHILIPPINES</a></li>
+      <li><a href="#">NEPAL</a></li>
+      <li><a href="#">UKRAINE</a></li>
+      <li><a href='#'>RUSSIA</a></li>
+      <li><a href="#">POLAND</a></li>
+      <li><a href="#">BANGLADESH</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4">
+    <ul>
+      <li><a href="#"><h5>STUDY ABROAD</h5></a></li>
+      <li><a href="#">CANADA</a></li>
+      <li><a href='#'>USA</a></li>
+      <li><a href="#">UK</a></li>
+      <li><a href="#">AUSTRALIA</a></li>
+      <li><a href='#'>GERMANY</a></li>
+      <li><a href="#">SWEDEN</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-2 text-white footer pt-4" >
+    <ul>
+      <li><a href="#"><h5>OTHER LINKS</h5></a></li>
+      <li><a href="#">ABOUT EDUPEDIA</a></li>
+      <li><a href='#'>CONTACT US</a></li>
+      <li><a href="#">ADVERTISING</a></li>
+      <li><a href="#">CAREERS</a></li>
+      <li><a href='#'>PRIVACY</a></li>
+      <li><a href="#">TERMS & CONDITIONS</a></li>
+    </ul>
+  </div>
+  <div class="col-1 d-none d-md-block">
+  </div>
+</div>
+<div class="row " style="background-color: #06A94D;">
+  <div class="col-6 p-0 footer_img">
+    
+  </div>
+  <div class="col-6 text-right footer_img pr-5">
+    <a href="#" ><img src="http://admissiontarget.com/assets/images/facebook_icon.png"></a>
+    <a href="#"><img src="http://admissiontarget.com/assets/images/linkdin_icon.png"></a>
+    <a href="#"><img src="http://admissiontarget.com/assets/images/twiter_icon.png"></a>
+    <a href="#"><img src="http://admissiontarget.com/assets/images/youtube_icon.png"></a>
+  </div>
+  <div class="col-12 text-center p-3 p-sm-5 copyright" style="background-color: #008938; color:white;">
+    <h6>Copyright © 2020 Admission Target || All Rights Reserved.</h6>
+  </div>
+</div>
+</div>
+<div id="applynowModal" class="applyNowPopup modal fade">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">Admission Enquiry</h4>
+    </div>
+    <form id="applyNowForm" name="apply_now_form" method="POST" action="#" data-toggle="validator" >
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="apply_full_name">Full Name:</label>
+          <input type="text" name="apply_full_name" id="apply_full_name" class="form-control" placeholder="Please enter your full name*" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="apply_phone">Mobile Number:</label>
+          <input type="text" name="apply_phone" id="apply_phone" class="form-control" placeholder="Please enter your 10 digits valid mobile number*" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="apply_course">Select Course:</label>
+          <select name="apply_course" id="apply_course" class="form-control">
+            <option value="">Select course</option><option value="1">ANM</option><option value="2">B.Arch.</option><option value="3">B.Com</option><option value="4">B.Com+B.Ed.</option><option value="5">B.Com+LLB</option><option value="6">B.Design</option><option value="7">B.Ed.</option><option value="8">B.El.Ed.</option><option value="9">B.Lib.</option><option value="10">B.P.Ed.</option><option value="11">B.Pharm.</option><option value="12">B.Sc.</option><option value="13">B.Sc. Agriculture</option><option value="14">B.Sc.+B.Ed.</option><option value="15">B.Sc.+LLB</option><option value="16">B.Tech</option><option value="18">BA</option><option value="19">BA+B.Ed.</option><option value="20">BA+LLB</option><option value="96">BAMS</option><option value="21">BBA</option><option value="22">BCA</option><option value="23">BDS</option><option value="24">BFA</option><option value="25">BHM</option><option value="27">BMLT</option><option value="100">BPE</option><option value="32">BPT</option><option value="83">BSW</option><option value="35">D.Ed.</option><option value="36">D.El.Ed.</option><option value="97">D.Litt.</option><option value="37">D.P.Ed.</option><option value="38">D.Pharm.</option><option value="39">DCA</option><option value="42">Diploma In Engineering</option><option value="43">DMLT</option><option value="44">GNM</option><option value="45">ITI</option><option value="47">LLB</option><option value="48">LLM</option><option value="50">M.Com</option><option value="52">M.Ed.</option><option value="54">M.P.Ed.</option><option value="55">M.Pharm.</option><option value="56">M.Phil.</option><option value="57">M.Sc.</option><option value="58">M.Tech</option><option value="60">MA</option><option value="61">MBA</option><option value="62">MBBS</option><option value="63">MCA</option><option value="66">MFA</option><option value="91">MPH</option><option value="71">MPHW</option><option value="72">MPT</option><option value="82">MSW</option><option value="73">NTT</option><option value="77">PGDCA</option><option value="79">Ph.D.</option><option value="80">STC</option><option value="81">VLDA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="apply_state">Select State:</label>
+          <select name="apply_state" id="apply_state" class="form-control"><option value="">Select state</option><option value="1">Andaman and Nicobar Islands</option><option value="2">Andhra Pradesh</option><option value="3">Arunachal Pradesh</option><option value="4">Assam</option><option value="5">Bihar</option><option value="6">Chandigarh</option><option value="7">Chhattisgarh</option><option value="8">Dadra and Nagar Haveli</option><option value="9">Daman and Diu</option><option value="10">Delhi</option><option value="11">Goa</option><option value="12">Gujarat</option><option value="13">Haryana</option><option value="14">Himachal Pradesh</option><option value="15">Jammu and Kashmir</option><option value="16">Jharkhand</option><option value="17">Karnataka</option><option value="18">Kenmore</option><option value="19">Kerala</option><option value="20">Lakshadweep</option><option value="21">Madhya Pradesh</option><option value="22">Maharashtra</option><option value="23">Manipur</option><option value="24">Meghalaya</option><option value="25">Mizoram</option><option value="26">Nagaland</option><option value="27">Narora</option><option value="28">Natwar</option><option value="29">Odisha</option><option value="30">Paschim Medinipur</option><option value="31">Pondicherry</option><option value="32">Punjab</option><option value="33">Rajasthan</option><option value="34">Sikkim</option><option value="35">Tamil Nadu</option><option value="36">Telangana</option><option value="37">Tripura</option><option value="38">Uttar Pradesh</option><option value="39">Uttarakhand</option><option value="40">Vaishali</option><option value="41">West Bengal</option></select>
+        </div>
+      </div>
+      <div class="modal-footer AlgnCenter">
+        <button type="submit" class="btn-success buttonApplySubmit">Apply Now</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+  
+ <!-- Scripts  -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript" src="assets/js/validation.js"></script>
+<script type="text/javascript" src="assets/js/cookies.js"></script>
+<script type="text/javascript" src="assets/js/menu.js"></script>
+<script src="assets/js/toastr.js"></script>
+<script src="assets/js/sweetalert.js"></script>
+<script src="assets/js/fancybox.js"></script>
+   
+ <!-- System script  -->
+ <script src="assets/js/index.js"></script>
+ <script src="assets/js/footer.js"></script>  
+ 
+   </body>
+   </html>
